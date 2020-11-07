@@ -1,5 +1,7 @@
 [![](https://raw.githubusercontent.com/yodev21/yodev21/main/profile-summary-card-output/nord_bright/1-repos-per-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 
+！[]（https://komarev.com/ghpvc/?username=yodev21）
+
 <!--
 **yodev21/yodev21** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
