@@ -1,18 +1,16 @@
-[![](https://raw.githubusercontent.com/yodev21/yodev21/main/profile-summary-card-output/nord_bright/1-repos-per-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+# My Profile
 
-！[]（https://komarev.com/ghpvc/?username=yodev21）
+Web Application Developer
 
-<!--
-**yodev21/yodev21** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+[![](https://raw.githubusercontent.com/yodev21/yodev21/main/profile-summary-card-output/vue/0-profile-details.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![](https://raw.githubusercontent.com/yodev21/yodev21/main/profile-summary-card-output/vue/1-repos-per-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![](https://raw.githubusercontent.com/yodev21/yodev21/main/profile-summary-card-output/vue/2-most-commit-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 
-Here are some ideas to get you started:
+# Skills
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+[![](https://img.shields.io/badge/-Rails-000?style=flat&logo=ruby-on-rails)](https://github.com/yodev21)
+[![](https://img.shields.io/badge/-AWS-000?style=flat&logo=amazon-aws)](https://github.com/yodev21)
+
+# Others
+
+![](https://komarev.com/ghpvc/?username=yodev21&color=green)
