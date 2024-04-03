@@ -13,10 +13,10 @@
 
 ## 各種アカウント
 <p>
-<a href="https://github.com/yodev21" target="_blank"><img alt="Github" src="https://img.shields.io/badge/yosuke.tanaka.svg?&style=flat-square&logo=Github&logoColor=white" /></a>
-<a href="https://twitter.com/yodev21" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/@yodev21.svg?&style=flat-square&logo=twitter&logoColor=white" /></a>
-<a href="https://qiita.com/yokku21" target="_blank"><img alt="Medium" src="https://img.shields.io/badge/yokku.svg?&style=flat-square&logo=qiita&logoColor=white" /></a>
-
+  <a href="https://github.com/yodev21" target="_blank"><img alt="Github" src="https://img.shields.io/badge/yosuke.tanaka.svg?&style=flat-square&logo=Github&logoColor=white" /></a>
+  <a href="https://twitter.com/yodev21" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/@yodev21.svg?&style=flat-square&logo=twitter&logoColor=white" /></a>
+  <a href="https://qiita.com/yokku21" target="_blank"><img alt="Medium" src="https://img.shields.io/badge/yokku.svg?&style=flat-square&logo=qiita&logoColor=white" /></a>
+</p>
 ---
 
 ## 保有スキル
