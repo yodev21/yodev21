@@ -1,14 +1,20 @@
-# 個人サービス
-【文学作家、声優・ナレーターさん募集中】
-小説、声劇台本、詩を無料で朗読できるサイト運営しています。
-小説台本の許可取りも簡単で #YouTube や #Spoon、 #ボイコネ #Tiktok など色んなメディアで朗読できます！
-現在Webラジオ局とコラボ放送中です。
+# 基本情報
+所属: コンサル企業
+役職: アプリ開発およびクラウド構築エンジニア
 
-### サービスサイト
-https://kikusyo.com/
+## 業務内容:
+・中規模システムを中心に、アプリケーション開発およびクラウドインフラの設計・構築を担当
+・主に AWS および Azure を使用してインフラ構築を行い、 Rails および Django を用いたアプリ開発が得意です
 
-### X
-https://twitter.com/kikudokusyo
+## 得意分野・スキルセット:
+・パフォーマンスチューニング:
+    ・レスポンス改善を目的としたパフォーマンス最適化
+・CI/CD パイプラインの構築:
+    ・Jenkins、GitHub Actions、Azure DevOps, Code Buildを用いた自動化パイプライン構築
+・開発効率化ツールの整備:
+    ・shell スクリプトや Docker を活用した開発環境の自動化・効率化
+・新人教育:
+    ・新入社員やジュニアエンジニアの指導・育成、チームビルディング支援
 
 # SNS
 
@@ -29,4 +35,4 @@ https://twitter.com/kikudokusyo
 <a href="https://clover.lt-s.jp/9295" target="_blank" rel="noopener noreferrer" style="padding-bottom: 5rem">上流から実装・運用まで　LTSのAWS構築・アプリ開発</a><br>
 <a href="https://note.com/d_biz_share/n/n07cc2eac3b22" target="_blank" rel="noopener noreferrer" style="padding-bottom: 5rem">【editchインタビュー #1】vol.1出場 DIVE INTO CODE 田中遥介さん</a><br>
 
-![閲覧数](https://komarev.com/ghpvc/?username=yodev21&color=green)
+![](https://komarev.com/ghpvc/?username=yodev21&color=green)
