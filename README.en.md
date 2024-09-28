@@ -28,12 +28,12 @@ Position: Application Development and Cloud Infrastructure Engineer
 <a href="https://qiita.com/yokku21" target="_blank" rel="noopener noreferrer" style="padding-bottom: 5rem">Qiita</a><br>
 <a href="https://twitter.com/yodev21" target="_blank" rel="noopener noreferrer" style="padding-bottom: 5rem">Twitter</a><br>
 
-# 保有資格
+# Certifications
 - AWS Certified Solutions Architect - Associate (2022/5)
 - AWS Certified Solutions Architect - Associate (2022/5)
 - JDLA Deep Learning for GENERAL (2022/5)
 
-# 活動履歴
+# Activity History
 <a href="https://kikusyo.com" target="_blank" rel="noopener noreferrer" style="padding-bottom: 5rem">月間1.4万PV 個人サービスの開発・運営</a><br>
 <a href="https://clover.lt-s.jp/9295" target="_blank" rel="noopener noreferrer" style="padding-bottom: 5rem">上流から実装・運用まで　LTSのAWS構築・アプリ開発</a><br>
 <a href="https://note.com/d_biz_share/n/n07cc2eac3b22" target="_blank" rel="noopener noreferrer" style="padding-bottom: 5rem">【editchインタビュー #1】vol.1出場 DIVE INTO CODE 田中遥介さん</a><br>
