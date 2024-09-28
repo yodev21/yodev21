@@ -11,10 +11,11 @@
 [![My Qiita posts](https://qiita-badge.apiapi.app/s/yokku21/posts.svg)](http://qiita.com/yokku21)
 [![My Qiita contributions](https://qiita-badge.apiapi.app/s/yokku21/contributions.svg)](http://qiita.com/yokku21)
 
-# Others
+# SNS
 
-[Wantedly](https://www.wantedly.com/users/62400896)  
-[Qiita](https://qiita.com/yokku21)  
-[Twitter](https://twitter.com/yodev21)  
-[Paiza](https://paiza.jp/career_sheets)  
-[LAPRAS](https://lapras.com/public/CZQQR6J)
+<a href="https://www.wantedly.com/users/62400896" target="_blank" rel="noopener noreferrer">Wantedly</a>
+<a href="https://youtrust.jp/users/yodev21" target="_blank" rel="noopener noreferrer">YOU TRUST</a>
+<a href="https://www.linkedin.com/in/yodev21" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a href="https://lapras.com/public/CZQQR6J" target="_blank" rel="noopener noreferrer">LAPRAS</a>
+<a href="https://qiita.com/yokku21" target="_blank" rel="noopener noreferrer">Qiita</a>
+<a href="https://twitter.com/yodev21" target="_blank" rel="noopener noreferrer">Twitter</a>
