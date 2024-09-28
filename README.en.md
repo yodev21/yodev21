@@ -2,21 +2,22 @@ English | [日本語](README.md)
 
 # Basic Information
 Company: Consulting Firm
+
 Position: Application Development and Cloud Infrastructure Engineer
 
 ## Job Description:
-・Primarily responsible for application development and cloud infrastructure design and construction, focusing on medium-sized systems.
-・Specializes in infrastructure setup using AWS and Azure, and excels in application development using Rails and Django.
+- Primarily responsible for application development and cloud infrastructure design and construction, focusing on medium-sized systems.
+- Specializes in infrastructure setup using AWS and Azure, and excels in application development using Rails and Django.
 
 ## Expertise & Skill Set:
-・Performance Tuning:
-    ・Optimization of application performance aimed at improving response times.
-・CI/CD Pipeline Construction:
-    ・Building automated pipelines using Jenkins, GitHub Actions, Azure DevOps, and CodeBuild.
-・Development Efficiency Tooling:
-    ・Automating and streamlining development environments using shell scripts and Docker.
-・Training Newcomers:
-    ・Mentoring and training new hires and junior engineers, as well as supporting team-building initiatives.
+- Performance Tuning:
+    - Optimization of application performance aimed at improving response times.
+- CI/CD Pipeline Construction:
+    - Building automated pipelines using Jenkins, GitHub Actions, Azure DevOps, and CodeBuild.
+- Development Efficiency Tooling:
+    - Automating and streamlining development environments using shell scripts and Docker.
+- Training Newcomers:
+    - Mentoring and training new hires and junior engineers, as well as supporting team-building initiatives.
 
 # SNS
 
