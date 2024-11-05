@@ -34,8 +34,9 @@
 - JDLA Deep Learning for GENERAL (2022/5)
 
 # 活動履歴
-<a href="https://kikusyo.com" target="_blank" rel="noopener noreferrer" style="padding-bottom: 5rem">月間1.4万PV 個人サービスの開発・運営</a><br>
-<a href="https://clover.lt-s.jp/9295" target="_blank" rel="noopener noreferrer" style="padding-bottom: 5rem">上流から実装・運用まで　LTSのAWS構築・アプリ開発</a><br>
-<a href="https://note.com/d_biz_share/n/n07cc2eac3b22" target="_blank" rel="noopener noreferrer" style="padding-bottom: 5rem">【editchインタビュー #1】vol.1出場 DIVE INTO CODE 田中遥介さん</a><br>
+<a href="https://kikusyo.com" target="_blank" rel="noopener noreferrer" style="padding-bottom: 5rem">月間1.4万PV 個人サービスの開発・運営</a><br><br>
+<a href="https://clover.lt-s.jp/9295" target="_blank" rel="noopener noreferrer" style="padding-bottom: 5rem">上流から実装・運用まで　LTSのAWS構築・アプリ開発</a><br><br>
+<a href="https://good-companies.jp/2024/07/12/lt-s/" target="_blank" rel="noopener noreferrer" style="padding-bottom: 5rem">株式会社エル・ティー・エス｜働く豊かさや楽しさを仲間と分かち合える環境で社員が自らのキャリアを描き形にしていく</a><br><br>
+<a href="https://note.com/d_biz_share/n/n07cc2eac3b22" target="_blank" rel="noopener noreferrer" style="padding-bottom: 5rem">【editchインタビュー #1】vol.1出場 DIVE INTO CODE 田中遥介さん</a><br><br>
 
 ![](https://komarev.com/ghpvc/?username=yodev21&color=green)
