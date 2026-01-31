@@ -7,9 +7,6 @@ English | [日本語](README.md)
 | **Company** | LTS, Inc. |
 | **Position** | Application Development and Cloud Infrastructure Engineer |
 
-Responsible for application development and cloud infrastructure design/construction.
-Specializes in infrastructure setup using AWS / Azure / Google Cloud, and backend development with Rails / Django / Go.
-
 ---
 
 ## Tech Stack
