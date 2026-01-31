@@ -41,13 +41,13 @@ AWS / Azure / Google Cloud を用いたインフラ構築と、Rails / Django / 
 
 | # | 案件名 | 期間 | 主要技術 |
 |---|--------|------|----------|
-| 01 | 医療機関向けWeb予約・健康診断システム | 2016年〜2020年 | Java, Windows Server |
-| 02 | 自社サービス開発支援 | 2021年〜2024年 | Rails, AWS, Docker |
-| 03 | 顧客管理システム開発 | 2023年〜2024年 | AWS, Python, Vue.js |
-| 04 | データ分析基盤 | 2023年〜2024年 | AWS, Tableau, Python |
-| 05 | 建設業向けCMサービス | 2024年〜現在 | Azure, Terraform, Django |
-| 06 | AI検索機能システム | 2025年 | Azure OpenAI, Django |
 | 07 | 海外送金アプリ開発支援 | 2025年〜現在 | Google Cloud, Go, Next.js |
+| 06 | AI検索機能システム | 2025年 | Azure OpenAI, Django |
+| 05 | 建設業向けCMサービス | 2024年〜現在 | Azure, Terraform, Django |
+| 04 | データ分析基盤 | 2023年〜2024年 | AWS, Tableau, Python |
+| 03 | 顧客管理システム開発 | 2023年〜2024年 | AWS, Python, Vue.js |
+| 02 | 自社サービス開発支援 | 2021年〜2024年 | Rails, AWS, Docker |
+| 01 | 医療機関向けWeb予約・健康診断システム | 2016年〜2020年 | Java, Windows Server |
 
 ### [Personal Projects](projects/personal/)
 個人開発の実績一覧（1件）
