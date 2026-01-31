@@ -25,12 +25,11 @@ Specializes in infrastructure setup using AWS / Azure / Google Cloud, and backen
 
 ---
 
-## Skill Set
+## Strengths
 
-- **Performance Tuning**: Optimization aimed at improving response times
-- **CI/CD Pipeline Construction**: Jenkins / GitHub Actions / Azure DevOps / Cloud Build
-- **Development Efficiency**: Automating development environments using Shell scripts and Docker
-- **Training Newcomers**: Mentoring junior engineers and supporting team-building
+- **Data-Driven Optimization**: Analyzing resource usage to drive continuous improvements in infrastructure and applications
+- **Log Monitoring & Improvement Cycle**: Continuously improving and monitoring application logs to enhance product quality
+- **Operations Knowledge Standardization**: Systematizing operational know-how to elevate team-wide skills
 
 ---
 
