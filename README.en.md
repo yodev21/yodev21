@@ -41,13 +41,13 @@ List of enterprise project experience (7 projects)
 
 | # | Project | Period | Key Technologies |
 |---|---------|--------|------------------|
-| 01 | Healthcare Web Reservation System | 2016 - 2020 | Java, Windows Server |
-| 02 | In-house Service Development | 2021 - 2024 | Rails, AWS, Docker |
-| 03 | CRM System Development | 2023 - 2024 | AWS, Python, Vue.js |
-| 04 | Data Analytics Platform | 2023 - 2024 | AWS, Tableau, Python |
-| 05 | Construction Management Service | 2024 - Present | Azure, Terraform, Django |
-| 06 | AI Search System | 2025 | Azure OpenAI, Django |
 | 07 | Overseas Remittance App | 2025 - Present | Google Cloud, Go, Next.js |
+| 06 | AI Search System | 2025 | Azure OpenAI, Django |
+| 05 | Construction Management Service | 2024 - Present | Azure, Terraform, Django |
+| 04 | Data Analytics Platform | 2023 - 2024 | AWS, Tableau, Python |
+| 03 | CRM System Development | 2023 - 2024 | AWS, Python, Vue.js |
+| 02 | In-house Service Development | 2021 - 2024 | Rails, AWS, Docker |
+| 01 | Healthcare Web Reservation System | 2016 - 2020 | Java, Windows Server |
 
 ### [Personal Projects](projects/personal/)
 List of personal project experience (1 project)
