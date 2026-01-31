@@ -33,6 +33,16 @@ Specializes in infrastructure setup using AWS / Azure / Google Cloud, and backen
 
 ---
 
+## Career Vision
+
+I aim to become a Cloud Lead who can provide opinions and proposals from a cloud perspective in product development.
+
+I'm interested in building infrastructure that supports development teams, and I aim to become a trusted expert in cloud and infrastructure while working across multiple products.
+
+My focus areas are Terraform / IaC and Observability (monitoring, logging, tracing). I will continue to develop both my communication skills and technical depth, leveraging my experience in "operations-aware design" and "data-driven optimization."
+
+---
+
 ## Projects
 
 ### [Enterprise Projects](projects/enterprise/)
