@@ -42,25 +42,12 @@
 
 ## Projects
 
-### [Enterprise Projects](projects/enterprise/)
-企業案件の実績一覧（7件）
-
-| # | 案件名 | 期間 | 主要技術 |
-|---|--------|------|----------|
-| 07 | 海外送金アプリ開発支援 | 2025年〜現在 | Google Cloud, Go, Next.js |
-| 06 | AI検索機能システム | 2025年 | Azure OpenAI, Django |
-| 05 | 建設業向けCMサービス | 2024年〜現在 | Azure, Terraform, Django |
-| 04 | データ分析基盤 | 2023年〜2024年 | AWS, Tableau, Python |
-| 03 | 顧客管理システム開発 | 2023年〜2024年 | AWS, Python, Vue.js |
-| 02 | 自社サービス開発支援 | 2021年〜2024年 | Rails, AWS, Docker |
-| 01 | 医療機関向けWeb予約・健康診断システム | 2016年〜2020年 | Java, Windows Server |
-
 ### [Personal Projects](projects/personal/)
-個人開発の実績一覧（1件）
 
 | # | 案件名 | 期間 | 主要技術 |
 |---|--------|------|----------|
-| 01 | 小説・朗読投稿サービス | 2022年〜現在 | Rails, AWS Lightsail |
+| 02 | 小説・朗読投稿サービス リアーキテクチャ | 2026年 | Go, Next.js, Google Cloud, Terraform |
+| 01 | 小説・朗読投稿サービス | 2022年〜2026年 | Rails, AWS Lightsail |
 
 ---
 
@@ -75,7 +62,7 @@
 ## Activities
 
 - [「遠くにいくなら皆で」チーム志向で進むエンジニアの道](https://careers.lt-s.jp/students/interview/newgrad-bp-001002-1-1-0-0)
-- [月間1.4万PV 個人サービスの開発・運営](https://kikusyo.com)
+- [個人サービスの開発・運営](https://kikusyo.com)
 - [上流から実装・運用まで LTSのAWS構築・アプリ開発](https://clover.lt-s.jp/9295)
 - [株式会社エル・ティー・エス｜働く豊かさや楽しさを仲間と分かち合える環境](https://good-companies.jp/2024/07/12/lt-s/)
 - [【editchインタビュー #1】vol.1出場 DIVE INTO CODE 田中遥介さん](https://note.com/d_biz_share/n/n07cc2eac3b22)

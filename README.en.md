@@ -42,25 +42,12 @@ My focus areas are Terraform / IaC and Observability (monitoring, logging, traci
 
 ## Projects
 
-### [Enterprise Projects](projects/enterprise/)
-List of enterprise project experience (7 projects)
-
-| # | Project | Period | Key Technologies |
-|---|---------|--------|------------------|
-| 07 | Overseas Remittance App | 2025 - Present | Google Cloud, Go, Next.js |
-| 06 | AI Search System | 2025 | Azure OpenAI, Django |
-| 05 | Construction Management Service | 2024 - Present | Azure, Terraform, Django |
-| 04 | Data Analytics Platform | 2023 - 2024 | AWS, Tableau, Python |
-| 03 | CRM System Development | 2023 - 2024 | AWS, Python, Vue.js |
-| 02 | In-house Service Development | 2021 - 2024 | Rails, AWS, Docker |
-| 01 | Healthcare Web Reservation System | 2016 - 2020 | Java, Windows Server |
-
 ### [Personal Projects](projects/personal/)
-List of personal project experience (1 project)
 
 | # | Project | Period | Key Technologies |
 |---|---------|--------|------------------|
-| 01 | Novel & Reading Service | 2022 - Present | Rails, AWS Lightsail |
+| 02 | Novel & Reading Service Re-architecture | 2026 | Go, Next.js, Google Cloud, Terraform |
+| 01 | Novel & Reading Service | 2022 - 2026 | Rails, AWS Lightsail |
 
 ---
 
@@ -75,7 +62,7 @@ List of personal project experience (1 project)
 ## Activities
 
 - ["If you want to go far, go together" - Engineer's Path with Team Spirit](https://careers.lt-s.jp/students/interview/newgrad-bp-001002-1-1-0-0)
-- [Personal Service with 14K Monthly PV](https://kikusyo.com)
+- [Personal Service Development & Operations](https://kikusyo.com)
 - [From Upstream to Implementation - AWS & App Development at LTS](https://clover.lt-s.jp/9295)
 - [LTS Inc. - Environment for Employees to Shape Their Own Careers](https://good-companies.jp/2024/07/12/lt-s/)
 - [editch Interview #1 - DIVE INTO CODE](https://note.com/d_biz_share/n/n07cc2eac3b22)
