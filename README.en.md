@@ -42,6 +42,20 @@ My focus areas are Terraform / IaC and Observability (monitoring, logging, traci
 
 ## Projects
 
+### Professional Experience
+
+Summary of professional project experience (details available upon request)
+
+| # | Summary | Role | Key Technologies |
+|---|---------|------|------------------|
+| 07 | Cloud infrastructure expansion & backend development | Infrastructure / Backend | Google Cloud (Cloud Run, Pub/Sub), Go, Next.js |
+| 06 | AI search feature POC | Infrastructure / AI development | Azure (OpenAI, Functions), Django |
+| 05 | Business SaaS platform build & operations | Sub-lead / Infrastructure design | Azure, Terraform, Django, Vue.js |
+| 04 | Data analytics platform operations | Lead / Infrastructure operations | AWS (ECS, Glue, Step Functions), Python |
+| 03 | Business system cloud infrastructure | Infrastructure / CI/CD | AWS (ECS, Lambda, Aurora), Python, Vue.js |
+| 02 | In-house web service development & operations | App & Infrastructure | Ruby on Rails, AWS, Docker |
+| 01 | Business system deployment & operations | Deployment SE / Operations | Java, Windows Server, CentOS |
+
 ### [Personal Projects](projects/personal/)
 
 | # | Project | Period | Key Technologies |
