@@ -60,7 +60,7 @@ Summary of professional project experience (details available upon request)
 
 | # | Project | Period | Key Technologies |
 |---|---------|--------|------------------|
-| 02 | Novel & Reading Service Re-architecture | 2026 | Go, Next.js, Google Cloud, Terraform |
+| 02 | Novel & Reading Service Re-architecture | 2026 (In Production) | Go, Next.js, Google Cloud, Vertex AI, Terraform |
 | 01 | Novel & Reading Service | 2022 - 2026 | Rails, AWS Lightsail |
 
 ---

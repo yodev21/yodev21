@@ -60,7 +60,7 @@
 
 | # | 案件名 | 期間 | 主要技術 |
 |---|--------|------|----------|
-| 02 | 小説・朗読投稿サービス リアーキテクチャ | 2026年 | Go, Next.js, Google Cloud, Terraform |
+| 02 | 小説・朗読投稿サービス リアーキテクチャ | 2026年（本番稼働中） | Go, Next.js, Google Cloud, Vertex AI, Terraform |
 | 01 | 小説・朗読投稿サービス | 2022年〜2026年 | Rails, AWS Lightsail |
 
 ---
