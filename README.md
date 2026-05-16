@@ -20,6 +20,7 @@
 | **CI/CD** | Jenkins / GitHub Actions / Azure DevOps / Cloud Build |
 | **Database** | MySQL / PostgreSQL / SQL Server / Aurora / Cloud SQL |
 | **AI / Data** | Vertex AI / AWS Bedrock / Azure OpenAI / Elasticsearch / Tableau |
+| **Design** | Figma / UI Design / Prototyping |
 | **Other** | Docker |
 
 ---
