@@ -14,11 +14,12 @@
 | Category | Technologies |
 |----------|-------------|
 | **Cloud** | AWS / Azure / Google Cloud / Cloudflare |
-| **Languages** | Ruby / Python / Go / Java |
-| **Frameworks** | Rails / Django / Flask / Vue.js / Next.js |
-| **IaC / CI/CD** | Terraform / Ansible / Jenkins / Azure DevOps / Cloud Build |
+| **Languages** | Ruby / Python / Go / Java / TypeScript |
+| **Frameworks** | Ruby on Rails / Django / Flask / FastAPI / Gin / Vue.js / Next.js |
+| **IaC** | Terraform / CDK / Ansible |
+| **CI/CD** | Jenkins / GitHub Actions / Azure DevOps / Cloud Build |
 | **Database** | MySQL / PostgreSQL / SQL Server / Aurora / Cloud SQL |
-| **AI / Data** | Vertex AI / Elasticsearch / Tableau |
+| **AI / Data** | Vertex AI / AWS Bedrock / Azure OpenAI / Elasticsearch / Tableau |
 | **Other** | Docker |
 
 ---
@@ -45,7 +46,7 @@ AIの進展により、単純な実装そのものよりも、要求を構造化
 
 ### Professional Experience
 
-業務案件での経験概要（詳細は職務経歴書にて）
+クライアントワークでの経験概要
 
 | # | 概要 | 役割 | 主要技術 |
 |---|------|------|----------|
@@ -56,7 +57,16 @@ AIの進展により、単純な実装そのものよりも、要求を構造化
 | 04 | データ分析基盤の運用・保守 | リード / 基盤運用 | AWS (ECS, Glue, Step Functions), Python |
 | 03 | 業務系システムのクラウド基盤構築 | 基盤構築 / CI/CD整備 | AWS (ECS, Lambda, Aurora), Python, Vue.js |
 | 02 | 自社Webサービスの継続開発・運用 | アプリ・インフラ担当 | AWS, Elasticsearch, Docker, Ruby on Rails |
-| 01 | オンプレミス業務系システムの導入・運用保守 | 導入SE / 運用保守 | CentOS, Windows Server, Java |
+| 01 | オンプレミス業務系システムの導入・運用保守 | 導入SE / 運用保守 | CentOS, Windows Server, Java, VB.NET |
+
+### Internal Projects
+
+社内プロジェクトでの取り組み
+
+| # | 概要 | 役割 | 主要技術 |
+|---|------|------|----------|
+| 02 | AI駆動開発ナレッジ共有 | 社内向けのAI駆動開発ナレッジ共有・実践支援 | AI活用, ナレッジ共有, 開発体制整備 |
+| 01 | 社内向けAIエージェント開発 | 社内利用を目的としたAIエージェントの設計・開発 | AWS Bedrock, Azure OpenAI |
 
 ### [Personal Projects](projects/personal/)
 

@@ -14,11 +14,12 @@ English | [日本語](README.md)
 | Category | Technologies |
 |----------|-------------|
 | **Cloud** | AWS / Azure / Google Cloud / Cloudflare |
-| **Languages** | Ruby / Python / Go / Java |
-| **Frameworks** | Rails / Django / Flask / Vue.js / Next.js |
-| **IaC / CI/CD** | Terraform / Ansible / Jenkins / Azure DevOps / Cloud Build |
+| **Languages** | Ruby / Python / Go / Java / TypeScript |
+| **Frameworks** | Ruby on Rails / Django / Flask / FastAPI / Gin / Vue.js / Next.js |
+| **IaC** | Terraform / CDK / Ansible |
+| **CI/CD** | Jenkins / GitHub Actions / Azure DevOps / Cloud Build |
 | **Database** | MySQL / PostgreSQL / SQL Server / Aurora / Cloud SQL |
-| **AI / Data** | Vertex AI / Elasticsearch / Tableau |
+| **AI / Data** | Vertex AI / AWS Bedrock / Azure OpenAI / Elasticsearch / Tableau |
 | **Other** | Docker |
 
 ---
@@ -45,7 +46,7 @@ Alongside staying hands-on, I want to build development environments where desig
 
 ### Professional Experience
 
-Summary of professional project experience (details available upon request)
+Client work experience
 
 | # | Summary | Role | Key Technologies |
 |---|---------|------|------------------|
@@ -56,7 +57,16 @@ Summary of professional project experience (details available upon request)
 | 04 | Data analytics platform operations | Lead / Infrastructure operations | AWS (ECS, Glue, Step Functions), Python |
 | 03 | Business system cloud infrastructure | Infrastructure / CI/CD | AWS (ECS, Lambda, Aurora), Python, Vue.js |
 | 02 | In-house web service development & operations | App & Infrastructure | AWS, Elasticsearch, Docker, Ruby on Rails |
-| 01 | On-premises business system deployment & operations | Deployment SE / Operations | CentOS, Windows Server, Java |
+| 01 | On-premises business system deployment & operations | Deployment SE / Operations | CentOS, Windows Server, Java, VB.NET |
+
+### Internal Projects
+
+Internal company initiatives
+
+| # | Summary | Role | Key Technologies |
+|---|---------|------|------------------|
+| 02 | AI-driven development knowledge sharing | Internal enablement for AI-driven development practices and hands-on support | AI adoption, knowledge sharing, development workflow enablement |
+| 01 | Internal AI agent development | Design and development of AI agents for internal use | AWS Bedrock, Azure OpenAI |
 
 ### [Personal Projects](projects/personal/)
 
