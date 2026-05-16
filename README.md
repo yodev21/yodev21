@@ -70,6 +70,8 @@ AIの進展により、単純な実装そのものよりも、要求を構造化
 
 ### [Personal Projects](projects/personal/)
 
+サービス: [kikusyo.com](https://kikusyo.com/)
+
 | # | 案件名 | 期間 | 主要技術 |
 |---|--------|------|----------|
 | 02 | 小説・朗読投稿サービス リアーキテクチャ | 2026年（本番稼働中） | Google Cloud, Vertex AI, Terraform, Go, Next.js |

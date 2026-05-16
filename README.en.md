@@ -70,6 +70,8 @@ Internal company initiatives
 
 ### [Personal Projects](projects/personal/)
 
+Service: [kikusyo.com](https://kikusyo.com/)
+
 | # | Project | Period | Key Technologies |
 |---|---------|--------|------------------|
 | 02 | Novel & Reading Service Re-architecture | 2026 (In Production) | Google Cloud, Vertex AI, Terraform, Go, Next.js |
