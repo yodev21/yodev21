@@ -5,7 +5,7 @@ English | [日本語](README.md)
 | | |
 |---|---|
 | **Company** | LTS, Inc. |
-| **Position** | Application Development and Cloud Infrastructure Engineer |
+| **Position** | Tech Lead |
 
 ---
 
@@ -13,30 +13,31 @@ English | [日本語](README.md)
 
 | Category | Technologies |
 |----------|-------------|
-| **Cloud** | AWS / Azure / Google Cloud |
+| **Cloud** | AWS / Azure / Google Cloud / Cloudflare |
 | **Languages** | Ruby / Python / Go / Java |
 | **Frameworks** | Rails / Django / Flask / Vue.js / Next.js |
 | **IaC / CI/CD** | Terraform / Ansible / Jenkins / Azure DevOps / Cloud Build |
 | **Database** | MySQL / PostgreSQL / SQL Server / Aurora / Cloud SQL |
-| **Other** | Docker / Elasticsearch / Tableau |
+| **AI / Data** | Vertex AI / Elasticsearch / Tableau |
+| **Other** | Docker |
 
 ---
 
 ## Strengths
 
-- **Data-Driven Optimization**: Analyzing resource usage to drive continuous improvements in infrastructure and applications
-- **Log Monitoring & Improvement Cycle**: Continuously improving and monitoring application logs to enhance product quality
-- **Operations Knowledge Standardization**: Systematizing operational know-how to elevate team-wide skills
+- **Turning Ambiguous Requirements into Executable Delivery**: Working closely with consultants to clarify loosely defined requirements through prototyping and proactive discovery, then driving delivery across cloud architecture, infrastructure buildout, and application implementation
+- **Designing AI-Driven Development and Observability Foundations**: Building and improving harness engineering foundations, while also establishing analytics workflows and using AI agents for access analysis and incident investigation to increase the repeatability, quality, and iteration speed of development and operations
+- **Hands-On Technical Leadership Across Disciplines**: Leading development not only by building independently, but also by involving designers and junior engineers to help the team deliver stronger outcomes together
 
 ---
 
 ## Career Vision
 
-I aim to become a Cloud Lead who can provide opinions and proposals from a cloud perspective in product development.
+As AI reshapes software delivery, I believe the highest-value tech leads will be those who can structure ambiguous requirements, break problems down well, and design how humans and AI should work together to move products forward.
 
-I'm interested in building infrastructure that supports development teams, and I aim to become a trusted expert in cloud and infrastructure while working across multiple products.
+In my next stage, I want to grow as a Tech Lead who connects requirement discovery, cloud and application delivery, and the engineering foundations needed for AI-enabled development.
 
-My focus areas are Terraform / IaC and Observability (monitoring, logging, tracing). I will continue to develop both my communication skills and technical depth, leveraging my experience in "operations-aware design" and "data-driven optimization."
+Alongside staying hands-on, I want to build development environments where designers and junior engineers can contribute effectively, and keep refining what strong technical leadership should look like through practice and dialogue.
 
 ---
 
@@ -48,6 +49,7 @@ Summary of professional project experience (details available upon request)
 
 | # | Summary | Role | Key Technologies |
 |---|---------|------|------------------|
+| 08 | Development of a general-purpose business matching platform | Tech Lead | Google Cloud, Cloudflare, Vertex AI, Go, Next.js |
 | 07 | Cloud infrastructure expansion & backend development | Infrastructure / Backend | Google Cloud (Cloud Run, Pub/Sub), Go, Next.js |
 | 06 | AI search feature POC | Infrastructure / AI development | Azure (OpenAI, Functions), Django |
 | 05 | Business SaaS platform build & operations | Sub-lead / Infrastructure design | Azure, Terraform, Django, Vue.js |
