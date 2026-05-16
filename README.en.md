@@ -26,7 +26,7 @@ English | [日本語](README.md)
 
 ## Strengths
 
-- **Turning Ambiguous Requirements into Executable Delivery**: Working closely with consultants to clarify loosely defined requirements through prototyping and proactive discovery, then driving delivery across cloud architecture, infrastructure buildout, and application implementation
+- **Turning Ambiguous Requirements into Production Delivery**: Working closely with consultants to clarify loosely defined requirements through prototyping and proactive discovery, then driving delivery across cloud architecture, infrastructure buildout, application implementation, and production rollout
 - **Designing AI-Driven Development and Observability Foundations**: Building and improving harness engineering foundations, while also establishing analytics workflows and using AI agents for access analysis and incident investigation to increase the repeatability, quality, and iteration speed of development and operations
 - **Hands-On Technical Leadership Across Disciplines**: Leading development not only by building independently, but also by involving designers and junior engineers to help the team deliver stronger outcomes together
 
