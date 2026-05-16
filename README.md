@@ -55,15 +55,15 @@ AIの進展により、単純な実装そのものよりも、要求を構造化
 | 05 | 業務系SaaS基盤構築・運用 | サブリード / 基盤設計 | Azure, Terraform, Django, Vue.js |
 | 04 | データ分析基盤の運用・保守 | リード / 基盤運用 | AWS (ECS, Glue, Step Functions), Python |
 | 03 | 業務系システムのクラウド基盤構築 | 基盤構築 / CI/CD整備 | AWS (ECS, Lambda, Aurora), Python, Vue.js |
-| 02 | 自社Webサービスの継続開発・運用 | アプリ・インフラ担当 | Ruby on Rails, AWS, Docker |
-| 01 | 業務系システムの導入・運用保守 | 導入SE / 運用保守 | Java, Windows Server, CentOS |
+| 02 | 自社Webサービスの継続開発・運用 | アプリ・インフラ担当 | AWS, Elasticsearch, Docker, Ruby on Rails |
+| 01 | オンプレミス業務系システムの導入・運用保守 | 導入SE / 運用保守 | CentOS, Windows Server, Java |
 
 ### [Personal Projects](projects/personal/)
 
 | # | 案件名 | 期間 | 主要技術 |
 |---|--------|------|----------|
-| 02 | 小説・朗読投稿サービス リアーキテクチャ | 2026年（本番稼働中） | Go, Next.js, Google Cloud, Vertex AI, Terraform |
-| 01 | 小説・朗読投稿サービス | 2022年〜2026年 | Rails, AWS Lightsail |
+| 02 | 小説・朗読投稿サービス リアーキテクチャ | 2026年（本番稼働中） | Google Cloud, Vertex AI, Terraform, Go, Next.js |
+| 01 | 小説・朗読投稿サービス | 2022年〜2026年 | AWS, Ruby on Rails |
 
 ---
 

@@ -55,15 +55,15 @@ Summary of professional project experience (details available upon request)
 | 05 | Business SaaS platform build & operations | Sub-lead / Infrastructure design | Azure, Terraform, Django, Vue.js |
 | 04 | Data analytics platform operations | Lead / Infrastructure operations | AWS (ECS, Glue, Step Functions), Python |
 | 03 | Business system cloud infrastructure | Infrastructure / CI/CD | AWS (ECS, Lambda, Aurora), Python, Vue.js |
-| 02 | In-house web service development & operations | App & Infrastructure | Ruby on Rails, AWS, Docker |
-| 01 | Business system deployment & operations | Deployment SE / Operations | Java, Windows Server, CentOS |
+| 02 | In-house web service development & operations | App & Infrastructure | AWS, Elasticsearch, Docker, Ruby on Rails |
+| 01 | On-premises business system deployment & operations | Deployment SE / Operations | CentOS, Windows Server, Java |
 
 ### [Personal Projects](projects/personal/)
 
 | # | Project | Period | Key Technologies |
 |---|---------|--------|------------------|
-| 02 | Novel & Reading Service Re-architecture | 2026 (In Production) | Go, Next.js, Google Cloud, Vertex AI, Terraform |
-| 01 | Novel & Reading Service | 2022 - 2026 | Rails, AWS Lightsail |
+| 02 | Novel & Reading Service Re-architecture | 2026 (In Production) | Google Cloud, Vertex AI, Terraform, Go, Next.js |
+| 01 | Novel & Reading Service | 2022 - 2026 | AWS, Ruby on Rails |
 
 ---
 
