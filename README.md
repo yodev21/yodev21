@@ -51,7 +51,7 @@ AIの進展により、単純な実装そのものよりも、要求を構造化
 
 | # | 概要 | 役割 | 主要技術 |
 |---|------|------|----------|
-| 08 | 汎用ビジネスマッチング基盤開発 | テックリード | Google Cloud, Cloudflare, Vertex AI, Go, Next.js |
+| 08 | 汎用ビジネスマッチングSaaSの立ち上げ・運用体制構築 | テックリード | Google Cloud, Cloudflare, Vertex AI, Go, Next.js |
 | 07 | クラウド基盤追加構築・バックエンド開発 | 基盤構築 / バックエンド開発 | Google Cloud (Cloud Run, Pub/Sub), Go, Next.js |
 | 06 | AI検索機能のPOC開発 | 基盤構築 / AI機能開発 | Azure (OpenAI, Functions), Django |
 | 05 | 業務系SaaS基盤構築・運用 | サブリード / 基盤設計 | Azure, Terraform, Django, Vue.js |
