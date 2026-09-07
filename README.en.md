@@ -51,6 +51,7 @@ Client work experience
 
 | # | Summary | Role | Key Technologies |
 |---|---------|------|------------------|
+| 09 | AI agent development POC | Tech Lead | Python, Azure |
 | 08 | Development of a general-purpose business matching platform | Tech Lead | Google Cloud, Cloudflare, Vertex AI, Go, Next.js |
 | 07 | Cloud infrastructure expansion & backend development | Infrastructure / Backend | Google Cloud (Cloud Run, Pub/Sub), Go, Next.js |
 | 06 | AI search feature POC | Infrastructure / AI development | Azure (OpenAI, Functions), Django |
