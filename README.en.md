@@ -82,6 +82,7 @@ Service: [kikusyo.com](https://kikusyo.com/)
 
 ## Certifications
 
+- Registered Product Owner - Scrum Inc. (2026/9)
 - AWS Certified Solutions Architect - Associate (2022/5)
 - AWS Certified Developer - Associate (2022/5)
 - JDLA Deep Learning for GENERAL (2022/5)

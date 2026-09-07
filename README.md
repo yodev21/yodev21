@@ -82,6 +82,7 @@ AIの進展により、単純な実装そのものよりも、要求を構造化
 
 ## Certifications
 
+- Registered Product Owner - Scrum Inc. (2026/9)
 - AWS Certified Solutions Architect - Associate (2022/5)
 - AWS Certified Developer - Associate (2022/5)
 - JDLA Deep Learning for GENERAL (2022/5)
