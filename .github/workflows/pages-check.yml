@@ -66,5 +66,14 @@ jobs:
           assert Path('_site/sitemap.xml').exists()
           assert base + '/' in Path('_site/sitemap.xml').read_text()
           assert 'Sitemap: ' + base + '/sitemap.xml' in Path('_site/robots.txt').read_text()
-          print('SEO metadata, language alternates, sitemap and robots.txt OK')
+          home = Path('_site/index.html').read_text()
+          assert 'class="hero"' in home
+          assert 'id="hero-title"' in home
+          assert 'class="capability-grid"' in home
+          assert 'id="selected-work"' in home
+          css = Path('_site/assets/css/style.css').read_text()
+          assert '--accent:' in css
+          assert '@media (max-width: 560px)' in css
+          assert 'prefers-reduced-motion' in css
+          print('SEO, navigation, portfolio structure and responsive styles OK')
           PY
