@@ -8,7 +8,13 @@ I turn ambiguous requirements into working systems, connecting discovery, cloud 
 
 </div>
 
-## What I Do
+## About {#about}
+
+As a Tech Lead, I join projects while requirements are still taking shape and work with stakeholders through architecture, implementation, and operations. I work across cloud infrastructure and applications, staying hands-on wherever the product needs it.
+
+Outside work, I have designed, built, and operated a novel and reading community since 2022. Running a long-lived service has given me practical experience beyond feature delivery, including incidents, cost, analytics, and continuous improvement.
+
+## What Matters in My Work
 
 <div class="capability-grid">
   <section>
@@ -28,7 +34,7 @@ I turn ambiguous requirements into working systems, connecting discovery, cloud 
   </section>
 </div>
 
-## Current Focus
+## Technologies I Work With Now
 
 | Area | Technologies & themes |
 |---|---|
@@ -79,6 +85,8 @@ Redesigned a Rails service after four years in production, adding AI-assisted en
 </details>
 
 ## Leadership
+
+### Go far, together
 
 I focus on making the reasoning behind technical decisions visible so teams can act independently. While remaining hands-on, I bring designers and growing engineers into the process and close the gaps between requirements, architecture, and operations.
 

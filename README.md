@@ -8,7 +8,13 @@
 
 </div>
 
-## できること
+## プロフィール {#about}
+
+テックリードとして、要求がまだ固まっていない段階から関係者と対話し、設計・実装・運用までつなげています。クラウド基盤だけ、アプリケーションだけに分けず、プロダクト全体を見ながら必要なところに手を動かすスタイルです。
+
+個人では、小説・朗読投稿サービスを企画・開発し、2022年から運営しています。長く使われるサービスを自分で運用する中で、機能開発だけでなく、障害対応、コスト、分析、継続的な改善まで経験してきました。
+
+## 仕事で大切にしていること
 
 <div class="capability-grid">
   <section>
@@ -28,7 +34,7 @@
   </section>
 </div>
 
-## 現在のフォーカス
+## 今扱っている技術
 
 | 領域 | 主な技術・テーマ |
 |---|---|
@@ -39,7 +45,7 @@
 
 [これまでに使用した技術をすべて見る →](TECHNOLOGIES.md){: .text-link }
 
-## Selected Work {#selected-work}
+## 主な実績 {#selected-work}
 
 ### AIエージェント構築PoC
 
@@ -78,28 +84,30 @@ AIエージェントの設計と検証をリード。技術検証だけで終わ
 
 </details>
 
-## Leadership
+## チームでの進め方
+
+### 遠くにいくなら、皆で
 
 技術選定だけでなく、判断の背景を共有し、チームが自律的に動ける状態をつくることを重視しています。自ら実装しながら、デザイナーやジュニアエンジニアを巻き込み、要求・設計・運用の間にある認識差を埋めます。
 
 AIが実装を加速する今、テックリードには「何をつくるか」「どこまでをAIに任せるか」「品質をどう担保するか」を設計する力が必要です。事業・プロダクト・開発組織の接続点として、その役割を担います。
 
-## Credentials & Writing
+## 資格・発信
 
-### Certifications
+### 資格
 
 - Registered Product Owner — Scrum Inc.（2026）
 - AWS Certified Solutions Architect – Associate
 - AWS Certified Developer – Associate
 - JDLA Deep Learning for GENERAL
 
-### Interviews & Articles
+### インタビュー・記事
 
 - [「遠くにいくなら皆で」チーム志向で進むエンジニアの道](https://careers.lt-s.jp/students/interview/newgrad-bp-001002-1-1-0-0)
 - [上流から実装・運用まで LTSのAWS構築・アプリ開発](https://clover.lt-s.jp/9295)
 - [株式会社エル・ティー・エス｜働く豊かさや楽しさを仲間と分かち合える環境](https://good-companies.jp/2024/07/12/lt-s/)
 - [editchインタビュー #1](https://note.com/d_biz_share/n/n07cc2eac3b22)
 
-## Connect
+## リンク
 
 [Wantedly](https://www.wantedly.com/users/62400896) · [YOUTRUST](https://youtrust.jp/users/yodev21) · [LinkedIn](https://www.linkedin.com/in/yodev21) · [LAPRAS](https://lapras.com/public/CZQQR6J) · [Qiita](https://qiita.com/yokku21) · [X](https://twitter.com/yodev21)

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0b1720">
+    <meta name="theme-color" content="#f7f8f6">
     {% seo %}
     {% for alternate in page.alternates %}
     <link rel="alternate" hreflang="{{ alternate[0] }}" href="{{ alternate[1] | absolute_url }}">
@@ -21,71 +21,75 @@
     <a class="skip-link" href="#main-content">{% if page.lang == 'en' %}Skip to content{% else %}本文へ移動{% endif %}</a>
     <header class="site-header">
       <div class="site-header__inner">
-        <a class="brand" href="{{ '/' | relative_url }}" aria-label="{% if page.lang == 'en' %}Yosuke Tanaka, home{% else %}田中遥介 ホーム{% endif %}">
-          <span class="brand__mark" aria-hidden="true">YT</span>
-          <span class="brand__text"><strong>Yosuke Tanaka</strong><small>Tech Lead</small></span>
+        <a class="brand" href="{{ '/' | relative_url }}">
+          {% if page.lang == 'en' %}
+          <strong>Yosuke Tanaka</strong><span>Software Engineer</span>
+          {% else %}
+          <strong>田中 遥介</strong><span>Software Engineer</span>
+          {% endif %}
         </a>
         <nav class="site-nav" aria-label="{% if page.lang == 'en' %}Main navigation{% else %}メインナビゲーション{% endif %}">
           {% if page.lang == 'en' %}
+          <a href="{{ '/README.en.html#about' | relative_url }}">About</a>
           <a href="{{ '/README.en.html#selected-work' | relative_url }}">Work</a>
           <a href="{{ '/TECHNOLOGIES.en.html' | relative_url }}">Technologies</a>
-          <a href="{{ '/projects/personal/' | relative_url }}">Projects <span class="visually-hidden">(Japanese)</span></a>
-          <a class="site-nav__language" href="{{ '/' | relative_url }}" lang="ja">JA</a>
+          <a class="language-link" href="{{ '/' | relative_url }}" lang="ja">日本語</a>
           {% else %}
+          <a href="{{ '/#about' | relative_url }}">プロフィール</a>
           <a href="{{ '/#selected-work' | relative_url }}">実績</a>
           <a href="{{ '/TECHNOLOGIES.html' | relative_url }}">使用技術</a>
-          <a href="{{ '/projects/personal/' | relative_url }}">個人開発</a>
-          <a class="site-nav__language" href="{{ '/README.en.html' | relative_url }}" lang="en">EN</a>
+          <a class="language-link" href="{{ '/README.en.html' | relative_url }}" lang="en">English</a>
           {% endif %}
         </nav>
       </div>
     </header>
+
     {% if is_home %}
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero__glow" aria-hidden="true"></div>
       <div class="hero__inner">
         <div class="hero__copy">
-          <p class="eyebrow">Tech Lead · Cloud · AI</p>
           {% if page.lang == 'en' %}
-          <h1 id="hero-title">Turning ambiguity into<br><em>working systems.</em></h1>
-          <p class="hero__lead">I lead products from requirement discovery through cloud architecture, application delivery, and production operations—with AI built into both the product and the way teams work.</p>
-          <div class="hero__actions">
-            <a class="button button--primary" href="#selected-work">View selected work <span aria-hidden="true">↓</span></a>
-            <a class="button button--secondary" href="https://github.com/yodev21">GitHub <span aria-hidden="true">↗</span></a>
+          <p class="hero__role">Tech Lead / Software Engineer</p>
+          <h1 id="hero-title">Yosuke Tanaka</h1>
+          <p class="hero__statement">From shaping the idea to keeping it running.</p>
+          <p class="hero__lead">I work across requirement discovery, cloud architecture, application development, and production operations. My current focus is building and operating products with AI and cloud-native technologies.</p>
+          <ul class="profile-meta" aria-label="Profile details">
+            <li>LTS, Inc.</li><li>Tokyo, Japan</li>
+          </ul>
+          <div class="profile-links">
+            <a href="https://github.com/yodev21">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/yodev21">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="https://www.wantedly.com/users/62400896">Wantedly <span aria-hidden="true">↗</span></a>
           </div>
           {% else %}
-          <h1 id="hero-title">曖昧な要求を、<br><em>動く仕組みへ。</em></h1>
-          <p class="hero__lead">要求整理からクラウド設計、アプリケーション開発、本番運用まで。AIをプロダクトと開発プロセスの両方に組み込み、チームで継続的に価値を届けます。</p>
-          <div class="hero__actions">
-            <a class="button button--primary" href="#selected-work">主な実績を見る <span aria-hidden="true">↓</span></a>
-            <a class="button button--secondary" href="https://github.com/yodev21">GitHub <span aria-hidden="true">↗</span></a>
+          <p class="hero__role">テックリード / ソフトウェアエンジニア</p>
+          <h1 id="hero-title">田中 遥介</h1>
+          <p class="hero__statement">考えるところから、動かし続けるところまで。</p>
+          <p class="hero__lead">要求整理からクラウド設計、アプリケーション開発、本番運用まで、プロダクト開発を一通り担っています。現在はAIを活用した開発と、クラウドネイティブなシステムの設計・運用に取り組んでいます。</p>
+          <ul class="profile-meta" aria-label="プロフィール情報">
+            <li>株式会社エル・ティー・エス</li><li>東京</li>
+          </ul>
+          <div class="profile-links">
+            <a href="https://github.com/yodev21">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/yodev21">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="https://www.wantedly.com/users/62400896">Wantedly <span aria-hidden="true">↗</span></a>
           </div>
           {% endif %}
         </div>
-        <div class="hero__visual" aria-hidden="true">
-          <div class="orbit orbit--one"></div>
-          <div class="orbit orbit--two"></div>
-          <div class="hero__monogram">YT</div>
-          <span class="hero__node hero__node--one">Discover</span>
-          <span class="hero__node hero__node--two">Design</span>
-          <span class="hero__node hero__node--three">Deliver</span>
-          <span class="hero__node hero__node--four">Operate</span>
-        </div>
-      </div>
-      <div class="signal-bar">
-        <div><span>01</span><strong>{% if page.lang == 'en' %}Requirements{% else %}要求整理{% endif %}</strong></div>
-        <div><span>02</span><strong>{% if page.lang == 'en' %}Architecture{% else %}設計・構築{% endif %}</strong></div>
-        <div><span>03</span><strong>{% if page.lang == 'en' %}Delivery{% else %}実装・推進{% endif %}</strong></div>
-        <div><span>04</span><strong>{% if page.lang == 'en' %}Operations{% else %}運用・改善{% endif %}</strong></div>
+        <figure class="hero__photo">
+          <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="{% if page.lang == 'en' %}Profile photo of Yosuke Tanaka{% else %}田中遥介のプロフィール写真{% endif %}" width="460" height="460">
+        </figure>
       </div>
     </section>
     {% endif %}
+
     <main id="main-content" class="page-shell">
       <article class="page-content{% if is_home %} page-content--home{% endif %}">{{ content }}</article>
     </main>
+
     <footer class="site-footer">
       <div class="site-footer__inner">
-        <div><strong>Yosuke Tanaka</strong><p>Tech Lead · Tokyo, Japan</p></div>
+        <div><strong>{% if page.lang == 'en' %}Yosuke Tanaka{% else %}田中 遥介{% endif %}</strong><p>Tech Lead / Software Engineer</p></div>
         <nav aria-label="{% if page.lang == 'en' %}Footer navigation{% else %}フッターナビゲーション{% endif %}">
           <a href="https://github.com/yodev21">GitHub</a>
           <a href="https://www.linkedin.com/in/yodev21">LinkedIn</a>
