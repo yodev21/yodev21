@@ -1,0 +1,111 @@
+[English](README.en.md) | 日本語
+
+[プロフィールサイト](https://yodev21.github.io/yodev21/)
+
+# Profile
+
+| | |
+|---|---|
+| **所属** | 株式会社エル・ティー・エス |
+| **役職** | テックリード |
+
+---
+
+## 主要技術
+
+| 分野 | 技術 |
+|---|---|
+| **バックエンド** | Go / Python |
+| **フロントエンド** | TypeScript / Next.js |
+| **クラウド** | Google Cloud / AWS / Azure / Cloudflare |
+| **インフラ・開発基盤** | Terraform / Docker / GitHub Actions |
+| **データベース** | PostgreSQL |
+| **生成AI** | Vertex AI / Amazon Bedrock / Azure OpenAI |
+
+[使用技術の一覧](TECHNOLOGIES.md)
+
+---
+
+## 強み
+
+- **曖昧な要求を構造化し、本番適用まで推進する力**: コンサルと連携しながら、プロトタイプやこちらからのヒアリングを通じて曖昧な要求を整理し、クラウド設計・構築からアプリ実装、本番適用までを一貫して推進
+- **AI駆動開発と分析基盤を支える設計力**: ハーネスエンジニアリングの設計・整備に加え、分析基盤を用意し、アクセス状況の把握や不具合時の調査にAIエージェントを活用することで、開発・運用の再現性、品質、改善速度を高める
+- **多職種・ジュニア層を巻き込む開発リード**: 単独で手を動かせるだけでなく、デザイナーやジュニア層を巻き込みながら、チームとして成果を出す進め方を設計・リード
+
+---
+
+## 次のキャリアで目指すこと
+
+AIの進展により、単純な実装そのものよりも、要求を構造化し、適切に分解し、AIと人の役割分担を設計しながらプロダクトを前に進めるテックリードの価値が高まっていると考えています。
+
+次のキャリアでは、要求整理からクラウド・アプリ実装、AI活用の開発基盤整備までをつなぐテックリードとして、事業・プロダクト・開発組織の接続点を担える存在を目指しています。
+
+また、自ら実装できることに加えて、デザイナーやジュニア層が力を発揮しやすい開発体制をつくり、テックリードのあるべき姿を対話と実践を通じて磨き続けたいです。
+
+---
+
+## Projects
+
+### Professional Experience
+
+クライアントワークでの経験概要
+
+| # | 概要 | 役割 | 主要技術 |
+|---|------|------|----------|
+| 09 | AIエージェント構築POC | テックリード | Python, Azure |
+| 08 | 汎用ビジネスマッチングSaaSの立ち上げ・運用体制構築 | テックリード | Google Cloud, Cloudflare, Vertex AI, Go, Next.js |
+| 07 | クラウド基盤追加構築・バックエンド開発 | 基盤構築 / バックエンド開発 | Google Cloud (Cloud Run, Pub/Sub), Go, Next.js |
+| 06 | AI検索機能のPOC開発 | 基盤構築 / AI機能開発 | Azure (OpenAI, Functions), Django |
+| 05 | 業務系SaaS基盤構築・運用 | サブリード / 基盤設計 | Azure, Terraform, Django, Vue.js |
+| 04 | データ分析基盤の運用・保守 | リード / 基盤運用 | AWS (ECS, Glue, Step Functions), Python |
+| 03 | 業務系システムのクラウド基盤構築 | 基盤構築 / CI/CD整備 | AWS (ECS, Lambda, Aurora), Python, Vue.js |
+| 02 | 自社Webサービスの継続開発・運用 | アプリ・インフラ担当 | AWS, Elasticsearch, Docker, Ruby on Rails |
+| 01 | オンプレミス業務系システムの導入・運用保守 | 導入SE / 運用保守 | CentOS, Windows Server, Java, VB.NET |
+
+### Internal Projects
+
+社内プロジェクトでの取り組み
+
+| # | 概要 | 役割 | 主要技術 |
+|---|------|------|----------|
+| 02 | AI駆動開発ナレッジ共有 | 社内向けのAI駆動開発ナレッジ共有・実践支援 | AI活用, ナレッジ共有, 開発体制整備 |
+| 01 | 社内向けAIエージェント開発 | 社内利用を目的としたAIエージェントの設計・開発 | AWS Bedrock, Azure OpenAI |
+
+### [Personal Projects](projects/personal/)
+
+サービス: [kikusyo.com](https://kikusyo.com/)
+
+| # | 案件名 | 期間 | 主要技術 |
+|---|--------|------|----------|
+| 02 | 小説・朗読投稿サービス リアーキテクチャ | 2026年（本番稼働中） | Google Cloud, Vertex AI, Terraform, Go, Next.js |
+| 01 | 小説・朗読投稿サービス | 2022年〜2026年 | AWS, Ruby on Rails |
+
+---
+
+## Certifications
+
+- Registered Product Owner - Scrum Inc. (2026/9)
+- AWS Certified Solutions Architect - Associate (2022/5)
+- AWS Certified Developer - Associate (2022/5)
+- JDLA Deep Learning for GENERAL (2022/5)
+
+---
+
+## Activities
+
+- [「遠くにいくなら皆で」チーム志向で進むエンジニアの道](https://careers.lt-s.jp/students/interview/newgrad-bp-001002-1-1-0-0)
+- [個人サービスの開発・運営](https://kikusyo.com)
+- [上流から実装・運用まで LTSのAWS構築・アプリ開発](https://clover.lt-s.jp/9295)
+- [株式会社エル・ティー・エス｜働く豊かさや楽しさを仲間と分かち合える環境](https://good-companies.jp/2024/07/12/lt-s/)
+- [【editchインタビュー #1】vol.1出場 DIVE INTO CODE 田中遥介さん](https://note.com/d_biz_share/n/n07cc2eac3b22)
+
+---
+
+## SNS
+
+[![Wantedly](https://img.shields.io/badge/Wantedly-00A4BB?style=flat-square&logo=wantedly&logoColor=white)](https://www.wantedly.com/users/62400896)
+[![YOUTRUST](https://img.shields.io/badge/YOUTRUST-00C853?style=flat-square&logoColor=white)](https://youtrust.jp/users/yodev21)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yodev21)
+[![LAPRAS](https://img.shields.io/badge/LAPRAS-1E88E5?style=flat-square&logoColor=white)](https://lapras.com/public/CZQQR6J)
+[![Qiita](https://img.shields.io/badge/Qiita-55C500?style=flat-square&logo=qiita&logoColor=white)](https://qiita.com/yokku21)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white)](https://twitter.com/yodev21)

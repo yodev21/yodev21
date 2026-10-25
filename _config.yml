@@ -1,0 +1,101 @@
+title: 田中遥介 / yodev21
+tagline: Tech Lead
+description: 要求整理からクラウド設計・アプリ開発・本番運用までを担うテックリード。技術経験と開発実績を紹介しています。
+url: https://yodev21.github.io
+baseurl: /yodev21
+lang: ja
+locale: ja_JP
+cloudflare_web_analytics_site_id: 282bea37e8344754aae7cfeaa2033596
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-relative-links
+social:
+  name: 田中遥介
+  links:
+    - https://github.com/yodev21
+    - https://www.linkedin.com/in/yodev21
+    - https://twitter.com/yodev21
+twitter:
+  username: yodev21
+  card: summary
+exclude:
+  - Gemfile
+  - Gemfile.lock
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      lang: ja
+      locale: ja_JP
+  - scope:
+      path: README.md
+    values:
+      title: Tech Lead
+      permalink: /
+      alternates:
+        ja: /
+        en: /README.en.html
+  - scope:
+      path: README.en.md
+    values:
+      title: Tech Lead
+      description: A tech lead working across requirements, cloud architecture, application development, and production operations. Explore my experience and projects.
+      lang: en
+      locale: en_US
+      alternates:
+        ja: /
+        en: /README.en.html
+  - scope:
+      path: TECHNOLOGIES.md
+    values:
+      title: 使用技術
+      description: 業務・個人開発で使用した言語、クラウド、フレームワーク、インフラ技術の一覧。
+      alternates:
+        ja: /TECHNOLOGIES.html
+        en: /TECHNOLOGIES.en.html
+  - scope:
+      path: TECHNOLOGIES.en.md
+    values:
+      title: Technologies Used
+      description: Languages, cloud platforms, frameworks, and infrastructure tools used in professional and personal projects.
+      lang: en
+      locale: en_US
+      alternates:
+        ja: /TECHNOLOGIES.html
+        en: /TECHNOLOGIES.en.html
+  - scope:
+      path: PRIVACY.md
+    values:
+      title: アクセス解析について
+      description: このサイトで利用している匿名のアクセス解析について説明します。
+      alternates:
+        ja: /PRIVACY.html
+        en: /PRIVACY.en.html
+  - scope:
+      path: PRIVACY.en.md
+    values:
+      title: Analytics and privacy
+      description: How this site uses privacy-first, anonymous web analytics.
+      lang: en
+      locale: en_US
+      alternates:
+        ja: /PRIVACY.html
+        en: /PRIVACY.en.html
+  - scope:
+      path: projects/personal/README.md
+    values:
+      title: 個人開発
+      description: 小説・朗読投稿サービスの開発・運用とリアーキテクチャの実績。
+  - scope:
+      path: projects/personal/01_小説朗読投稿サービス.md
+    values:
+      title: 小説・朗読投稿サービスの開発・運用
+      description: Ruby on RailsとAWS Lightsailを使った個人サービスの開発・運用実績。
+  - scope:
+      path: projects/personal/02_小説朗読投稿サービス_移行.md
+    values:
+      title: 小説・朗読投稿サービスのリアーキテクチャ
+      description: Go・Next.js・Google Cloudへの移行と、AIを活用した開発・品質管理の取り組み。
