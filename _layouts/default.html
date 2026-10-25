@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | escape }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    {% for alternate in page.alternates %}
+    <link rel="alternate" hreflang="{{ alternate[0] }}" href="{{ alternate[1] | absolute_url }}">
+    {% endfor %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <main class="container-lg px-3 my-5 markdown-body">
+      <nav aria-label="{% if page.lang == 'en' %}Main navigation{% else %}メインナビゲーション{% endif %}">
+        {% if page.lang == 'en' %}
+        <a href="{{ '/README.en.html' | relative_url }}">Profile</a> · <a href="{{ '/TECHNOLOGIES.en.html' | relative_url }}">Technologies</a>
+        {% else %}
+        <a href="{{ '/' | relative_url }}">プロフィール</a> · <a href="{{ '/TECHNOLOGIES.html' | relative_url }}">使用技術</a>
+        {% endif %}
+        · <a href="{{ '/projects/personal/' | relative_url }}">{% if page.lang == 'en' %}Personal projects (Japanese){% else %}個人開発{% endif %}</a>
+        · <a href="https://github.com/yodev21">GitHub</a>
+      </nav>
+      {{ content }}
+    </main>
+  </body>
+</html>

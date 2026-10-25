@@ -1,0 +1,66 @@
+name: Pages build check
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Check generated SEO metadata
+        run: |
+          python3 - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+
+          class Head(HTMLParser):
+              def __init__(self, html):
+                  super().__init__()
+                  self.meta = {}
+                  self.links = []
+                  self.language = None
+                  self.feed(html)
+
+              def handle_starttag(self, tag, attrs):
+                  attrs = dict(attrs)
+                  if tag == 'html':
+                      self.language = attrs.get('lang')
+                  elif tag == 'meta':
+                      self.meta[attrs.get('name', attrs.get('property'))] = attrs.get('content')
+                  elif tag == 'link':
+                      self.links.append(attrs)
+
+          base = 'https://yodev21.github.io/yodev21'
+          pages = [
+              ('index.html', 'ja', '/', '/README.en.html'),
+              ('README.en.html', 'en', '/README.en.html', '/'),
+              ('TECHNOLOGIES.html', 'ja', '/TECHNOLOGIES.html', '/TECHNOLOGIES.en.html'),
+              ('TECHNOLOGIES.en.html', 'en', '/TECHNOLOGIES.en.html', '/TECHNOLOGIES.html'),
+          ]
+          for filename, lang, path, alternate in pages:
+              html = Path('_site', filename).read_text()
+              head = Head(html)
+              assert head.language == lang, filename
+              assert head.meta.get('description'), filename
+              assert head.meta.get('og:title') and head.meta.get('og:description'), filename
+              assert head.meta.get('twitter:card') == 'summary', filename
+              assert [x.get('href') for x in head.links if x.get('rel') == 'canonical'] == [base + path], filename
+              assert any(x.get('rel') == 'alternate' and x.get('href') == base + alternate for x in head.links), filename
+              assert '<title>' in html and '田中遥介' in html, filename
+              assert 'noindex' not in html, filename
+          assert Path('_site/sitemap.xml').exists()
+          assert base + '/' in Path('_site/sitemap.xml').read_text()
+          assert 'Sitemap: ' + base + '/sitemap.xml' in Path('_site/robots.txt').read_text()
+          print('SEO metadata, language alternates, sitemap and robots.txt OK')
+          PY
