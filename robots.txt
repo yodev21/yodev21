@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yodev21.github.io/yodev21/sitemap.xml
