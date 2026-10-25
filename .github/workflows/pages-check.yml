@@ -47,6 +47,8 @@ jobs:
               ('README.en.html', 'en', '/README.en.html', '/'),
               ('TECHNOLOGIES.html', 'ja', '/TECHNOLOGIES.html', '/TECHNOLOGIES.en.html'),
               ('TECHNOLOGIES.en.html', 'en', '/TECHNOLOGIES.en.html', '/TECHNOLOGIES.html'),
+              ('PRIVACY.html', 'ja', '/PRIVACY.html', '/PRIVACY.en.html'),
+              ('PRIVACY.en.html', 'en', '/PRIVACY.en.html', '/PRIVACY.html'),
           ]
           for filename, lang, path, alternate in pages:
               html = Path('_site', filename).read_text()
@@ -59,6 +61,8 @@ jobs:
               assert any(x.get('rel') == 'alternate' and x.get('href') == base + alternate for x in head.links), filename
               assert '<title>' in html and '田中遥介' in html, filename
               assert 'noindex' not in html, filename
+              assert 'https://static.cloudflareinsights.com/beacon.min.js' in html, filename
+              assert '282bea37e8344754aae7cfeaa2033596' in html, filename
           assert Path('_site/sitemap.xml').exists()
           assert base + '/' in Path('_site/sitemap.xml').read_text()
           assert 'Sitemap: ' + base + '/sitemap.xml' in Path('_site/robots.txt').read_text()

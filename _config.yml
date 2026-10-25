@@ -5,6 +5,7 @@ url: https://yodev21.github.io
 baseurl: /yodev21
 lang: ja
 locale: ja_JP
+cloudflare_web_analytics_token: 282bea37e8344754aae7cfeaa2033596
 theme: jekyll-theme-primer
 plugins:
   - jekyll-seo-tag
@@ -65,6 +66,24 @@ defaults:
       alternates:
         ja: /TECHNOLOGIES.html
         en: /TECHNOLOGIES.en.html
+  - scope:
+      path: PRIVACY.md
+    values:
+      title: アクセス解析について
+      description: このサイトで利用している匿名のアクセス解析について説明します。
+      alternates:
+        ja: /PRIVACY.html
+        en: /PRIVACY.en.html
+  - scope:
+      path: PRIVACY.en.md
+    values:
+      title: Analytics and privacy
+      description: How this site uses privacy-first, anonymous web analytics.
+      lang: en
+      locale: en_US
+      alternates:
+        ja: /PRIVACY.html
+        en: /PRIVACY.en.html
   - scope:
       path: projects/personal/README.md
     values:
