@@ -1,111 +1,105 @@
-English | [日本語](README.md)
+<div class="github-profile-intro">
 
-[Profile website](https://yodev21.github.io/yodev21/)
+# Yosuke Tanaka — Tech Lead
 
-# Profile
+I turn ambiguous requirements into working systems, connecting discovery, cloud architecture, application delivery, and production operations.
 
-| | |
+[日本語](README.md) · [Profile website](https://yodev21.github.io/yodev21/README.en.html)
+
+</div>
+
+## What I Do
+
+<div class="capability-grid">
+  <section>
+    <span class="section-number">01</span>
+    <h3>Structure ambiguity</h3>
+    <p>I work with consultants and users to clarify loosely defined needs through dialogue and prototypes, then turn them into buildable decisions.</p>
+  </section>
+  <section>
+    <span class="section-number">02</span>
+    <h3>Connect product delivery</h3>
+    <p>I lead across cloud architecture, infrastructure, application development, and production rollout so decisions become working software.</p>
+  </section>
+  <section>
+    <span class="section-number">03</span>
+    <h3>Increase team velocity</h3>
+    <p>I design AI-assisted workflows, analytics, observability, and delivery foundations that help designers and growing engineers contribute.</p>
+  </section>
+</div>
+
+## Current Focus
+
+| Area | Technologies & themes |
 |---|---|
-| **Company** | LTS, Inc. |
-| **Position** | Tech Lead |
+| **AI × Product** | Vertex AI / Amazon Bedrock / Azure OpenAI / AI agents |
+| **Cloud Native** | Google Cloud / AWS / Azure / Cloudflare / Kubernetes |
+| **Application** | Go / Python / TypeScript / Next.js |
+| **Platform & Delivery** | Terraform / Docker / GitHub Actions / Observability |
 
----
+[View all technologies used →](TECHNOLOGIES.en.md){: .text-link }
 
-## Core Technologies
+## Selected Work {#selected-work}
 
-| Area | Technologies |
-|---|---|
-| **Backend** | Go / Python |
-| **Frontend** | TypeScript / Next.js |
-| **Cloud** | Google Cloud / AWS / Azure / Cloudflare |
-| **Infrastructure & Delivery** | Terraform / Docker / GitHub Actions |
-| **Databases** | PostgreSQL |
-| **Generative AI** | Vertex AI / Amazon Bedrock / Azure OpenAI |
+### AI Agent Proof of Concept
 
-[All technologies used](TECHNOLOGIES.en.md)
+**Tech Lead · Python / Azure**
 
----
+Leading the design and validation of an AI agent, from shaping requirements to implementation with real operational use in mind.
 
-## Strengths
+### Business Matching SaaS Launch
 
-- **Turning Ambiguous Requirements into Production Delivery**: Working closely with consultants to clarify loosely defined requirements through prototyping and proactive discovery, then driving delivery across cloud architecture, infrastructure buildout, application implementation, and production rollout
-- **Designing AI-Driven Development and Observability Foundations**: Building and improving harness engineering foundations, while also establishing analytics workflows and using AI agents for access analysis and incident investigation to increase the repeatability, quality, and iteration speed of development and operations
-- **Hands-On Technical Leadership Across Disciplines**: Leading development not only by building independently, but also by involving designers and junior engineers to help the team deliver stronger outcomes together
+**Tech Lead · Google Cloud / Cloudflare / Vertex AI / Go / Next.js**
 
----
+Leading across requirement discovery, cloud and application architecture, product development, and the operating model for launch.
 
-## Career Vision
+### Novel & Reading Service Re-architecture
 
-As AI reshapes software delivery, I believe the highest-value tech leads will be those who can structure ambiguous requirements, break problems down well, and design how humans and AI should work together to move products forward.
+**Personal Product · Go / Next.js / Google Cloud / Terraform**
 
-In my next stage, I want to grow as a Tech Lead who connects requirement discovery, cloud and application delivery, and the engineering foundations needed for AI-enabled development.
+Redesigned a Rails service after four years in production, adding AI-assisted engineering, quality controls, analytics, and observability.
 
-Alongside staying hands-on, I want to build development environments where designers and junior engineers can contribute effectively, and keep refining what strong technical leadership should look like through practice and dialogue.
+[View the personal project →](projects/personal/){: .text-link }
 
----
+<details class="experience-details">
+<summary>View complete professional experience</summary>
 
-## Projects
-
-### Professional Experience
-
-Client work experience
-
-| # | Summary | Role | Key Technologies |
+| # | Summary | Role | Key technologies |
 |---|---------|------|------------------|
-| 09 | AI agent development POC | Tech Lead | Python, Azure |
-| 08 | Development of a general-purpose business matching platform | Tech Lead | Google Cloud, Cloudflare, Vertex AI, Go, Next.js |
-| 07 | Cloud infrastructure expansion & backend development | Infrastructure / Backend | Google Cloud (Cloud Run, Pub/Sub), Go, Next.js |
-| 06 | AI search feature POC | Infrastructure / AI development | Azure (OpenAI, Functions), Django |
-| 05 | Business SaaS platform build & operations | Sub-lead / Infrastructure design | Azure, Terraform, Django, Vue.js |
-| 04 | Data analytics platform operations | Lead / Infrastructure operations | AWS (ECS, Glue, Step Functions), Python |
-| 03 | Business system cloud infrastructure | Infrastructure / CI/CD | AWS (ECS, Lambda, Aurora), Python, Vue.js |
-| 02 | In-house web service development & operations | App & Infrastructure | AWS, Elasticsearch, Docker, Ruby on Rails |
-| 01 | On-premises business system deployment & operations | Deployment SE / Operations | CentOS, Windows Server, Java, VB.NET |
+| 09 | AI agent proof of concept | Tech Lead | Python, Azure |
+| 08 | Business matching SaaS launch and operating model | Tech Lead | Google Cloud, Cloudflare, Vertex AI, Go, Next.js |
+| 07 | Cloud expansion and backend development | Infrastructure / Backend | Google Cloud, Go, Next.js |
+| 06 | AI search proof of concept | Infrastructure / AI | Azure OpenAI, Functions, Django |
+| 05 | Business SaaS platform and operations | Sub-lead / Infrastructure | Azure, Terraform, Django, Vue.js |
+| 04 | Analytics platform operations | Lead / Platform operations | AWS, Python |
+| 03 | Business system cloud platform | Infrastructure / CI/CD | AWS, Python, Vue.js |
+| 02 | In-house web service development | Application / Infrastructure | AWS, Elasticsearch, Rails |
+| 01 | On-premises business system delivery | Deployment SE / Operations | CentOS, Windows Server, Java, VB.NET |
 
-### Internal Projects
+</details>
 
-Internal company initiatives
+## Leadership
 
-| # | Summary | Role | Key Technologies |
-|---|---------|------|------------------|
-| 02 | AI-driven development knowledge sharing | Internal enablement for AI-driven development practices and hands-on support | AI adoption, knowledge sharing, development workflow enablement |
-| 01 | Internal AI agent development | Design and development of AI agents for internal use | AWS Bedrock, Azure OpenAI |
+I focus on making the reasoning behind technical decisions visible so teams can act independently. While remaining hands-on, I bring designers and growing engineers into the process and close the gaps between requirements, architecture, and operations.
 
-### [Personal Projects](projects/personal/)
+As AI accelerates implementation, tech leads need to decide what to build, where AI should contribute, and how quality will be assured. I work at that intersection of business, product, and engineering.
 
-Service: [kikusyo.com](https://kikusyo.com/)
+## Credentials & Writing
 
-| # | Project | Period | Key Technologies |
-|---|---------|--------|------------------|
-| 02 | Novel & Reading Service Re-architecture | 2026 (In Production) | Google Cloud, Vertex AI, Terraform, Go, Next.js |
-| 01 | Novel & Reading Service | 2022 - 2026 | AWS, Ruby on Rails |
+### Certifications
 
----
+- Registered Product Owner — Scrum Inc. (2026)
+- AWS Certified Solutions Architect – Associate
+- AWS Certified Developer – Associate
+- JDLA Deep Learning for GENERAL
 
-## Certifications
+### Interviews & Articles
 
-- Registered Product Owner - Scrum Inc. (2026/9)
-- AWS Certified Solutions Architect - Associate (2022/5)
-- AWS Certified Developer - Associate (2022/5)
-- JDLA Deep Learning for GENERAL (2022/5)
+- [“If you want to go far, go together” — an engineer’s team-oriented path](https://careers.lt-s.jp/students/interview/newgrad-bp-001002-1-1-0-0)
+- [From discovery to delivery — AWS and application development at LTS](https://clover.lt-s.jp/9295)
+- [LTS, Inc. — sharing a richer and more enjoyable working life](https://good-companies.jp/2024/07/12/lt-s/)
+- [editch interview #1](https://note.com/d_biz_share/n/n07cc2eac3b22)
 
----
+## Connect
 
-## Activities
-
-- ["If you want to go far, go together" - Engineer's Path with Team Spirit](https://careers.lt-s.jp/students/interview/newgrad-bp-001002-1-1-0-0)
-- [Personal Service Development & Operations](https://kikusyo.com)
-- [From Upstream to Implementation - AWS & App Development at LTS](https://clover.lt-s.jp/9295)
-- [LTS Inc. - Environment for Employees to Shape Their Own Careers](https://good-companies.jp/2024/07/12/lt-s/)
-- [editch Interview #1 - DIVE INTO CODE](https://note.com/d_biz_share/n/n07cc2eac3b22)
-
----
-
-## SNS
-
-[![Wantedly](https://img.shields.io/badge/Wantedly-00A4BB?style=flat-square&logo=wantedly&logoColor=white)](https://www.wantedly.com/users/62400896)
-[![YOUTRUST](https://img.shields.io/badge/YOUTRUST-00C853?style=flat-square&logoColor=white)](https://youtrust.jp/users/yodev21)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yodev21)
-[![LAPRAS](https://img.shields.io/badge/LAPRAS-1E88E5?style=flat-square&logoColor=white)](https://lapras.com/public/CZQQR6J)
-[![Qiita](https://img.shields.io/badge/Qiita-55C500?style=flat-square&logo=qiita&logoColor=white)](https://qiita.com/yokku21)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white)](https://twitter.com/yodev21)
+[Wantedly](https://www.wantedly.com/users/62400896) · [YOUTRUST](https://youtrust.jp/users/yodev21) · [LinkedIn](https://www.linkedin.com/in/yodev21) · [LAPRAS](https://lapras.com/public/CZQQR6J) · [Qiita](https://qiita.com/yokku21) · [X](https://twitter.com/yodev21)

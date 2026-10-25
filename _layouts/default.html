@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b1720">
     {% seo %}
     {% for alternate in page.alternates %}
     <link rel="alternate" hreflang="{{ alternate[0] }}" href="{{ alternate[1] | absolute_url }}">
@@ -14,18 +15,84 @@
     <!-- End Cloudflare Web Analytics -->
     {% endif %}
   </head>
-  <body>
-    <main class="container-lg px-3 my-5 markdown-body">
-      <nav aria-label="{% if page.lang == 'en' %}Main navigation{% else %}メインナビゲーション{% endif %}">
-        {% if page.lang == 'en' %}
-        <a href="{{ '/README.en.html' | relative_url }}">Profile</a> · <a href="{{ '/TECHNOLOGIES.en.html' | relative_url }}">Technologies</a> · <a href="{{ '/PRIVACY.en.html' | relative_url }}">Analytics &amp; privacy</a>
-        {% else %}
-        <a href="{{ '/' | relative_url }}">プロフィール</a> · <a href="{{ '/TECHNOLOGIES.html' | relative_url }}">使用技術</a> · <a href="{{ '/PRIVACY.html' | relative_url }}">アクセス解析</a>
-        {% endif %}
-        · <a href="{{ '/projects/personal/' | relative_url }}">{% if page.lang == 'en' %}Personal projects (Japanese){% else %}個人開発{% endif %}</a>
-        · <a href="https://github.com/yodev21">GitHub</a>
-      </nav>
-      {{ content }}
+  {% assign is_home = false %}
+  {% if page.url == '/' or page.url == '/README.en.html' %}{% assign is_home = true %}{% endif %}
+  <body class="{% if is_home %}home-page{% else %}content-page{% endif %}">
+    <a class="skip-link" href="#main-content">{% if page.lang == 'en' %}Skip to content{% else %}本文へ移動{% endif %}</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="{% if page.lang == 'en' %}Yosuke Tanaka, home{% else %}田中遥介 ホーム{% endif %}">
+          <span class="brand__mark" aria-hidden="true">YT</span>
+          <span class="brand__text"><strong>Yosuke Tanaka</strong><small>Tech Lead</small></span>
+        </a>
+        <nav class="site-nav" aria-label="{% if page.lang == 'en' %}Main navigation{% else %}メインナビゲーション{% endif %}">
+          {% if page.lang == 'en' %}
+          <a href="{{ '/README.en.html#selected-work' | relative_url }}">Work</a>
+          <a href="{{ '/TECHNOLOGIES.en.html' | relative_url }}">Technologies</a>
+          <a href="{{ '/projects/personal/' | relative_url }}">Projects <span class="visually-hidden">(Japanese)</span></a>
+          <a class="site-nav__language" href="{{ '/' | relative_url }}" lang="ja">JA</a>
+          {% else %}
+          <a href="{{ '/#selected-work' | relative_url }}">実績</a>
+          <a href="{{ '/TECHNOLOGIES.html' | relative_url }}">使用技術</a>
+          <a href="{{ '/projects/personal/' | relative_url }}">個人開発</a>
+          <a class="site-nav__language" href="{{ '/README.en.html' | relative_url }}" lang="en">EN</a>
+          {% endif %}
+        </nav>
+      </div>
+    </header>
+    {% if is_home %}
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Tech Lead · Cloud · AI</p>
+          {% if page.lang == 'en' %}
+          <h1 id="hero-title">Turning ambiguity into<br><em>working systems.</em></h1>
+          <p class="hero__lead">I lead products from requirement discovery through cloud architecture, application delivery, and production operations—with AI built into both the product and the way teams work.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#selected-work">View selected work <span aria-hidden="true">↓</span></a>
+            <a class="button button--secondary" href="https://github.com/yodev21">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          {% else %}
+          <h1 id="hero-title">曖昧な要求を、<br><em>動く仕組みへ。</em></h1>
+          <p class="hero__lead">要求整理からクラウド設計、アプリケーション開発、本番運用まで。AIをプロダクトと開発プロセスの両方に組み込み、チームで継続的に価値を届けます。</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#selected-work">主な実績を見る <span aria-hidden="true">↓</span></a>
+            <a class="button button--secondary" href="https://github.com/yodev21">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          {% endif %}
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="orbit orbit--one"></div>
+          <div class="orbit orbit--two"></div>
+          <div class="hero__monogram">YT</div>
+          <span class="hero__node hero__node--one">Discover</span>
+          <span class="hero__node hero__node--two">Design</span>
+          <span class="hero__node hero__node--three">Deliver</span>
+          <span class="hero__node hero__node--four">Operate</span>
+        </div>
+      </div>
+      <div class="signal-bar">
+        <div><span>01</span><strong>{% if page.lang == 'en' %}Requirements{% else %}要求整理{% endif %}</strong></div>
+        <div><span>02</span><strong>{% if page.lang == 'en' %}Architecture{% else %}設計・構築{% endif %}</strong></div>
+        <div><span>03</span><strong>{% if page.lang == 'en' %}Delivery{% else %}実装・推進{% endif %}</strong></div>
+        <div><span>04</span><strong>{% if page.lang == 'en' %}Operations{% else %}運用・改善{% endif %}</strong></div>
+      </div>
+    </section>
+    {% endif %}
+    <main id="main-content" class="page-shell">
+      <article class="page-content{% if is_home %} page-content--home{% endif %}">{{ content }}</article>
     </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div><strong>Yosuke Tanaka</strong><p>Tech Lead · Tokyo, Japan</p></div>
+        <nav aria-label="{% if page.lang == 'en' %}Footer navigation{% else %}フッターナビゲーション{% endif %}">
+          <a href="https://github.com/yodev21">GitHub</a>
+          <a href="https://www.linkedin.com/in/yodev21">LinkedIn</a>
+          <a href="{{ '/PRIVACY.html' | relative_url }}">Privacy</a>
+        </nav>
+        <small>© {{ 'now' | date: '%Y' }} Yosuke Tanaka</small>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,6 +1,6 @@
 title: 田中遥介 / yodev21
 tagline: Tech Lead
-description: 要求整理からクラウド設計・アプリ開発・本番運用までを担うテックリード。技術経験と開発実績を紹介しています。
+description: 曖昧な要求を構造化し、クラウド設計・アプリ開発・本番運用までをつなぐテックリード。AI・クラウド領域の経験と実績を紹介します。
 url: https://yodev21.github.io
 baseurl: /yodev21
 lang: ja
@@ -42,7 +42,7 @@ defaults:
       path: README.en.md
     values:
       title: Tech Lead
-      description: A tech lead working across requirements, cloud architecture, application development, and production operations. Explore my experience and projects.
+      description: A tech lead turning ambiguous requirements into working systems across cloud architecture, application delivery, AI, and production operations.
       lang: en
       locale: en_US
       alternates:
