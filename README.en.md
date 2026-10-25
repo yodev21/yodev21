@@ -9,19 +9,18 @@ English | [日本語](README.md)
 
 ---
 
-## Tech Stack
+## Core Technologies
 
-| Category | Technologies |
-|----------|-------------|
-| **Cloud** | AWS / Azure / Google Cloud / Cloudflare |
-| **Languages** | Ruby / Python / Go / Java / TypeScript |
-| **Frameworks** | Ruby on Rails / Django / Flask / FastAPI / Gin / Vue.js / Next.js |
-| **IaC** | Terraform / CDK / Ansible |
-| **CI/CD** | Jenkins / GitHub Actions / Azure DevOps / Cloud Build |
-| **Database** | MySQL / PostgreSQL / SQL Server / Aurora / Cloud SQL |
-| **AI / Data** | Vertex AI / AWS Bedrock / Azure OpenAI / Elasticsearch / Tableau |
-| **Design** | Figma / UI Design / Prototyping |
-| **Other** | Docker |
+| Area | Technologies |
+|---|---|
+| **Backend** | Go / Python |
+| **Frontend** | TypeScript / Next.js |
+| **Cloud** | Google Cloud / AWS / Azure / Cloudflare |
+| **Infrastructure & Delivery** | Terraform / Docker / GitHub Actions |
+| **Databases** | PostgreSQL |
+| **Generative AI** | Vertex AI / Amazon Bedrock / Azure OpenAI |
+
+[All technologies used](TECHNOLOGIES.en.md)
 
 ---
 

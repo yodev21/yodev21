@@ -9,19 +9,18 @@
 
 ---
 
-## Tech Stack
+## 主要技術
 
-| Category | Technologies |
-|----------|-------------|
-| **Cloud** | AWS / Azure / Google Cloud / Cloudflare |
-| **Languages** | Ruby / Python / Go / Java / TypeScript |
-| **Frameworks** | Ruby on Rails / Django / Flask / FastAPI / Gin / Vue.js / Next.js |
-| **IaC** | Terraform / CDK / Ansible |
-| **CI/CD** | Jenkins / GitHub Actions / Azure DevOps / Cloud Build |
-| **Database** | MySQL / PostgreSQL / SQL Server / Aurora / Cloud SQL |
-| **AI / Data** | Vertex AI / AWS Bedrock / Azure OpenAI / Elasticsearch / Tableau |
-| **Design** | Figma / UI Design / Prototyping |
-| **Other** | Docker |
+| 分野 | 技術 |
+|---|---|
+| **バックエンド** | Go / Python |
+| **フロントエンド** | TypeScript / Next.js |
+| **クラウド** | Google Cloud / AWS / Azure / Cloudflare |
+| **インフラ・開発基盤** | Terraform / Docker / GitHub Actions |
+| **データベース** | PostgreSQL |
+| **生成AI** | Vertex AI / Amazon Bedrock / Azure OpenAI |
+
+[使用技術の一覧](TECHNOLOGIES.md)
 
 ---
 
