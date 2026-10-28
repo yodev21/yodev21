@@ -82,6 +82,14 @@ jobs:
           assert 'class="hero"' in home
           assert 'id="hero-title"' in home
           assert 'assets/images/profile.jpg' in home
+          assert home.count('YOUTRUSTで連絡する') == 1
+          hero = home.split('class="hero"', 1)[1].split('</section>', 1)[0]
+          assert hero.count('class="profile-links"') == 1
+          assert hero.count('<a ') == 1
+          assert 'https://youtrust.jp/users/yodev21' in hero
+          footer = home.split('class="site-footer"', 1)[1]
+          assert 'https://github.com/yodev21' not in footer
+          assert 'https://www.linkedin.com/in/yodev21' not in footer
           assert 'data-search-dialog' in home
           assert 'data-search-index="/yodev21/search.json"' in home
           assert 'class="social-links"' in home
