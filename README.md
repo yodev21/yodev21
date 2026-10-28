@@ -110,4 +110,11 @@ AIが実装を加速する今、テックリードには「何をつくるか」
 
 ## リンク
 
-[Wantedly](https://www.wantedly.com/users/62400896) · [YOUTRUST](https://youtrust.jp/users/yodev21) · [LinkedIn](https://www.linkedin.com/in/yodev21) · [LAPRAS](https://lapras.com/public/CZQQR6J) · [Qiita](https://qiita.com/yokku21) · [X](https://twitter.com/yodev21)
+<div class="social-links">
+  <a href="https://www.wantedly.com/users/62400896" title="Wantedly"><img src="assets/icons/wantedly.svg" alt="Wantedly" width="24" height="24"></a>
+  <a href="https://youtrust.jp/users/yodev21" title="YOUTRUST"><img src="assets/icons/youtrust.svg" alt="YOUTRUST" width="24" height="24"></a>
+  <a href="https://www.linkedin.com/in/yodev21" title="LinkedIn"><img src="assets/icons/linkedin.ico" alt="LinkedIn" width="24" height="24"></a>
+  <a href="https://lapras.com/public/CZQQR6J" title="LAPRAS"><img src="assets/icons/lapras.png" alt="LAPRAS" width="24" height="24"></a>
+  <a href="https://qiita.com/yokku21" title="Qiita"><img src="assets/icons/qiita.svg" alt="Qiita" width="24" height="24"></a>
+  <a href="https://twitter.com/yodev21" title="X"><img src="assets/icons/x.svg" alt="X" width="24" height="24"></a>
+</div>
