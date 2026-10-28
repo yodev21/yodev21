@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 438" role="img" aria-label="チームで対話する様子を表したイラスト">
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#dcece8"/><stop offset="1" stop-color="#91bbb4"/></linearGradient></defs>
+  <rect width="720" height="438" fill="url(#bg)"/>
+  <circle cx="566" cy="94" r="118" fill="#fff" opacity=".28"/>
+  <path d="M0 340C150 280 272 330 410 292s225-19 310 13v133H0Z" fill="#2e6f68" opacity=".24"/>
+  <rect x="77" y="66" width="238" height="108" rx="28" fill="#fff" opacity=".9"/>
+  <path d="m126 174-23 38 53-38" fill="#fff" opacity=".9"/>
+  <circle cx="179" cy="269" r="57" fill="#2e6f68"/><path d="M79 438v-57c0-60 45-99 100-99s100 39 100 99v57" fill="#2e6f68"/>
+  <circle cx="371" cy="245" r="52" fill="#f5c9a9"/><path d="M282 438v-61c0-53 40-89 89-89s89 36 89 89v61" fill="#f7f8f6"/>
+  <circle cx="555" cy="272" r="55" fill="#31534f"/><path d="M460 438v-53c0-58 43-96 95-96s95 38 95 96v53" fill="#31534f"/>
+  <g fill="#2e6f68"><circle cx="134" cy="113" r="9"/><circle cx="169" cy="113" r="9"/><rect x="200" y="104" width="70" height="18" rx="9"/></g>
+</svg>
