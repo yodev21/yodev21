@@ -13,6 +13,8 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7
+      - name: Check search script syntax
+        run: node --check assets/js/search.js
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
@@ -64,12 +66,19 @@ jobs:
               assert 'https://static.cloudflareinsights.com/beacon.min.js' in html, filename
               assert 'data-cf-beacon' in html, filename
           assert Path('_site/sitemap.xml').exists()
+          assert Path('_site/search.json').exists()
+          assert Path('_site/assets/js/search.js').exists()
+          search_index = Path('_site/search.json').read_text()
+          assert '田中遥介 — プロフィール' in search_index
+          assert 'Technologies Used' in search_index
           assert base + '/' in Path('_site/sitemap.xml').read_text()
           assert 'Sitemap: ' + base + '/sitemap.xml' in Path('_site/robots.txt').read_text()
           home = Path('_site/index.html').read_text()
           assert 'class="hero"' in home
           assert 'id="hero-title"' in home
           assert 'assets/images/profile.jpg' in home
+          assert 'data-search-dialog' in home
+          assert 'data-search-index="/yodev21/search.json"' in home
           assert 'class="capability-grid"' in home
           assert 'id="selected-work"' in home
           css = Path('_site/assets/css/style.css').read_text()
