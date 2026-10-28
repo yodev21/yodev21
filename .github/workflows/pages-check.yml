@@ -74,11 +74,16 @@ jobs:
           assert base + '/' in Path('_site/sitemap.xml').read_text()
           assert 'Sitemap: ' + base + '/sitemap.xml' in Path('_site/robots.txt').read_text()
           home = Path('_site/index.html').read_text()
+          home_en = Path('_site/README.en.html').read_text()
           assert 'class="hero"' in home
           assert 'id="hero-title"' in home
           assert 'assets/images/profile.jpg' in home
           assert 'data-search-dialog' in home
           assert 'data-search-index="/yodev21/search.json"' in home
+          for rendered_home in (home, home_en):
+              experience = rendered_home.split('class="experience-details"', 1)[1].split('</details>', 1)[0]
+              assert '<table>' in experience
+              assert '| # |' not in experience
           assert 'class="capability-grid"' in home
           assert 'id="selected-work"' in home
           css = Path('_site/assets/css/style.css').read_text()

@@ -67,7 +67,7 @@ Redesigned a Rails service after four years in production, adding AI-assisted en
 
 [View the personal project →](projects/personal/){: .text-link }
 
-<details class="experience-details">
+<details class="experience-details" markdown="1">
 <summary>View complete professional experience</summary>
 
 | # | Summary | Role | Key technologies |

@@ -67,7 +67,7 @@ AIエージェントの設計と検証をリード。技術検証だけで終わ
 
 [個人開発の詳細を見る →](projects/personal/){: .text-link }
 
-<details class="experience-details">
+<details class="experience-details" markdown="1">
 <summary>これまでの業務経験をすべて見る</summary>
 
 | # | 概要 | 役割 | 主要技術 |
