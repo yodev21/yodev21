@@ -77,8 +77,24 @@ jobs:
           assert 'Technologies Used' in search_index
           assert base + '/' in Path('_site/sitemap.xml').read_text()
           assert 'Sitemap: ' + base + '/sitemap.xml' in Path('_site/robots.txt').read_text()
+          breadcrumb_pages = {
+              'TECHNOLOGIES.html': 2,
+              'TECHNOLOGIES.en.html': 2,
+              'PRIVACY.html': 2,
+              'PRIVACY.en.html': 2,
+              'projects/personal/index.html': 2,
+              'projects/personal/01_小説朗読投稿サービス.html': 3,
+              'projects/personal/02_小説朗読投稿サービス_移行.html': 3,
+          }
+          for filename, count in breadcrumb_pages.items():
+              rendered = Path('_site', filename).read_text()
+              assert 'itemtype="https://schema.org/BreadcrumbList"' in rendered, filename
+              assert rendered.count('itemtype="https://schema.org/ListItem"') == count, filename
+              assert rendered.count('itemprop="position"') == count, filename
           home = Path('_site/index.html').read_text()
           home_en = Path('_site/README.en.html').read_text()
+          assert 'class="breadcrumbs"' not in home
+          assert 'class="breadcrumbs"' not in home_en
           assert 'class="hero"' in home
           assert 'id="hero-title"' in home
           assert 'assets/images/profile.jpg' in home

@@ -59,6 +59,10 @@ defaults:
       alternates:
         ja: /TECHNOLOGIES.html
         en: /TECHNOLOGIES.en.html
+      breadcrumbs:
+        - name: ホーム
+          url: /
+        - name: 使用技術
   - scope:
       path: TECHNOLOGIES.en.md
     values:
@@ -70,6 +74,10 @@ defaults:
       alternates:
         ja: /TECHNOLOGIES.html
         en: /TECHNOLOGIES.en.html
+      breadcrumbs:
+        - name: Home
+          url: /README.en.html
+        - name: Technologies
   - scope:
       path: PRIVACY.md
     values:
@@ -79,6 +87,10 @@ defaults:
       alternates:
         ja: /PRIVACY.html
         en: /PRIVACY.en.html
+      breadcrumbs:
+        - name: ホーム
+          url: /
+        - name: アクセス解析について
   - scope:
       path: PRIVACY.en.md
     values:
@@ -90,21 +102,41 @@ defaults:
       alternates:
         ja: /PRIVACY.html
         en: /PRIVACY.en.html
+      breadcrumbs:
+        - name: Home
+          url: /README.en.html
+        - name: Analytics and privacy
   - scope:
       path: projects/personal/README.md
     values:
       title: 個人開発
       search_title: 個人開発
       description: 小説・朗読投稿サービスの開発・運用とリアーキテクチャの実績。
+      breadcrumbs:
+        - name: ホーム
+          url: /
+        - name: 個人開発
   - scope:
       path: projects/personal/01_小説朗読投稿サービス.md
     values:
       title: 小説・朗読投稿サービスの開発・運用
       search_title: 小説・朗読投稿サービスの開発・運用
       description: Ruby on RailsとAWS Lightsailを使った個人サービスの開発・運用実績。
+      breadcrumbs:
+        - name: ホーム
+          url: /
+        - name: 個人開発
+          url: /projects/personal/
+        - name: 小説・朗読投稿サービスの開発・運用
   - scope:
       path: projects/personal/02_小説朗読投稿サービス_移行.md
     values:
       title: 小説・朗読投稿サービスのリアーキテクチャ
       search_title: 小説・朗読投稿サービスのリアーキテクチャ
       description: Go・Next.js・Google Cloudへの移行と、AIを活用した開発・品質管理の取り組み。
+      breadcrumbs:
+        - name: ホーム
+          url: /
+        - name: 個人開発
+          url: /projects/personal/
+        - name: リアーキテクチャ

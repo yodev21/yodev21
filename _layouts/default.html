@@ -108,7 +108,21 @@
     {% endif %}
 
     <main id="main-content" class="page-shell">
-      <article class="page-content{% if is_home %} page-content--home{% endif %}">{{ content }}</article>
+      <article class="page-content{% if is_home %} page-content--home{% endif %}">
+        {% if page.breadcrumbs %}
+        <nav class="breadcrumbs" aria-label="{% if page.lang == 'en' %}Breadcrumb{% else %}パンくずリスト{% endif %}">
+          <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+            {% for crumb in page.breadcrumbs %}
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              {% if crumb.url %}<a itemprop="item" href="{{ crumb.url | absolute_url }}"><span itemprop="name">{{ crumb.name }}</span></a>{% else %}<span itemprop="name" aria-current="page">{{ crumb.name }}</span>{% endif %}
+              <meta itemprop="position" content="{{ forloop.index }}">
+            </li>
+            {% endfor %}
+          </ol>
+        </nav>
+        {% endif %}
+        {{ content }}
+      </article>
     </main>
 
     <footer class="site-footer">
