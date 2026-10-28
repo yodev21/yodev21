@@ -14,4 +14,4 @@ A chronological summary of the work, roles, and principal technologies I can des
 | 02 | In-house web service development | Application / Infrastructure | AWS, Elasticsearch, Rails |
 | 01 | On-premises business system delivery | Deployment SE / Operations | CentOS, Windows Server, Java, VB.NET |
 
-[View technologies used →](TECHNOLOGIES.en.md){: .text-link }
+[View technologies used →](TECHNOLOGIES.en.md)

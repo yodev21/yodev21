@@ -14,4 +14,4 @@
 | 02 | 自社Webサービスの継続開発・運用 | アプリ・インフラ担当 | AWS, Elasticsearch, Rails |
 | 01 | オンプレミス業務系システムの導入・運用保守 | 導入SE / 運用保守 | CentOS, Windows Server, Java, VB.NET |
 
-[使用した技術の一覧を見る →](TECHNOLOGIES.md){: .text-link }
+[使用した技術の一覧を見る →](TECHNOLOGIES.md)

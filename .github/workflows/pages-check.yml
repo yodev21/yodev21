@@ -16,7 +16,9 @@ jobs:
         with:
           persist-credentials: false
       - name: Check search script syntax
-        run: node --check assets/js/search.js
+        run: |
+          node --check assets/js/search.js
+          node --check assets/js/contact.js
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@44a6e6beabd48582f863aeeb6cb2151cc1716697 # v1
         with:
@@ -69,6 +71,8 @@ jobs:
               assert head.meta.get('twitter:card') == 'summary', filename
               assert [x.get('href') for x in head.links if x.get('rel') == 'canonical'] == [base + path], filename
               assert any(x.get('rel') == 'alternate' and x.get('href') == base + alternate for x in head.links), filename
+              default_path = path if lang == 'ja' else alternate
+              assert any(x.get('rel') == 'alternate' and x.get('hreflang') == 'x-default' and x.get('href') == base + default_path for x in head.links), filename
               assert '<title>' in html and '田中遥介' in html, filename
               assert 'noindex' not in html, filename
               assert 'https://static.cloudflareinsights.com/beacon.min.js' in html, filename
@@ -76,6 +80,7 @@ jobs:
           assert Path('_site/sitemap.xml').exists()
           assert Path('_site/search.json').exists()
           assert Path('_site/assets/js/search.js').exists()
+          assert Path('_site/assets/js/contact.js').exists()
           for icon in ('github.svg', 'wantedly.svg', 'youtrust.svg', 'linkedin.ico', 'lapras.png', 'qiita.svg', 'x.svg'):
               assert Path('_site/assets/icons', icon).exists(), icon
           assert Path('_site/assets/icons/favicon.svg').exists()
@@ -116,8 +121,12 @@ jobs:
               assert profile in hero
           assert '"@type": "ProfilePage"' in home
           assert '"@type": "Person"' in home
+          assert '"@id": "https://yodev21.github.io/yodev21/#person"' in home
+          assert '"dateModified": "2026-10-29"' in home
+          assert '"subjectOf"' in home
           assert '"sameAs"' in home
           assert 'property="og:image"' in home
+          assert '田中遥介（yodev21）のプロフィール。' in home
           footer = home.split('class="site-footer"', 1)[1]
           assert 'class="site-footer__top"' in footer
           assert 'class="site-footer__bottom"' in footer
@@ -134,6 +143,7 @@ jobs:
               assert rendered_home.count('id="contact"') == 1
               assert 'class="site-footer__contact"' in rendered_home
               assert 'class="site-footer__email-icon"' in rendered_home
+              assert 'data-copy-email="yodev21.business@gmail.com"' in rendered_home
               assert 'mailto:yodev21.business@gmail.com' in rendered_home
           assert 'href="/yodev21/#contact"' not in home
           assert 'href="/yodev21/README.en.html#contact"' not in home_en
@@ -141,6 +151,8 @@ jobs:
           assert 'メールは週に1回程度の確認になることがあります。' in home
           assert 'If you’d like to get in touch' in home_en
           assert 'I usually check email about once a week' in home_en
+          assert '>プライバシー</a>' in home
+          assert '>Privacy</a>' in home_en
           assert 'class="article-grid"' in home
           assert home.count('class="article-card"') == 4
           assert home.count('class="article-card__media"') == 4
@@ -163,6 +175,8 @@ jobs:
           personal = Path('_site/projects/personal/index.html').read_text()
           assert 'class="stack-summary"' in personal
           assert 'class="product-card"' in personal
+          assert 'property="og:image"' in personal
+          assert 'assets/images/projects/kikusyo-card.webp' in personal
           assert 'https://kikusyo.com/' in personal
           assert '運営中' in personal
           assert '<dt>クラウド</dt>' in personal
