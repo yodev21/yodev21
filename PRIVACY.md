@@ -14,7 +14,7 @@ Cloudflare Web AnalyticsはCookie、localStorage、sessionStorageを使用せず
 
 Cloudflareの説明では、未集計のビーコンデータは7日間保持された後に集計され、ダッシュボード上の集計データは6か月間確認できます。JavaScriptを無効化または分析用スクリプトをブロックした場合、アクセス解析の情報は送信されません。
 
-詳しい収集項目と取り扱いは、[Cloudflare Web Analyticsのデータ収集に関する説明](https://developers.cloudflare.com/web-analytics/data-metrics/data-origin-and-collection/){:target="_blank" rel="noopener"}および[Cloudflareのプライバシーポリシー](https://www.cloudflare.com/privacypolicy/){:target="_blank" rel="noopener"}をご覧ください。
+詳しい収集項目と取り扱いは、<a href="https://developers.cloudflare.com/web-analytics/data-metrics/data-origin-and-collection/" target="_blank" rel="noopener">Cloudflare Web Analyticsのデータ収集に関する説明</a>および<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflareのプライバシーポリシー</a>をご覧ください。
 
 ## お問い合わせ
 

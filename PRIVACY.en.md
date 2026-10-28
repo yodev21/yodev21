@@ -14,7 +14,7 @@ Cloudflare Web Analytics does not use cookies, localStorage, or sessionStorage a
 
 Cloudflare states that raw beacon data is retained for seven days before aggregation, and aggregated dashboard data remains available for six months. No analytics data is sent if JavaScript is disabled or the analytics script is blocked.
 
-See [Cloudflare's Web Analytics data collection documentation](https://developers.cloudflare.com/web-analytics/data-metrics/data-origin-and-collection/){:target="_blank" rel="noopener"} and [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/){:target="_blank" rel="noopener"} for details.
+See <a href="https://developers.cloudflare.com/web-analytics/data-metrics/data-origin-and-collection/" target="_blank" rel="noopener">Cloudflare's Web Analytics data collection documentation</a> and <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare's privacy policy</a> for details.
 
 ## Contact
 
