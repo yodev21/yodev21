@@ -68,6 +68,34 @@ defaults:
           url: /
         - name: 使用技術
   - scope:
+      path: EXPERIENCE.md
+    values:
+      title: これまでの業務経験
+      search_title: これまでの業務経験
+      description: これまで担当した業務、役割、主な技術を公開可能な範囲でまとめています。
+      alternates:
+        ja: /EXPERIENCE.html
+        en: /EXPERIENCE.en.html
+      breadcrumbs:
+        - name: ホーム
+          url: /
+        - name: 業務経験
+  - scope:
+      path: EXPERIENCE.en.md
+    values:
+      title: Professional Experience
+      search_title: Professional Experience
+      description: A chronological summary of professional work, roles, and principal technologies.
+      lang: en
+      locale: en_US
+      alternates:
+        ja: /EXPERIENCE.html
+        en: /EXPERIENCE.en.html
+      breadcrumbs:
+        - name: Home
+          url: /README.en.html
+        - name: Professional Experience
+  - scope:
       path: TECHNOLOGIES.en.md
     values:
       title: Technologies Used

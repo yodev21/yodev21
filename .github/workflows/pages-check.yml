@@ -55,6 +55,8 @@ jobs:
               ('README.en.html', 'en', '/README.en.html', '/'),
               ('TECHNOLOGIES.html', 'ja', '/TECHNOLOGIES.html', '/TECHNOLOGIES.en.html'),
               ('TECHNOLOGIES.en.html', 'en', '/TECHNOLOGIES.en.html', '/TECHNOLOGIES.html'),
+              ('EXPERIENCE.html', 'ja', '/EXPERIENCE.html', '/EXPERIENCE.en.html'),
+              ('EXPERIENCE.en.html', 'en', '/EXPERIENCE.en.html', '/EXPERIENCE.html'),
               ('PRIVACY.html', 'ja', '/PRIVACY.html', '/PRIVACY.en.html'),
               ('PRIVACY.en.html', 'en', '/PRIVACY.en.html', '/PRIVACY.html'),
           ]
@@ -81,11 +83,14 @@ jobs:
           search_index = Path('_site/search.json').read_text()
           assert '田中遥介 — プロフィール' in search_index
           assert 'Technologies Used' in search_index
+          assert 'Professional Experience' in search_index
           assert base + '/' in Path('_site/sitemap.xml').read_text()
           assert 'Sitemap: ' + base + '/sitemap.xml' in Path('_site/robots.txt').read_text()
           breadcrumb_pages = {
               'TECHNOLOGIES.html': 2,
               'TECHNOLOGIES.en.html': 2,
+              'EXPERIENCE.html': 2,
+              'EXPERIENCE.en.html': 2,
               'PRIVACY.html': 2,
               'PRIVACY.en.html': 2,
               'projects/personal/index.html': 2,
@@ -126,8 +131,8 @@ jobs:
           assert 'assets/icons/github.svg' in footer
           assert 'assets/icons/wantedly.svg' in footer
           for rendered_home in (home, home_en):
-              assert rendered_home.count('class="contact-section"') == 1
-              assert 'id="contact"' in rendered_home
+              assert rendered_home.count('id="contact"') == 1
+              assert 'class="site-footer__contact"' in rendered_home
               assert 'mailto:yodev21.business@gmail.com' in rendered_home
           assert 'href="/yodev21/#contact"' in home
           assert 'href="/yodev21/README.en.html#contact"' in home_en
@@ -142,11 +147,15 @@ jobs:
               assert Path('_site/assets/images/articles', image).exists(), image
               assert 'assets/images/articles/' + image in home
           for rendered_home in (home, home_en):
-              experience = rendered_home.split('class="experience-details"', 1)[1].split('</details>', 1)[0]
-              assert '<table>' in experience
-              assert '| # |' not in experience
+              assert 'class="experience-details"' not in rendered_home
               current_cloud = rendered_home.split('<strong>Cloud Native</strong>', 1)[1].split('</tr>', 1)[0]
               assert 'Kubernetes' not in current_cloud
+          assert '/yodev21/EXPERIENCE.html' in home
+          assert '/yodev21/EXPERIENCE.en.html' in home_en
+          for experience_page in ('EXPERIENCE.html', 'EXPERIENCE.en.html'):
+              experience = Path('_site', experience_page).read_text()
+              assert '<table>' in experience
+              assert experience.count('<tr>') == 10
           assert 'class="capability-grid"' in home
           assert 'id="selected-work"' in home
           assert 'class="selected-work-list"' in home
@@ -167,7 +176,7 @@ jobs:
           css = Path('_site/assets/css/style.css').read_text()
           assert '--accent:' in css
           assert '.hero-social' in css
-          assert '.contact-section' in css
+          assert '.site-footer__contact' in css
           assert 'overflow-wrap:anywhere' in css.replace(' ', '')
           assert '@media (max-width: 520px)' in css
           assert 'prefers-reduced-motion' in css
