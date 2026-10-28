@@ -103,10 +103,24 @@ As AI accelerates implementation, tech leads need to decide what to build, where
 
 ### Interviews & Articles
 
-- [“If you want to go far, go together” — an engineer’s team-oriented path](https://careers.lt-s.jp/students/interview/newgrad-bp-001002-1-1-0-0)
-- [From discovery to delivery — AWS and application development at LTS](https://clover.lt-s.jp/9295)
-- [LTS, Inc. — sharing a richer and more enjoyable working life](https://good-companies.jp/2024/07/12/lt-s/)
-- [editch interview #1](https://note.com/d_biz_share/n/n07cc2eac3b22)
+<div class="article-grid">
+  <a class="article-card" href="https://careers.lt-s.jp/students/interview/newgrad-bp-001002-1-1-0-0">
+    <img src="assets/images/articles/lts-careers.jpg" alt="" width="720" height="438" loading="lazy">
+    <span class="article-card__body"><small>careers.lt-s.jp</small><strong class="article-card__title">“If you want to go far, go together” — a team-oriented engineering path</strong><span>On continuous learning and supporting each team member’s growth.</span></span>
+  </a>
+  <a class="article-card" href="https://clover.lt-s.jp/9295">
+    <img src="assets/images/articles/lts-clover.jpg" alt="" width="720" height="405" loading="lazy">
+    <span class="article-card__body"><small>clover.lt-s.jp</small><strong class="article-card__title">From discovery to delivery — AWS and application development at LTS</strong><span>How we work across upstream planning, implementation, and production operations.</span></span>
+  </a>
+  <a class="article-card" href="https://good-companies.jp/2024/07/12/lt-s/">
+    <img src="assets/images/articles/good-companies.jpg" alt="" width="720" height="433" loading="lazy">
+    <span class="article-card__body"><small>good-companies.jp</small><strong class="article-card__title">Sharing a richer and more enjoyable working life at LTS</strong><span>An interview about work, career ownership, and growing with colleagues at LTS.</span></span>
+  </a>
+  <a class="article-card" href="https://note.com/d_biz_share/n/n07cc2eac3b22">
+    <img src="assets/images/articles/editch-note.jpg" alt="" width="720" height="377" loading="lazy">
+    <span class="article-card__body"><small>note.com</small><strong class="article-card__title">editch interview #1</strong><span>Looking back on entering a portfolio competition and what changed afterward.</span></span>
+  </a>
+</div>
 
 ## Connect
 

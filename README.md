@@ -103,10 +103,24 @@ AIが実装を加速する今、テックリードには「何をつくるか」
 
 ### インタビュー・記事
 
-- [「遠くにいくなら皆で」チーム志向で進むエンジニアの道](https://careers.lt-s.jp/students/interview/newgrad-bp-001002-1-1-0-0)
-- [上流から実装・運用まで LTSのAWS構築・アプリ開発](https://clover.lt-s.jp/9295)
-- [株式会社エル・ティー・エス｜働く豊かさや楽しさを仲間と分かち合える環境](https://good-companies.jp/2024/07/12/lt-s/)
-- [editchインタビュー #1](https://note.com/d_biz_share/n/n07cc2eac3b22)
+<div class="article-grid">
+  <a class="article-card" href="https://careers.lt-s.jp/students/interview/newgrad-bp-001002-1-1-0-0">
+    <img src="assets/images/articles/lts-careers.jpg" alt="" width="720" height="438" loading="lazy">
+    <span class="article-card__body"><small>careers.lt-s.jp</small><strong class="article-card__title">「遠くにいくなら皆で」チーム志向で進むエンジニアの道</strong><span>学び続ける姿勢と、メンバーの成長を支えるチームづくりについて話しました。</span></span>
+  </a>
+  <a class="article-card" href="https://clover.lt-s.jp/9295">
+    <img src="assets/images/articles/lts-clover.jpg" alt="" width="720" height="405" loading="lazy">
+    <span class="article-card__body"><small>clover.lt-s.jp</small><strong class="article-card__title">上流から実装・運用まで LTSのAWS構築・アプリ開発</strong><span>AWS案件における上流工程から設計・実装・運用までの取り組みを紹介しています。</span></span>
+  </a>
+  <a class="article-card" href="https://good-companies.jp/2024/07/12/lt-s/">
+    <img src="assets/images/articles/good-companies.jpg" alt="" width="720" height="433" loading="lazy">
+    <span class="article-card__body"><small>good-companies.jp</small><strong class="article-card__title">働く豊かさや楽しさを仲間と分かち合える環境</strong><span>LTSでの働き方、キャリア、仲間と成長する環境についてのインタビューです。</span></span>
+  </a>
+  <a class="article-card" href="https://note.com/d_biz_share/n/n07cc2eac3b22">
+    <img src="assets/images/articles/editch-note.jpg" alt="" width="720" height="377" loading="lazy">
+    <span class="article-card__body"><small>note.com</small><strong class="article-card__title">editchインタビュー #1</strong><span>ポートフォリオコンテストに参加した当時の経験と、その前後の変化を振り返っています。</span></span>
+  </a>
+</div>
 
 ## リンク
 
