@@ -114,6 +114,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   border-radius: 14px;
   box-shadow: 0 24px 70px rgba(25, 42, 40, .2);
 }
+.site-search[open] { animation: search-dialog-in .16s ease-out; }
+.site-search[open]::backdrop { animation: search-backdrop-in .16s ease-out; }
 .site-search::backdrop { background: rgba(32, 39, 43, .42); backdrop-filter: blur(3px); }
 .site-search__panel { padding: 28px; }
 .site-search__header { display: flex; align-items: start; justify-content: space-between; gap: 24px; }
@@ -257,6 +259,17 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .site-footer__bottom small { color: #7b858a; font-size: 11px; }
 .site-footer__nav { display: flex; flex-wrap: wrap; gap: 22px; }
 .site-footer__nav a { min-height: 32px; color: #657177; font-size: 11px; }
+.hero-social a:active, .site-footer__social a:active, .article-card:active, .product-card:active { transform: translateY(0) scale(.98); }
+
+@keyframes search-dialog-in {
+  from { opacity: 0; transform: translateY(8px) scale(.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes search-backdrop-in {
+  from { background: rgba(32, 39, 43, 0); backdrop-filter: blur(0); }
+  to { background: rgba(32, 39, 43, .42); backdrop-filter: blur(3px); }
+}
 
 @media (max-width: 780px) {
   .site-nav { gap: 14px; }
@@ -314,6 +327,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .site-search[open], .site-search[open]::backdrop { animation: none; }
   .hero-social a, .site-footer__social a { transition: none; }
   .article-card { transition: none; }
   .product-card { transition: none; }
