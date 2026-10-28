@@ -130,11 +130,31 @@
 
     <footer class="site-footer">
       <div class="site-footer__inner">
-        <div><strong>{% if page.lang == 'en' %}Yosuke Tanaka{% else %}田中 遥介{% endif %}</strong><p>Tech Lead / Software Engineer</p></div>
-        <nav aria-label="{% if page.lang == 'en' %}Footer navigation{% else %}フッターナビゲーション{% endif %}">
-          <a href="{% if page.lang == 'en' %}{{ '/PRIVACY.en.html' | relative_url }}{% else %}{{ '/PRIVACY.html' | relative_url }}{% endif %}">Privacy</a>
-        </nav>
-        <small>© {{ 'now' | date: '%Y' }} Yosuke Tanaka</small>
+        <div class="site-footer__top">
+          <div class="site-footer__identity">
+            <a class="site-footer__name" href="{% if page.lang == 'en' %}{{ '/README.en.html' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{% if page.lang == 'en' %}Yosuke Tanaka{% else %}田中 遥介{% endif %}</a>
+            <p>Tech Lead / Software Engineer</p>
+            <p class="site-footer__statement">{% if page.lang == 'en' %}From shaping the idea to keeping it running.{% else %}考えるところから、動かし続けるところまで。{% endif %}</p>
+          </div>
+          <nav class="site-footer__social" aria-label="{% if page.lang == 'en' %}External profiles{% else %}外部プロフィール{% endif %}">
+            <a href="https://github.com/yodev21" title="GitHub" target="_blank" rel="noopener"><img src="{{ '/assets/icons/github.svg' | relative_url }}" alt="GitHub" width="22" height="22"></a>
+            <a href="https://youtrust.jp/users/yodev21" title="YOUTRUST" target="_blank" rel="noopener"><img src="{{ '/assets/icons/youtrust.svg' | relative_url }}" alt="YOUTRUST" width="22" height="22"></a>
+            <a href="https://www.wantedly.com/users/62400896" title="Wantedly" target="_blank" rel="noopener"><img src="{{ '/assets/icons/wantedly.svg' | relative_url }}" alt="Wantedly" width="22" height="22"></a>
+            <a href="https://www.linkedin.com/in/yodev21" title="LinkedIn" target="_blank" rel="noopener"><img src="{{ '/assets/icons/linkedin.ico' | relative_url }}" alt="LinkedIn" width="22" height="22"></a>
+            <a href="https://lapras.com/public/CZQQR6J" title="LAPRAS" target="_blank" rel="noopener"><img src="{{ '/assets/icons/lapras.png' | relative_url }}" alt="LAPRAS" width="22" height="22"></a>
+            <a href="https://qiita.com/yokku21" title="Qiita" target="_blank" rel="noopener"><img src="{{ '/assets/icons/qiita.svg' | relative_url }}" alt="Qiita" width="22" height="22"></a>
+            <a href="https://twitter.com/yodev21" title="X" target="_blank" rel="noopener"><img src="{{ '/assets/icons/x.svg' | relative_url }}" alt="X" width="22" height="22"></a>
+          </nav>
+        </div>
+        <div class="site-footer__bottom">
+          <nav class="site-footer__nav" aria-label="{% if page.lang == 'en' %}Footer navigation{% else %}フッターナビゲーション{% endif %}">
+            <a href="{% if page.lang == 'en' %}{{ '/README.en.html' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{% if page.lang == 'en' %}Home{% else %}ホーム{% endif %}</a>
+            <a href="{{ '/projects/personal/' | relative_url }}">{% if page.lang == 'en' %}Personal project{% else %}個人開発{% endif %}</a>
+            <a href="{% if page.lang == 'en' %}{{ '/TECHNOLOGIES.en.html' | relative_url }}{% else %}{{ '/TECHNOLOGIES.html' | relative_url }}{% endif %}">{% if page.lang == 'en' %}Technologies{% else %}使用技術{% endif %}</a>
+            <a href="{% if page.lang == 'en' %}{{ '/PRIVACY.en.html' | relative_url }}{% else %}{{ '/PRIVACY.html' | relative_url }}{% endif %}">Privacy</a>
+          </nav>
+          <small>© {{ 'now' | date: '%Y' }} Yosuke Tanaka</small>
+        </div>
       </div>
     </footer>
     <script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>
