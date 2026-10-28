@@ -104,11 +104,15 @@ jobs:
           assert 'class="hero"' in home
           assert 'id="hero-title"' in home
           assert 'assets/images/profile.jpg' in home
-          assert home.count('YOUTRUSTで連絡する') == 1
           hero = home.split('class="hero"', 1)[1].split('</section>', 1)[0]
-          assert hero.count('class="profile-links"') == 1
-          assert hero.count('<a ') == 1
-          assert 'https://youtrust.jp/users/yodev21' in hero
+          assert hero.count('class="hero-social"') == 1
+          assert hero.count('<a ') == 4
+          for profile in ('https://github.com/yodev21', 'https://youtrust.jp/users/yodev21', 'https://www.wantedly.com/users/62400896', 'https://www.linkedin.com/in/yodev21'):
+              assert profile in hero
+          assert '"@type": "ProfilePage"' in home
+          assert '"@type": "Person"' in home
+          assert '"sameAs"' in home
+          assert 'property="og:image"' in home
           footer = home.split('class="site-footer"', 1)[1]
           assert 'class="site-footer__top"' in footer
           assert 'class="site-footer__bottom"' in footer
@@ -152,6 +156,8 @@ jobs:
               assert 'assets/images/architecture/' + diagram in architecture
           css = Path('_site/assets/css/style.css').read_text()
           assert '--accent:' in css
+          assert '.hero-social' in css
+          assert 'overflow-wrap:anywhere' in css.replace(' ', '')
           assert '@media (max-width: 520px)' in css
           assert 'prefers-reduced-motion' in css
           print('SEO, navigation, portfolio structure and responsive styles OK')

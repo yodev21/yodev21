@@ -30,7 +30,7 @@ Outside work, I have designed, built, and operated a novel and reading community
   <section>
     <span class="section-number">03</span>
     <h3>Increase team velocity</h3>
-    <p>I design AI-assisted workflows, analytics, observability, and delivery foundations that help designers and growing engineers contribute.</p>
+    <p>I combine AI-assisted implementation and review with analytics, observability, and delivery foundations so designers and growing engineers can contribute.</p>
   </section>
 </div>
 
@@ -65,7 +65,7 @@ Leading across requirement discovery, cloud and application architecture, produc
 
 **Personal Product · Go / Next.js / Google Cloud / Terraform**
 
-Redesigned and migrated a Rails service after four years in production, adding AI-assisted engineering, quality controls, analytics, and observability while keeping the product in operation.
+Redesigned a Rails service that reached roughly 14,000 monthly page views, using four years of operating experience to migrate it with AI-assisted engineering, quality controls, analytics, and observability while keeping it live.
 
 </div>
 
@@ -94,7 +94,7 @@ Redesigned and migrated a Rails service after four years in production, adding A
 
 I focus on making the reasoning behind technical decisions visible so teams can act independently. While remaining hands-on, I bring designers and growing engineers into the process and close the gaps between requirements, architecture, and operations.
 
-As AI accelerates implementation, tech leads need to decide what to build, where AI should contribute, and how quality will be assured. I work at that intersection of business, product, and engineering.
+I use AI for implementation and research, but I do not accept its output as-is. I take responsibility for checking whether it serves the goal and for validating the code, tests, security, and production operation.
 
 ## Credentials & Writing
 

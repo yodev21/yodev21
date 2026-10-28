@@ -16,7 +16,7 @@ social:
   links:
     - https://github.com/yodev21
     - https://www.linkedin.com/in/yodev21
-    - https://twitter.com/yodev21
+    - https://x.com/yodev21
 twitter:
   username: yodev21
   card: summary
@@ -36,6 +36,7 @@ defaults:
     values:
       title: Tech Lead
       search_title: 田中遥介 — プロフィール
+      image: /assets/images/profile.jpg
       permalink: /
       alternates:
         ja: /
@@ -45,6 +46,7 @@ defaults:
     values:
       title: Tech Lead
       search_title: Yosuke Tanaka — Profile
+      image: /assets/images/profile.jpg
       description: A tech lead turning ambiguous requirements into working systems across cloud architecture, application delivery, AI, and production operations.
       lang: en
       locale: en_US

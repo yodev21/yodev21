@@ -16,4 +16,8 @@ Cloudflare states that raw beacon data is retained for seven days before aggrega
 
 See [Cloudflare's Web Analytics data collection documentation](https://developers.cloudflare.com/web-analytics/data-metrics/data-origin-and-collection/){:target="_blank" rel="noopener"} and [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/){:target="_blank" rel="noopener"} for details.
 
+## Contact
+
+This site has no contact form. For questions about the content or analytics, contact me through [my YOUTRUST profile](https://youtrust.jp/users/yodev21){:target="_blank" rel="noopener"}.
+
 Last updated: October 29, 2026

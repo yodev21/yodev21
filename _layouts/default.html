@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="{{ page.lang | default: site.lang | escape }}">
+  {% assign is_home = false %}
+  {% if page.url == '/' or page.url == '/README.en.html' %}{% assign is_home = true %}{% endif %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +9,34 @@
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'; worker-src 'none'; upgrade-insecure-requests">
     {% seo %}
+    {% if is_home %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "url": "{{ page.url | absolute_url }}",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "{% if page.lang == 'en' %}Yosuke Tanaka{% else %}田中 遥介{% endif %}",
+        "alternateName": "yodev21",
+        "url": "{{ page.url | absolute_url }}",
+        "image": "{{ '/assets/images/profile.jpg' | absolute_url }}",
+        "jobTitle": "Tech Lead / Software Engineer",
+        "worksFor": { "@type": "Organization", "name": "LTS, Inc." },
+        "sameAs": [
+          "https://github.com/yodev21",
+          "https://youtrust.jp/users/yodev21",
+          "https://www.wantedly.com/users/62400896",
+          "https://www.linkedin.com/in/yodev21",
+          "https://lapras.com/public/CZQQR6J",
+          "https://qiita.com/yokku21",
+          "https://x.com/yodev21"
+        ],
+        "knowsAbout": ["Cloud architecture", "Software engineering", "AI product development", "Production operations"]
+      }
+    }
+    </script>
+    {% endif %}
     {% for alternate in page.alternates %}
     <link rel="alternate" hreflang="{{ alternate[0] }}" href="{{ alternate[1] | absolute_url }}">
     {% endfor %}
@@ -18,8 +48,6 @@
     <!-- End Cloudflare Web Analytics -->
     {% endif %}
   </head>
-  {% assign is_home = false %}
-  {% if page.url == '/' or page.url == '/README.en.html' %}{% assign is_home = true %}{% endif %}
   <body class="{% if is_home %}home-page{% else %}content-page{% endif %}">
     <a class="skip-link" href="#main-content">{% if page.lang == 'en' %}Skip to content{% else %}本文へ移動{% endif %}</a>
     <header class="site-header">
@@ -87,9 +115,12 @@
           <ul class="profile-meta" aria-label="Profile details">
             <li>LTS, Inc.</li><li>Tokyo, Japan</li>
           </ul>
-          <div class="profile-links">
-            <a href="https://youtrust.jp/users/yodev21" target="_blank" rel="noopener">Contact via YOUTRUST <span aria-hidden="true">↗</span></a>
-          </div>
+          <nav class="hero-social" aria-label="Primary external profiles">
+            <a href="https://github.com/yodev21" aria-label="GitHub (opens in a new tab)" title="GitHub" target="_blank" rel="noopener"><img src="{{ '/assets/icons/github.svg' | relative_url }}" alt="" width="21" height="21"></a>
+            <a href="https://youtrust.jp/users/yodev21" aria-label="YOUTRUST — contact and profile (opens in a new tab)" title="YOUTRUST — contact and profile" target="_blank" rel="noopener"><img src="{{ '/assets/icons/youtrust.svg' | relative_url }}" alt="" width="21" height="21"></a>
+            <a href="https://www.wantedly.com/users/62400896" aria-label="Wantedly (opens in a new tab)" title="Wantedly" target="_blank" rel="noopener"><img src="{{ '/assets/icons/wantedly.svg' | relative_url }}" alt="" width="21" height="21"></a>
+            <a href="https://www.linkedin.com/in/yodev21" aria-label="LinkedIn (opens in a new tab)" title="LinkedIn" target="_blank" rel="noopener"><img src="{{ '/assets/icons/linkedin.ico' | relative_url }}" alt="" width="21" height="21"></a>
+          </nav>
           {% else %}
           <p class="hero__role">テックリード / ソフトウェアエンジニア</p>
           <h1 id="hero-title">田中 遥介</h1>
@@ -98,9 +129,12 @@
           <ul class="profile-meta" aria-label="プロフィール情報">
             <li>株式会社エル・ティー・エス</li><li>東京</li>
           </ul>
-          <div class="profile-links">
-            <a href="https://youtrust.jp/users/yodev21" target="_blank" rel="noopener">YOUTRUSTで連絡する <span aria-hidden="true">↗</span></a>
-          </div>
+          <nav class="hero-social" aria-label="主な外部プロフィール">
+            <a href="https://github.com/yodev21" aria-label="GitHub（新しいタブで開く）" title="GitHub" target="_blank" rel="noopener"><img src="{{ '/assets/icons/github.svg' | relative_url }}" alt="" width="21" height="21"></a>
+            <a href="https://youtrust.jp/users/yodev21" aria-label="YOUTRUST・連絡先（新しいタブで開く）" title="YOUTRUST・連絡先" target="_blank" rel="noopener"><img src="{{ '/assets/icons/youtrust.svg' | relative_url }}" alt="" width="21" height="21"></a>
+            <a href="https://www.wantedly.com/users/62400896" aria-label="Wantedly（新しいタブで開く）" title="Wantedly" target="_blank" rel="noopener"><img src="{{ '/assets/icons/wantedly.svg' | relative_url }}" alt="" width="21" height="21"></a>
+            <a href="https://www.linkedin.com/in/yodev21" aria-label="LinkedIn（新しいタブで開く）" title="LinkedIn" target="_blank" rel="noopener"><img src="{{ '/assets/icons/linkedin.ico' | relative_url }}" alt="" width="21" height="21"></a>
+          </nav>
           {% endif %}
         </div>
         <figure class="hero__photo">
@@ -137,13 +171,13 @@
             <p class="site-footer__statement">{% if page.lang == 'en' %}From shaping the idea to keeping it running.{% else %}考えるところから、動かし続けるところまで。{% endif %}</p>
           </div>
           <nav class="site-footer__social" aria-label="{% if page.lang == 'en' %}External profiles{% else %}外部プロフィール{% endif %}">
-            <a href="https://github.com/yodev21" title="GitHub" target="_blank" rel="noopener"><img src="{{ '/assets/icons/github.svg' | relative_url }}" alt="GitHub" width="22" height="22"></a>
-            <a href="https://youtrust.jp/users/yodev21" title="YOUTRUST" target="_blank" rel="noopener"><img src="{{ '/assets/icons/youtrust.svg' | relative_url }}" alt="YOUTRUST" width="22" height="22"></a>
-            <a href="https://www.wantedly.com/users/62400896" title="Wantedly" target="_blank" rel="noopener"><img src="{{ '/assets/icons/wantedly.svg' | relative_url }}" alt="Wantedly" width="22" height="22"></a>
-            <a href="https://www.linkedin.com/in/yodev21" title="LinkedIn" target="_blank" rel="noopener"><img src="{{ '/assets/icons/linkedin.ico' | relative_url }}" alt="LinkedIn" width="22" height="22"></a>
-            <a href="https://lapras.com/public/CZQQR6J" title="LAPRAS" target="_blank" rel="noopener"><img src="{{ '/assets/icons/lapras.png' | relative_url }}" alt="LAPRAS" width="22" height="22"></a>
-            <a href="https://qiita.com/yokku21" title="Qiita" target="_blank" rel="noopener"><img src="{{ '/assets/icons/qiita.svg' | relative_url }}" alt="Qiita" width="22" height="22"></a>
-            <a href="https://twitter.com/yodev21" title="X" target="_blank" rel="noopener"><img src="{{ '/assets/icons/x.svg' | relative_url }}" alt="X" width="22" height="22"></a>
+            <a href="https://github.com/yodev21" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener"><img src="{{ '/assets/icons/github.svg' | relative_url }}" alt="" width="22" height="22"></a>
+            <a href="https://youtrust.jp/users/yodev21" aria-label="YOUTRUST" title="YOUTRUST" target="_blank" rel="noopener"><img src="{{ '/assets/icons/youtrust.svg' | relative_url }}" alt="" width="22" height="22"></a>
+            <a href="https://www.wantedly.com/users/62400896" aria-label="Wantedly" title="Wantedly" target="_blank" rel="noopener"><img src="{{ '/assets/icons/wantedly.svg' | relative_url }}" alt="" width="22" height="22"></a>
+            <a href="https://www.linkedin.com/in/yodev21" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener"><img src="{{ '/assets/icons/linkedin.ico' | relative_url }}" alt="" width="22" height="22"></a>
+            <a href="https://lapras.com/public/CZQQR6J" aria-label="LAPRAS" title="LAPRAS" target="_blank" rel="noopener"><img src="{{ '/assets/icons/lapras.png' | relative_url }}" alt="" width="22" height="22"></a>
+            <a href="https://qiita.com/yokku21" aria-label="Qiita" title="Qiita" target="_blank" rel="noopener"><img src="{{ '/assets/icons/qiita.svg' | relative_url }}" alt="" width="22" height="22"></a>
+            <a href="https://x.com/yodev21" aria-label="X" title="X" target="_blank" rel="noopener"><img src="{{ '/assets/icons/x.svg' | relative_url }}" alt="" width="22" height="22"></a>
           </nav>
         </div>
         <div class="site-footer__bottom">

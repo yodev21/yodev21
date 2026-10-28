@@ -16,4 +16,8 @@ Cloudflareの説明では、未集計のビーコンデータは7日間保持さ
 
 詳しい収集項目と取り扱いは、[Cloudflare Web Analyticsのデータ収集に関する説明](https://developers.cloudflare.com/web-analytics/data-metrics/data-origin-and-collection/){:target="_blank" rel="noopener"}および[Cloudflareのプライバシーポリシー](https://www.cloudflare.com/privacypolicy/){:target="_blank" rel="noopener"}をご覧ください。
 
+## お問い合わせ
+
+このサイトには問い合わせフォームを設置していません。掲載内容やアクセス解析についての連絡は、[YOUTRUSTのプロフィール](https://youtrust.jp/users/yodev21){:target="_blank" rel="noopener"}からお願いします。
+
 最終更新: 2026年10月29日
