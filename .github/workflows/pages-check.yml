@@ -12,14 +12,20 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
       - name: Check search script syntax
         run: node --check assets/js/search.js
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
+        uses: actions/jekyll-build-pages@44a6e6beabd48582f863aeeb6cb2151cc1716697 # v1
         with:
           source: ./
           destination: ./_site
+      - name: Audit generated site security and privacy
+        run: python3 scripts/audit_site.py _site
+      - name: Audit CI dependency pinning
+        run: python3 scripts/audit_ci.py
       - name: Check generated SEO metadata
         run: |
           python3 - <<'PY'
@@ -70,8 +76,8 @@ jobs:
           assert Path('_site/assets/js/search.js').exists()
           for icon in ('wantedly.svg', 'youtrust.svg', 'linkedin.ico', 'lapras.png', 'qiita.svg', 'x.svg'):
               assert Path('_site/assets/icons', icon).exists(), icon
-          for image in ('lts-careers.jpg', 'lts-clover.jpg', 'good-companies.jpg', 'editch-note.jpg'):
-              assert Path('_site/assets/images/articles', image).exists(), image
+          assert Path('_site/assets/icons/favicon.svg').exists()
+          assert Path('_site/assets/images/projects/kikusyo-card.webp').exists()
           search_index = Path('_site/search.json').read_text()
           assert '田中遥介 — プロフィール' in search_index
           assert 'Technologies Used' in search_index
@@ -112,6 +118,8 @@ jobs:
           assert 'assets/icons/wantedly.svg' in home
           assert 'class="article-grid"' in home
           assert home.count('class="article-card"') == 4
+          assert home.count('class="article-card__media ') == 4
+          assert 'assets/images/articles/' not in home
           for rendered_home in (home, home_en):
               experience = rendered_home.split('class="experience-details"', 1)[1].split('</details>', 1)[0]
               assert '<table>' in experience
@@ -120,6 +128,15 @@ jobs:
               assert 'Kubernetes' not in current_cloud
           assert 'class="capability-grid"' in home
           assert 'id="selected-work"' in home
+          assert 'class="selected-work-list"' in home
+          personal = Path('_site/projects/personal/index.html').read_text()
+          assert 'class="stack-summary"' in personal
+          assert 'class="product-card"' in personal
+          assert 'https://kikusyo.com/' in personal
+          assert '運営中' in personal
+          assert '<dt>クラウド</dt>' in personal
+          assert '<h1' in Path('_site/projects/personal/01_小説朗読投稿サービス.html').read_text()
+          assert '<h1' in Path('_site/projects/personal/02_小説朗読投稿サービス_移行.html').read_text()
           architecture = Path('_site/projects/personal/02_小説朗読投稿サービス_移行.html').read_text()
           assert architecture.count('class="architecture-diagram"') == 3
           assert 'language-mermaid' not in architecture

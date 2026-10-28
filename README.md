@@ -47,6 +47,8 @@
 
 ## 主な実績 {#selected-work}
 
+<div class="selected-work-list" markdown="1">
+
 ### AIエージェント構築PoC
 
 **Tech Lead · Python / Azure**
@@ -63,7 +65,9 @@ AIエージェントの設計と検証をリード。技術検証だけで終わ
 
 **Personal Product · Go / Next.js / Google Cloud / Terraform**
 
-4年間運用したRailsサービスを再設計。AIを活用した開発・品質管理と、分析・可観測性を含む運用基盤を構築しました。
+4年間運用したRailsサービスを再設計。AIを活用した開発・品質管理と、分析・可観測性を含む運用基盤へ移行し、現在もサービスを運営しています。
+
+</div>
 
 [個人開発の詳細を見る →](projects/personal/){: .text-link }
 
@@ -104,20 +108,20 @@ AIが実装を加速する今、テックリードには「何をつくるか」
 ### インタビュー・記事
 
 <div class="article-grid">
-  <a class="article-card" href="https://careers.lt-s.jp/students/interview/newgrad-bp-001002-1-1-0-0">
-    <img src="assets/images/articles/lts-careers.jpg" alt="" width="720" height="438" loading="lazy">
+  <a class="article-card" href="https://careers.lt-s.jp/students/interview/newgrad-bp-001002-1-1-0-0" target="_blank" rel="noopener">
+    <span class="article-card__media article-card__media--lts" aria-hidden="true"><span>LTS</span></span>
     <span class="article-card__body"><small>careers.lt-s.jp</small><strong class="article-card__title">「遠くにいくなら皆で」チーム志向で進むエンジニアの道</strong><span>学び続ける姿勢と、メンバーの成長を支えるチームづくりについて話しました。</span></span>
   </a>
-  <a class="article-card" href="https://clover.lt-s.jp/9295">
-    <img src="assets/images/articles/lts-clover.jpg" alt="" width="720" height="405" loading="lazy">
+  <a class="article-card" href="https://clover.lt-s.jp/9295" target="_blank" rel="noopener">
+    <span class="article-card__media article-card__media--clover" aria-hidden="true"><span>CLOVER</span></span>
     <span class="article-card__body"><small>clover.lt-s.jp</small><strong class="article-card__title">上流から実装・運用まで LTSのAWS構築・アプリ開発</strong><span>AWS案件における上流工程から設計・実装・運用までの取り組みを紹介しています。</span></span>
   </a>
-  <a class="article-card" href="https://good-companies.jp/2024/07/12/lt-s/">
-    <img src="assets/images/articles/good-companies.jpg" alt="" width="720" height="433" loading="lazy">
+  <a class="article-card" href="https://good-companies.jp/2024/07/12/lt-s/" target="_blank" rel="noopener">
+    <span class="article-card__media article-card__media--good" aria-hidden="true"><span>INTERVIEW</span></span>
     <span class="article-card__body"><small>good-companies.jp</small><strong class="article-card__title">働く豊かさや楽しさを仲間と分かち合える環境</strong><span>LTSでの働き方、キャリア、仲間と成長する環境についてのインタビューです。</span></span>
   </a>
-  <a class="article-card" href="https://note.com/d_biz_share/n/n07cc2eac3b22">
-    <img src="assets/images/articles/editch-note.jpg" alt="" width="720" height="377" loading="lazy">
+  <a class="article-card" href="https://note.com/d_biz_share/n/n07cc2eac3b22" target="_blank" rel="noopener">
+    <span class="article-card__media article-card__media--note" aria-hidden="true"><span>note</span></span>
     <span class="article-card__body"><small>note.com</small><strong class="article-card__title">editchインタビュー #1</strong><span>ポートフォリオコンテストに参加した当時の経験と、その前後の変化を振り返っています。</span></span>
   </a>
 </div>
@@ -125,10 +129,10 @@ AIが実装を加速する今、テックリードには「何をつくるか」
 ## リンク
 
 <div class="social-links">
-  <a href="https://www.wantedly.com/users/62400896" title="Wantedly"><img src="assets/icons/wantedly.svg" alt="Wantedly" width="24" height="24"></a>
-  <a href="https://youtrust.jp/users/yodev21" title="YOUTRUST"><img src="assets/icons/youtrust.svg" alt="YOUTRUST" width="24" height="24"></a>
-  <a href="https://www.linkedin.com/in/yodev21" title="LinkedIn"><img src="assets/icons/linkedin.ico" alt="LinkedIn" width="24" height="24"></a>
-  <a href="https://lapras.com/public/CZQQR6J" title="LAPRAS"><img src="assets/icons/lapras.png" alt="LAPRAS" width="24" height="24"></a>
-  <a href="https://qiita.com/yokku21" title="Qiita"><img src="assets/icons/qiita.svg" alt="Qiita" width="24" height="24"></a>
-  <a href="https://twitter.com/yodev21" title="X"><img src="assets/icons/x.svg" alt="X" width="24" height="24"></a>
+  <a href="https://www.wantedly.com/users/62400896" title="Wantedly" target="_blank" rel="noopener"><img src="assets/icons/wantedly.svg" alt="Wantedly" width="24" height="24"></a>
+  <a href="https://youtrust.jp/users/yodev21" title="YOUTRUST" target="_blank" rel="noopener"><img src="assets/icons/youtrust.svg" alt="YOUTRUST" width="24" height="24"></a>
+  <a href="https://www.linkedin.com/in/yodev21" title="LinkedIn" target="_blank" rel="noopener"><img src="assets/icons/linkedin.ico" alt="LinkedIn" width="24" height="24"></a>
+  <a href="https://lapras.com/public/CZQQR6J" title="LAPRAS" target="_blank" rel="noopener"><img src="assets/icons/lapras.png" alt="LAPRAS" width="24" height="24"></a>
+  <a href="https://qiita.com/yokku21" title="Qiita" target="_blank" rel="noopener"><img src="assets/icons/qiita.svg" alt="Qiita" width="24" height="24"></a>
+  <a href="https://twitter.com/yodev21" title="X" target="_blank" rel="noopener"><img src="assets/icons/x.svg" alt="X" width="24" height="24"></a>
 </div>

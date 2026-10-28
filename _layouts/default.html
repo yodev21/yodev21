@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f7f8f6">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'; worker-src 'none'; upgrade-insecure-requests">
     {% seo %}
     {% for alternate in page.alternates %}
     <link rel="alternate" hreflang="{{ alternate[0] }}" href="{{ alternate[1] | absolute_url }}">
     {% endfor %}
+    <link rel="icon" href="{{ '/assets/icons/favicon.svg' | relative_url }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     {% if site.cloudflare_web_analytics_site_id %}
     <!-- Cloudflare Web Analytics -->
@@ -21,7 +24,7 @@
     <a class="skip-link" href="#main-content">{% if page.lang == 'en' %}Skip to content{% else %}本文へ移動{% endif %}</a>
     <header class="site-header">
       <div class="site-header__inner">
-        <a class="brand" href="{{ '/' | relative_url }}">
+        <a class="brand" href="{% if page.lang == 'en' %}{{ '/README.en.html' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
           {% if page.lang == 'en' %}
           <strong>Yosuke Tanaka</strong><span>Software Engineer</span>
           {% else %}
@@ -85,7 +88,7 @@
             <li>LTS, Inc.</li><li>Tokyo, Japan</li>
           </ul>
           <div class="profile-links">
-            <a href="https://youtrust.jp/users/yodev21">Contact via YOUTRUST <span aria-hidden="true">↗</span></a>
+            <a href="https://youtrust.jp/users/yodev21" target="_blank" rel="noopener">Contact via YOUTRUST <span aria-hidden="true">↗</span></a>
           </div>
           {% else %}
           <p class="hero__role">テックリード / ソフトウェアエンジニア</p>
@@ -96,7 +99,7 @@
             <li>株式会社エル・ティー・エス</li><li>東京</li>
           </ul>
           <div class="profile-links">
-            <a href="https://youtrust.jp/users/yodev21">YOUTRUSTで連絡する <span aria-hidden="true">↗</span></a>
+            <a href="https://youtrust.jp/users/yodev21" target="_blank" rel="noopener">YOUTRUSTで連絡する <span aria-hidden="true">↗</span></a>
           </div>
           {% endif %}
         </div>
@@ -129,7 +132,7 @@
       <div class="site-footer__inner">
         <div><strong>{% if page.lang == 'en' %}Yosuke Tanaka{% else %}田中 遥介{% endif %}</strong><p>Tech Lead / Software Engineer</p></div>
         <nav aria-label="{% if page.lang == 'en' %}Footer navigation{% else %}フッターナビゲーション{% endif %}">
-          <a href="{{ '/PRIVACY.html' | relative_url }}">Privacy</a>
+          <a href="{% if page.lang == 'en' %}{{ '/PRIVACY.en.html' | relative_url }}{% else %}{{ '/PRIVACY.html' | relative_url }}{% endif %}">Privacy</a>
         </nav>
         <small>© {{ 'now' | date: '%Y' }} Yosuke Tanaka</small>
       </div>

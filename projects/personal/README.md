@@ -1,18 +1,29 @@
-# Personal Projects
+# 個人開発
 
-## Overview
+<a class="product-card" href="https://kikusyo.com/" target="_blank" rel="noopener">
+  <img src="../../assets/images/projects/kikusyo-card.webp" alt="聴くっしょ！ 小説と朗読をつなぐ朗読許可プラットフォーム" width="960" height="502">
+  <span class="product-card__body">
+    <span class="product-card__meta"><strong>聴くっしょ！</strong><small>運営中</small></span>
+    <span>作家が投稿した小説を、声優・ナレーターが許可を得て朗読できるプラットフォームです。2022年の公開から運営を続け、2026年4月にシステムを全面移行しました。</span>
+    <span class="product-card__link">サービスを見る <span aria-hidden="true">↗</span></span>
+  </span>
+</a>
+
+## プロジェクト一覧
 
 | # | 案件名 | 期間 | 役割 | 主要技術 |
 |---|--------|------|------|----------|
-| 02 | [小説・朗読投稿サービス リアーキテクチャ](02_小説朗読投稿サービス_移行.md) | 2026年3月〜2026年4月 | 設計 / 開発 / インフラ / AI駆動開発 | Go, Next.js, Google Cloud, Terraform |
-| 01 | [小説・朗読投稿サービス](01_小説朗読投稿サービス.md) | 2022年4月〜2026年3月 | 企画 / 設計 / 開発 / 運用 | Ruby on Rails, AWS Lightsail, MySQL |
+| 02 | [現行システムへのリアーキテクチャ](02_小説朗読投稿サービス_移行.md) | 2026年3月〜2026年4月 | 設計 / 開発 / インフラ / AI駆動開発 | Go, Next.js, Google Cloud, Terraform |
+| 01 | [旧システムの開発・運用](01_小説朗読投稿サービス.md) | 2022年4月〜2026年3月 | 企画 / 設計 / 開発 / 運用 | Ruby on Rails, AWS Lightsail, MySQL |
 
-## Tech Stack Summary
+## 使用技術の概要
 
-**Cloud**: Google Cloud (Cloud Run, Cloud SQL, Cloud Storage, BigQuery, Vertex AI), AWS Lightsail
-**Languages**: Go, Ruby, TypeScript
-**Frameworks**: Gin, Next.js, Rails
-**IaC / CI/CD**: Terraform, GitHub Actions
-**Database**: PostgreSQL, MySQL
-**Observability**: OpenTelemetry, Cloud Logging, Cloud Trace, BigQuery
-**Other**: PWA, Firebase Cloud Messaging, Stripe, Amazon SES
+<dl class="stack-summary">
+  <div><dt>クラウド</dt><dd>Google Cloud（Cloud Run / Cloud SQL / Cloud Storage / BigQuery / Vertex AI）、AWS Lightsail</dd></div>
+  <div><dt>言語</dt><dd>Go / Ruby / TypeScript</dd></div>
+  <div><dt>フレームワーク</dt><dd>Gin / Next.js / Rails</dd></div>
+  <div><dt>IaC・CI/CD</dt><dd>Terraform / GitHub Actions</dd></div>
+  <div><dt>データベース</dt><dd>PostgreSQL / MySQL</dd></div>
+  <div><dt>可観測性・分析</dt><dd>OpenTelemetry / Cloud Logging / Cloud Trace / BigQuery</dd></div>
+  <div><dt>その他</dt><dd>PWA / Firebase Cloud Messaging / Stripe / Amazon SES</dd></div>
+</dl>
