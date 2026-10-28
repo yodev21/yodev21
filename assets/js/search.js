@@ -29,7 +29,7 @@
     const sections = [];
     let current = { title: page.title, url: page.url, text: '' };
 
-    for (const node of main.querySelectorAll('h1, h2, h3, p, li, td, th, summary')) {
+    for (const node of main.querySelectorAll('h1, h2, h3, p, li, td, th, summary, .article-card__title')) {
       if (/^H[1-3]$/.test(node.tagName)) {
         if (current.text.trim()) sections.push(current);
         current = {

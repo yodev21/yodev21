@@ -217,6 +217,15 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .social-links img { width: 24px; height: 24px; display: block; object-fit: contain; filter: grayscale(1); opacity: .82; }
 .social-links a:hover img { filter: none; opacity: 1; }
 
+.article-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.article-card { min-width: 0; overflow: hidden; display: flex; flex-direction: column; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 10px; text-decoration: none; transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease; }
+.article-card:hover { color: var(--ink); border-color: #9bbab6; box-shadow: 0 12px 28px rgba(38, 64, 61, .09); transform: translateY(-2px); }
+.article-card > img { width: 100%; aspect-ratio: 16 / 9; display: block; object-fit: cover; background: #edf1ef; border-bottom: 1px solid var(--line); }
+.article-card__body { min-height: 190px; padding: 19px 20px 21px; display: flex; flex-direction: column; }
+.article-card small { margin-bottom: 8px; color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: .04em; }
+.article-card__title { color: var(--ink); font-size: 16px; line-height: 1.65; }
+.article-card__body > span { margin-top: 10px; color: #59666c; font-size: 13px; line-height: 1.75; }
+
 .site-footer { background: #edf1ef; border-top: 1px solid var(--line); }
 .site-footer__inner { width: min(calc(100% - 40px), var(--max)); min-height: 180px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 24px; }
 .site-footer strong { font-size: 16px; }
@@ -236,6 +245,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .hero h1 { font-size: clamp(42px, 12vw, 60px); }
   .hero__lead { font-size: 16px; }
   .capability-grid { grid-template-columns: 1fr; }
+  .article-grid { grid-template-columns: 1fr; }
+  .article-card__body { min-height: 0; }
   .capability-grid section { min-height: 0; }
   .page-content { padding: 58px 0 86px; }
   .page-content h2 { margin-top: 72px; }
@@ -268,6 +279,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .social-links a { transition: none; }
+  .article-card { transition: none; }
 }
 
 @media print {

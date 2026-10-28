@@ -70,6 +70,8 @@ jobs:
           assert Path('_site/assets/js/search.js').exists()
           for icon in ('wantedly.svg', 'youtrust.svg', 'linkedin.ico', 'lapras.png', 'qiita.svg', 'x.svg'):
               assert Path('_site/assets/icons', icon).exists(), icon
+          for image in ('lts-careers.jpg', 'lts-clover.jpg', 'good-companies.jpg', 'editch-note.jpg'):
+              assert Path('_site/assets/images/articles', image).exists(), image
           search_index = Path('_site/search.json').read_text()
           assert '田中遥介 — プロフィール' in search_index
           assert 'Technologies Used' in search_index
@@ -84,6 +86,8 @@ jobs:
           assert 'data-search-index="/yodev21/search.json"' in home
           assert 'class="social-links"' in home
           assert 'assets/icons/wantedly.svg' in home
+          assert 'class="article-grid"' in home
+          assert home.count('class="article-card"') == 4
           for rendered_home in (home, home_en):
               experience = rendered_home.split('class="experience-details"', 1)[1].split('</details>', 1)[0]
               assert '<table>' in experience
