@@ -125,14 +125,3 @@ As AI accelerates implementation, tech leads need to decide what to build, where
     <span class="article-card__body"><small>note.com</small><strong class="article-card__title">editch interview #1</strong><span>Looking back on entering a portfolio competition and what changed afterward.</span></span>
   </a>
 </div>
-
-## Connect
-
-<div class="social-links">
-  <a href="https://www.wantedly.com/users/62400896" title="Wantedly" target="_blank" rel="noopener"><img src="assets/icons/wantedly.svg" alt="Wantedly" width="24" height="24"></a>
-  <a href="https://youtrust.jp/users/yodev21" title="YOUTRUST" target="_blank" rel="noopener"><img src="assets/icons/youtrust.svg" alt="YOUTRUST" width="24" height="24"></a>
-  <a href="https://www.linkedin.com/in/yodev21" title="LinkedIn" target="_blank" rel="noopener"><img src="assets/icons/linkedin.ico" alt="LinkedIn" width="24" height="24"></a>
-  <a href="https://lapras.com/public/CZQQR6J" title="LAPRAS" target="_blank" rel="noopener"><img src="assets/icons/lapras.png" alt="LAPRAS" width="24" height="24"></a>
-  <a href="https://qiita.com/yokku21" title="Qiita" target="_blank" rel="noopener"><img src="assets/icons/qiita.svg" alt="Qiita" width="24" height="24"></a>
-  <a href="https://twitter.com/yodev21" title="X" target="_blank" rel="noopener"><img src="assets/icons/x.svg" alt="X" width="24" height="24"></a>
-</div>

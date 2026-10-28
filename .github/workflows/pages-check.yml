@@ -74,7 +74,7 @@ jobs:
           assert Path('_site/sitemap.xml').exists()
           assert Path('_site/search.json').exists()
           assert Path('_site/assets/js/search.js').exists()
-          for icon in ('wantedly.svg', 'youtrust.svg', 'linkedin.ico', 'lapras.png', 'qiita.svg', 'x.svg'):
+          for icon in ('github.svg', 'wantedly.svg', 'youtrust.svg', 'linkedin.ico', 'lapras.png', 'qiita.svg', 'x.svg'):
               assert Path('_site/assets/icons', icon).exists(), icon
           assert Path('_site/assets/icons/favicon.svg').exists()
           assert Path('_site/assets/images/projects/kikusyo-card.webp').exists()
@@ -110,12 +110,17 @@ jobs:
           assert hero.count('<a ') == 1
           assert 'https://youtrust.jp/users/yodev21' in hero
           footer = home.split('class="site-footer"', 1)[1]
-          assert 'https://github.com/yodev21' not in footer
-          assert 'https://www.linkedin.com/in/yodev21' not in footer
+          assert 'class="site-footer__top"' in footer
+          assert 'class="site-footer__bottom"' in footer
+          for profile in ('https://github.com/yodev21', 'https://youtrust.jp/users/yodev21', 'https://www.wantedly.com/users/62400896', 'https://www.linkedin.com/in/yodev21'):
+              assert profile in footer
+          assert '/yodev21/projects/personal/' in footer
           assert 'data-search-dialog' in home
           assert 'data-search-index="/yodev21/search.json"' in home
-          assert 'class="social-links"' in home
-          assert 'assets/icons/wantedly.svg' in home
+          assert '<h2 id="リンク">' not in home
+          assert 'class="site-footer__social"' in footer
+          assert 'assets/icons/github.svg' in footer
+          assert 'assets/icons/wantedly.svg' in footer
           assert 'class="article-grid"' in home
           assert home.count('class="article-card"') == 4
           assert home.count('class="article-card__media"') == 4
