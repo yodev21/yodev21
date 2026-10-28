@@ -64,7 +64,7 @@
         <label class="site-search__field">
           <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
           <span class="visually-hidden">{% if page.lang == 'en' %}Search terms{% else %}検索語{% endif %}</span>
-          <input type="search" data-search-input autocomplete="off" spellcheck="false" placeholder="{% if page.lang == 'en' %}Try “Kubernetes” or “AI”{% else %}「Kubernetes」「AI」など{% endif %}">
+          <input type="search" data-search-input autocomplete="off" spellcheck="false" placeholder="{% if page.lang == 'en' %}Try “AI” or “cloud architecture”{% else %}「AI」「クラウド設計」など{% endif %}">
         </label>
         <p class="site-search__status" data-search-status role="status" aria-live="polite">{% if page.lang == 'en' %}Enter a keyword to search profiles, work, and technologies.{% else %}プロフィール、実績、使用技術から検索できます。{% endif %}</p>
         <ol class="site-search__results" data-search-results></ol>
