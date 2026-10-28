@@ -133,6 +133,7 @@ jobs:
           for rendered_home in (home, home_en):
               assert rendered_home.count('id="contact"') == 1
               assert 'class="site-footer__contact"' in rendered_home
+              assert 'class="site-footer__email-icon"' in rendered_home
               assert 'mailto:yodev21.business@gmail.com' in rendered_home
           assert 'href="/yodev21/#contact"' not in home
           assert 'href="/yodev21/README.en.html#contact"' not in home_en

@@ -65,7 +65,7 @@ Leading across requirement discovery, cloud and application architecture, produc
 
 **Personal Product · Go / Next.js / Google Cloud / Terraform**
 
-Redesigned a Rails service that reached roughly 14,000 monthly page views, using four years of operating experience to migrate it with AI-assisted engineering, quality controls, analytics, and observability while keeping it live.
+Redesigned a Rails service that temporarily recorded roughly 14,000 page views in one month, using four years of operating experience to migrate it with AI-assisted engineering, quality controls, analytics, and observability while keeping it live.
 
 </div>
 
