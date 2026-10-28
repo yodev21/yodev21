@@ -6,6 +6,7 @@ baseurl: /yodev21
 lang: ja
 locale: ja_JP
 cloudflare_web_analytics_site_id: 282bea37e8344754aae7cfeaa2033596
+contact_email: yodev21.business@gmail.com
 theme: jekyll-theme-primer
 plugins:
   - jekyll-seo-tag

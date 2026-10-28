@@ -125,6 +125,16 @@ jobs:
           assert 'class="site-footer__social"' in footer
           assert 'assets/icons/github.svg' in footer
           assert 'assets/icons/wantedly.svg' in footer
+          for rendered_home in (home, home_en):
+              assert rendered_home.count('class="contact-section"') == 1
+              assert 'id="contact"' in rendered_home
+              assert 'mailto:yodev21.business@gmail.com' in rendered_home
+          assert 'href="/yodev21/#contact"' in home
+          assert 'href="/yodev21/README.en.html#contact"' in home_en
+          assert '何かありましたら、以下の連絡先からお気軽にどうぞ。' in home
+          assert 'メールは週に1回程度の確認になることがあります。' in home
+          assert 'If you’d like to get in touch' in home_en
+          assert 'I usually check email about once a week' in home_en
           assert 'class="article-grid"' in home
           assert home.count('class="article-card"') == 4
           assert home.count('class="article-card__media"') == 4
@@ -157,6 +167,7 @@ jobs:
           css = Path('_site/assets/css/style.css').read_text()
           assert '--accent:' in css
           assert '.hero-social' in css
+          assert '.contact-section' in css
           assert 'overflow-wrap:anywhere' in css.replace(' ', '')
           assert '@media (max-width: 520px)' in css
           assert 'prefers-reduced-motion' in css

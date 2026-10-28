@@ -18,6 +18,6 @@ See [Cloudflare's Web Analytics data collection documentation](https://developer
 
 ## Contact
 
-This site has no contact form. For questions about the content or analytics, contact me through [my YOUTRUST profile](https://youtrust.jp/users/yodev21){:target="_blank" rel="noopener"}.
+This site has no contact form. For questions about the content or analytics, use one of the contact options on the home page.
 
 Last updated: October 29, 2026
