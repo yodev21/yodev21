@@ -39,7 +39,7 @@ Outside work, I have designed, built, and operated a novel and reading community
 | Area | Technologies & themes |
 |---|---|
 | **AI × Product** | Vertex AI / Amazon Bedrock / Azure OpenAI / AI agents |
-| **Cloud Native** | Google Cloud / AWS / Azure / Cloudflare / Kubernetes |
+| **Cloud Native** | Google Cloud / AWS / Azure / Cloudflare |
 | **Application** | Go / Python / TypeScript / Next.js |
 | **Platform & Delivery** | Terraform / Docker / GitHub Actions / Observability |
 
