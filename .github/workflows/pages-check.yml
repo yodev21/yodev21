@@ -134,8 +134,8 @@ jobs:
               assert rendered_home.count('id="contact"') == 1
               assert 'class="site-footer__contact"' in rendered_home
               assert 'mailto:yodev21.business@gmail.com' in rendered_home
-          assert 'href="/yodev21/#contact"' in home
-          assert 'href="/yodev21/README.en.html#contact"' in home_en
+          assert 'href="/yodev21/#contact"' not in home
+          assert 'href="/yodev21/README.en.html#contact"' not in home_en
           assert '何かありましたら、以下の連絡先からお気軽にどうぞ。' in home
           assert 'メールは週に1回程度の確認になることがあります。' in home
           assert 'If you’d like to get in touch' in home_en
