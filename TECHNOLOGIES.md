@@ -1,6 +1,6 @@
 # 使用技術
 
-[プロフィールに戻る](README.md) | [English](TECHNOLOGIES.en.md)
+[プロフィールに戻る](README.md) · [English](TECHNOLOGIES.en.md)
 
 業務・個人開発で使用した技術をまとめています。現在の主要技術は[プロフィール](README.md#current-technologies)にまとめています。
 

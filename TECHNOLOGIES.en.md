@@ -1,6 +1,6 @@
 # Technologies Used
 
-[Back to profile](README.en.md) | [日本語](TECHNOLOGIES.md)
+[Back to profile](README.en.md) · [日本語](TECHNOLOGIES.md)
 
 Technologies used across professional and personal projects. See the [profile](README.en.md#current-technologies) for core technologies.
 

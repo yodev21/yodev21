@@ -172,8 +172,12 @@ jobs:
           assert 'class="capability-grid"' in home
           assert 'id="current-technologies"' in home
           assert 'id="current-technologies"' in home_en
-          assert 'href="/yodev21/#current-technologies"' in Path('_site/TECHNOLOGIES.html').read_text()
-          assert 'href="/yodev21/README.en.html#current-technologies"' in Path('_site/TECHNOLOGIES.en.html').read_text()
+          technologies = Path('_site/TECHNOLOGIES.html').read_text()
+          technologies_en = Path('_site/TECHNOLOGIES.en.html').read_text()
+          assert 'href="/yodev21/#current-technologies"' in technologies
+          assert 'href="/yodev21/README.en.html#current-technologies"' in technologies_en
+          assert technologies.count('<table>') == 1
+          assert technologies_en.count('<table>') == 1
           assert 'id="selected-work"' in home
           assert 'class="selected-work-list"' in home
           personal = Path('_site/projects/personal/index.html').read_text()
