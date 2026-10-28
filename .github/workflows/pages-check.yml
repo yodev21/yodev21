@@ -92,6 +92,8 @@ jobs:
               experience = rendered_home.split('class="experience-details"', 1)[1].split('</details>', 1)[0]
               assert '<table>' in experience
               assert '| # |' not in experience
+              current_cloud = rendered_home.split('<strong>Cloud Native</strong>', 1)[1].split('</tr>', 1)[0]
+              assert 'Kubernetes' not in current_cloud
           assert 'class="capability-grid"' in home
           assert 'id="selected-work"' in home
           css = Path('_site/assets/css/style.css').read_text()

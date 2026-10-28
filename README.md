@@ -39,7 +39,7 @@
 | 領域 | 主な技術・テーマ |
 |---|---|
 | **AI × プロダクト** | Vertex AI / Amazon Bedrock / Azure OpenAI / AIエージェント |
-| **Cloud Native** | Google Cloud / AWS / Azure / Cloudflare / Kubernetes |
+| **Cloud Native** | Google Cloud / AWS / Azure / Cloudflare |
 | **Application** | Go / Python / TypeScript / Next.js |
 | **Platform & Delivery** | Terraform / Docker / GitHub Actions / Observability |
 
