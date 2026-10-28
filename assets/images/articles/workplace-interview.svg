@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 438" role="img" aria-label="仲間と働く環境を表したイラスト">
+  <defs><linearGradient id="bg" x2="1"><stop stop-color="#eee7dc"/><stop offset="1" stop-color="#a7c7bf"/></linearGradient></defs>
+  <rect width="720" height="438" fill="url(#bg)"/>
+  <rect x="64" y="52" width="592" height="258" rx="12" fill="#fff" opacity=".67"/>
+  <g fill="#8cb3aa" opacity=".6"><rect x="94" y="84" width="112" height="88"/><rect x="226" y="84" width="112" height="88"/><rect x="358" y="84" width="112" height="88"/><rect x="490" y="84" width="136" height="88"/></g>
+  <path d="M88 355h544v35H88z" fill="#31534f"/><path d="M144 390h28v48h-28zM548 390h28v48h-28z" fill="#31534f"/>
+  <circle cx="220" cy="270" r="48" fill="#d99e79"/><path d="M143 355c3-58 32-89 77-89s74 31 77 89" fill="#466d66"/>
+  <circle cx="360" cy="255" r="48" fill="#f0bf9d"/><path d="M283 355c3-58 32-89 77-89s74 31 77 89" fill="#f7f8f6"/>
+  <circle cx="500" cy="272" r="48" fill="#805c4f"/><path d="M423 355c3-58 32-89 77-89s74 31 77 89" fill="#365b66"/>
+  <circle cx="570" cy="111" r="20" fill="#f0c973"/><path d="M560 111h20M570 101v20" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 438" role="img" aria-label="クラウドとアプリケーション開発を表したイラスト">
+  <defs><linearGradient id="bg" y2="1"><stop stop-color="#dce8ed"/><stop offset="1" stop-color="#8eabb6"/></linearGradient></defs>
+  <rect width="720" height="438" fill="url(#bg)"/>
+  <g stroke="#315c66" stroke-width="6" fill="none" opacity=".7"><path d="M360 183v63M175 246h370M175 246v54M545 246v54"/></g>
+  <path d="M250 186c-43 0-70-24-70-58 0-32 25-56 59-58 17-38 54-61 99-61 53 0 95 34 104 81 38 2 68 27 68 61 0 36-32 63-76 63H250Z" fill="#fff" opacity=".93"/>
+  <g fill="#315c66"><rect x="86" y="297" width="180" height="98" rx="14"/><rect x="270" y="262" width="180" height="133" rx="14"/><rect x="454" y="297" width="180" height="98" rx="14"/></g>
+  <g fill="#b8dad3"><circle cx="119" cy="330" r="8"/><circle cx="303" cy="296" r="8"/><circle cx="487" cy="330" r="8"/></g>
+  <g fill="#fff" opacity=".8"><rect x="143" y="322" width="87" height="14" rx="7"/><rect x="327" y="288" width="87" height="14" rx="7"/><rect x="327" y="321" width="87" height="14" rx="7"/><rect x="511" y="322" width="87" height="14" rx="7"/></g>
+</svg>

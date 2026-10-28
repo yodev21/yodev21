@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 438" role="img" aria-label="ポートフォリオ制作とインタビューを表したイラスト">
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#d9e4e1"/><stop offset="1" stop-color="#6f918b"/></linearGradient></defs>
+  <rect width="720" height="438" fill="url(#bg)"/>
+  <rect x="73" y="57" width="425" height="294" rx="16" fill="#f7f8f6"/>
+  <rect x="73" y="57" width="425" height="48" rx="16" fill="#31534f"/><circle cx="108" cy="81" r="8" fill="#e3a585"/><circle cx="134" cy="81" r="8" fill="#e8ce78"/><circle cx="160" cy="81" r="8" fill="#8fc1b6"/>
+  <g fill="#9bbab4"><rect x="112" y="143" width="150" height="18" rx="9"/><rect x="112" y="185" width="310" height="14" rx="7" opacity=".7"/><rect x="112" y="219" width="258" height="14" rx="7" opacity=".7"/><rect x="112" y="269" width="118" height="42" rx="10"/></g>
+  <circle cx="555" cy="188" r="74" fill="#f1c4a4"/><path d="M431 438v-89c0-78 52-128 124-128s124 50 124 128v89" fill="#2e6f68"/>
+  <rect x="591" y="125" width="42" height="149" rx="21" fill="#253e3b"/><path d="M612 274v72M576 346h72" stroke="#253e3b" stroke-width="12" stroke-linecap="round"/>
+</svg>

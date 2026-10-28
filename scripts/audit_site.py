@@ -103,8 +103,11 @@ def audit(build_dir):
     ):
         assert disclosure in privacy, f"Privacy disclosure missing: {disclosure}"
 
-    assert not (build_dir / "assets/images/articles").exists(), "Copied article images must not be published"
-    assert "assets/images/articles/" not in "\n".join(p.read_text(encoding="utf-8") for p in pages)
+    article_images = build_dir / "assets/images/articles"
+    assert article_images.exists(), "Original article illustrations are missing"
+    assert all(path.suffix == ".svg" for path in article_images.iterdir()), "Only original SVG article illustrations may be published"
+    for removed_image in ("lts-careers.jpg", "lts-clover.jpg", "good-companies.jpg", "editch-note.jpg"):
+        assert not (article_images / removed_image).exists(), f"Copied article image restored: {removed_image}"
     for css in build_dir.rglob("*.css"):
         assert "url(http://" not in css.read_text(encoding="utf-8")
         assert "url(https://" not in css.read_text(encoding="utf-8")

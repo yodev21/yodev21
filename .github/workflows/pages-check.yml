@@ -118,8 +118,10 @@ jobs:
           assert 'assets/icons/wantedly.svg' in home
           assert 'class="article-grid"' in home
           assert home.count('class="article-card"') == 4
-          assert home.count('class="article-card__media ') == 4
-          assert 'assets/images/articles/' not in home
+          assert home.count('class="article-card__media"') == 4
+          for image in ('team-interview.svg', 'cloud-interview.svg', 'workplace-interview.svg', 'portfolio-interview.svg'):
+              assert Path('_site/assets/images/articles', image).exists(), image
+              assert 'assets/images/articles/' + image in home
           for rendered_home in (home, home_en):
               experience = rendered_home.split('class="experience-details"', 1)[1].split('</details>', 1)[0]
               assert '<table>' in experience
