@@ -23,6 +23,7 @@ twitter:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - scripts
 defaults:
   - scope:
       path: ""
@@ -81,22 +82,22 @@ defaults:
   - scope:
       path: PRIVACY.md
     values:
-      title: アクセス解析について
-      search_title: アクセス解析について
-      description: このサイトで利用している匿名のアクセス解析について説明します。
+      title: アクセス解析・外部送信について
+      search_title: アクセス解析・外部送信について
+      description: このサイトのアクセス解析で外部送信される情報、利用目的、Cookie、保存期間について説明します。
       alternates:
         ja: /PRIVACY.html
         en: /PRIVACY.en.html
       breadcrumbs:
         - name: ホーム
           url: /
-        - name: アクセス解析について
+        - name: アクセス解析・外部送信について
   - scope:
       path: PRIVACY.en.md
     values:
-      title: Analytics and privacy
-      search_title: Analytics and privacy
-      description: How this site uses privacy-first, anonymous web analytics.
+      title: Analytics and external data transmission
+      search_title: Analytics and external data transmission
+      description: Information sent by this site's analytics, its purpose, cookie use, and retention.
       lang: en
       locale: en_US
       alternates:
@@ -105,7 +106,7 @@ defaults:
       breadcrumbs:
         - name: Home
           url: /README.en.html
-        - name: Analytics and privacy
+        - name: Analytics and external data transmission
   - scope:
       path: projects/personal/README.md
     values:

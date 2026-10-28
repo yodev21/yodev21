@@ -47,6 +47,8 @@ Outside work, I have designed, built, and operated a novel and reading community
 
 ## Selected Work {#selected-work}
 
+<div class="selected-work-list" markdown="1">
+
 ### AI Agent Proof of Concept
 
 **Tech Lead · Python / Azure**
@@ -63,7 +65,9 @@ Leading across requirement discovery, cloud and application architecture, produc
 
 **Personal Product · Go / Next.js / Google Cloud / Terraform**
 
-Redesigned a Rails service after four years in production, adding AI-assisted engineering, quality controls, analytics, and observability.
+Redesigned and migrated a Rails service after four years in production, adding AI-assisted engineering, quality controls, analytics, and observability while keeping the product in operation.
+
+</div>
 
 [View the personal project →](projects/personal/){: .text-link }
 
@@ -104,20 +108,20 @@ As AI accelerates implementation, tech leads need to decide what to build, where
 ### Interviews & Articles
 
 <div class="article-grid">
-  <a class="article-card" href="https://careers.lt-s.jp/students/interview/newgrad-bp-001002-1-1-0-0">
-    <img src="assets/images/articles/lts-careers.jpg" alt="" width="720" height="438" loading="lazy">
+  <a class="article-card" href="https://careers.lt-s.jp/students/interview/newgrad-bp-001002-1-1-0-0" target="_blank" rel="noopener">
+    <span class="article-card__media article-card__media--lts" aria-hidden="true"><span>LTS</span></span>
     <span class="article-card__body"><small>careers.lt-s.jp</small><strong class="article-card__title">“If you want to go far, go together” — a team-oriented engineering path</strong><span>On continuous learning and supporting each team member’s growth.</span></span>
   </a>
-  <a class="article-card" href="https://clover.lt-s.jp/9295">
-    <img src="assets/images/articles/lts-clover.jpg" alt="" width="720" height="405" loading="lazy">
+  <a class="article-card" href="https://clover.lt-s.jp/9295" target="_blank" rel="noopener">
+    <span class="article-card__media article-card__media--clover" aria-hidden="true"><span>CLOVER</span></span>
     <span class="article-card__body"><small>clover.lt-s.jp</small><strong class="article-card__title">From discovery to delivery — AWS and application development at LTS</strong><span>How we work across upstream planning, implementation, and production operations.</span></span>
   </a>
-  <a class="article-card" href="https://good-companies.jp/2024/07/12/lt-s/">
-    <img src="assets/images/articles/good-companies.jpg" alt="" width="720" height="433" loading="lazy">
+  <a class="article-card" href="https://good-companies.jp/2024/07/12/lt-s/" target="_blank" rel="noopener">
+    <span class="article-card__media article-card__media--good" aria-hidden="true"><span>INTERVIEW</span></span>
     <span class="article-card__body"><small>good-companies.jp</small><strong class="article-card__title">Sharing a richer and more enjoyable working life at LTS</strong><span>An interview about work, career ownership, and growing with colleagues at LTS.</span></span>
   </a>
-  <a class="article-card" href="https://note.com/d_biz_share/n/n07cc2eac3b22">
-    <img src="assets/images/articles/editch-note.jpg" alt="" width="720" height="377" loading="lazy">
+  <a class="article-card" href="https://note.com/d_biz_share/n/n07cc2eac3b22" target="_blank" rel="noopener">
+    <span class="article-card__media article-card__media--note" aria-hidden="true"><span>note</span></span>
     <span class="article-card__body"><small>note.com</small><strong class="article-card__title">editch interview #1</strong><span>Looking back on entering a portfolio competition and what changed afterward.</span></span>
   </a>
 </div>
@@ -125,10 +129,10 @@ As AI accelerates implementation, tech leads need to decide what to build, where
 ## Connect
 
 <div class="social-links">
-  <a href="https://www.wantedly.com/users/62400896" title="Wantedly"><img src="assets/icons/wantedly.svg" alt="Wantedly" width="24" height="24"></a>
-  <a href="https://youtrust.jp/users/yodev21" title="YOUTRUST"><img src="assets/icons/youtrust.svg" alt="YOUTRUST" width="24" height="24"></a>
-  <a href="https://www.linkedin.com/in/yodev21" title="LinkedIn"><img src="assets/icons/linkedin.ico" alt="LinkedIn" width="24" height="24"></a>
-  <a href="https://lapras.com/public/CZQQR6J" title="LAPRAS"><img src="assets/icons/lapras.png" alt="LAPRAS" width="24" height="24"></a>
-  <a href="https://qiita.com/yokku21" title="Qiita"><img src="assets/icons/qiita.svg" alt="Qiita" width="24" height="24"></a>
-  <a href="https://twitter.com/yodev21" title="X"><img src="assets/icons/x.svg" alt="X" width="24" height="24"></a>
+  <a href="https://www.wantedly.com/users/62400896" title="Wantedly" target="_blank" rel="noopener"><img src="assets/icons/wantedly.svg" alt="Wantedly" width="24" height="24"></a>
+  <a href="https://youtrust.jp/users/yodev21" title="YOUTRUST" target="_blank" rel="noopener"><img src="assets/icons/youtrust.svg" alt="YOUTRUST" width="24" height="24"></a>
+  <a href="https://www.linkedin.com/in/yodev21" title="LinkedIn" target="_blank" rel="noopener"><img src="assets/icons/linkedin.ico" alt="LinkedIn" width="24" height="24"></a>
+  <a href="https://lapras.com/public/CZQQR6J" title="LAPRAS" target="_blank" rel="noopener"><img src="assets/icons/lapras.png" alt="LAPRAS" width="24" height="24"></a>
+  <a href="https://qiita.com/yokku21" title="Qiita" target="_blank" rel="noopener"><img src="assets/icons/qiita.svg" alt="Qiita" width="24" height="24"></a>
+  <a href="https://twitter.com/yodev21" title="X" target="_blank" rel="noopener"><img src="assets/icons/x.svg" alt="X" width="24" height="24"></a>
 </div>
