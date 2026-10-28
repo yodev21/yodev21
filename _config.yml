@@ -34,6 +34,7 @@ defaults:
       path: README.md
     values:
       title: Tech Lead
+      search_title: 田中遥介 — プロフィール
       permalink: /
       alternates:
         ja: /
@@ -42,6 +43,7 @@ defaults:
       path: README.en.md
     values:
       title: Tech Lead
+      search_title: Yosuke Tanaka — Profile
       description: A tech lead turning ambiguous requirements into working systems across cloud architecture, application delivery, AI, and production operations.
       lang: en
       locale: en_US
@@ -52,6 +54,7 @@ defaults:
       path: TECHNOLOGIES.md
     values:
       title: 使用技術
+      search_title: 使用技術
       description: 業務・個人開発で使用した言語、クラウド、フレームワーク、インフラ技術の一覧。
       alternates:
         ja: /TECHNOLOGIES.html
@@ -60,6 +63,7 @@ defaults:
       path: TECHNOLOGIES.en.md
     values:
       title: Technologies Used
+      search_title: Technologies Used
       description: Languages, cloud platforms, frameworks, and infrastructure tools used in professional and personal projects.
       lang: en
       locale: en_US
@@ -70,6 +74,7 @@ defaults:
       path: PRIVACY.md
     values:
       title: アクセス解析について
+      search_title: アクセス解析について
       description: このサイトで利用している匿名のアクセス解析について説明します。
       alternates:
         ja: /PRIVACY.html
@@ -78,6 +83,7 @@ defaults:
       path: PRIVACY.en.md
     values:
       title: Analytics and privacy
+      search_title: Analytics and privacy
       description: How this site uses privacy-first, anonymous web analytics.
       lang: en
       locale: en_US
@@ -88,14 +94,17 @@ defaults:
       path: projects/personal/README.md
     values:
       title: 個人開発
+      search_title: 個人開発
       description: 小説・朗読投稿サービスの開発・運用とリアーキテクチャの実績。
   - scope:
       path: projects/personal/01_小説朗読投稿サービス.md
     values:
       title: 小説・朗読投稿サービスの開発・運用
+      search_title: 小説・朗読投稿サービスの開発・運用
       description: Ruby on RailsとAWS Lightsailを使った個人サービスの開発・運用実績。
   - scope:
       path: projects/personal/02_小説朗読投稿サービス_移行.md
     values:
       title: 小説・朗読投稿サービスのリアーキテクチャ
+      search_title: 小説・朗読投稿サービスのリアーキテクチャ
       description: Go・Next.js・Google Cloudへの移行と、AIを活用した開発・品質管理の取り組み。
