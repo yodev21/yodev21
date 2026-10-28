@@ -30,7 +30,7 @@
   </section>
 </div>
 
-## 今扱っている技術
+<h2 id="current-technologies">今扱っている技術</h2>
 
 | 領域 | 主な技術・テーマ |
 |---|---|

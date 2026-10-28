@@ -18,6 +18,6 @@ See <a href="https://developers.cloudflare.com/web-analytics/data-metrics/data-o
 
 ## Contact
 
-This site has no contact form. For questions about the content or analytics, use one of the contact options on the home page.
+This site has no contact form. For questions about the content or analytics, use one of the contact options in the page footer.
 
 Last updated: October 29, 2026
