@@ -96,6 +96,12 @@ jobs:
               assert 'Kubernetes' not in current_cloud
           assert 'class="capability-grid"' in home
           assert 'id="selected-work"' in home
+          architecture = Path('_site/projects/personal/02_小説朗読投稿サービス_移行.html').read_text()
+          assert architecture.count('class="architecture-diagram"') == 3
+          assert 'language-mermaid' not in architecture
+          for diagram in ('before.svg', 'runtime.svg', 'delivery.svg'):
+              assert Path('_site/assets/images/architecture', diagram).exists(), diagram
+              assert 'assets/images/architecture/' + diagram in architecture
           css = Path('_site/assets/css/style.css').read_text()
           assert '--accent:' in css
           assert '@media (max-width: 520px)' in css
