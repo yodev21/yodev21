@@ -94,19 +94,19 @@ I use AI for implementation and research, but I do not accept its output as-is. 
 
 <div class="article-grid">
   <a class="article-card" href="https://careers.lt-s.jp/students/interview/newgrad-bp-001002-1-1-0-0" target="_blank" rel="noopener">
-    <span class="article-card__media" aria-hidden="true"><img src="assets/images/articles/team-interview.svg" alt="" width="720" height="438" loading="lazy"></span>
+    <span class="article-card__media" aria-hidden="true"><img src="assets/images/articles/team-interview.svg" alt="" width="360" height="219" loading="lazy"></span>
     <span class="article-card__body"><small>careers.lt-s.jp</small><strong class="article-card__title">“If you want to go far, go together” — a team-oriented engineering path</strong><span>On continuous learning and supporting each team member’s growth.</span></span>
   </a>
   <a class="article-card" href="https://clover.lt-s.jp/9295" target="_blank" rel="noopener">
-    <span class="article-card__media" aria-hidden="true"><img src="assets/images/articles/cloud-interview.svg" alt="" width="720" height="438" loading="lazy"></span>
+    <span class="article-card__media" aria-hidden="true"><img src="assets/images/articles/cloud-interview.svg" alt="" width="360" height="219" loading="lazy"></span>
     <span class="article-card__body"><small>clover.lt-s.jp</small><strong class="article-card__title">From discovery to delivery — AWS and application development at LTS</strong><span>How we work across upstream planning, implementation, and production operations.</span></span>
   </a>
   <a class="article-card" href="https://good-companies.jp/2024/07/12/lt-s/" target="_blank" rel="noopener">
-    <span class="article-card__media" aria-hidden="true"><img src="assets/images/articles/workplace-interview.svg" alt="" width="720" height="438" loading="lazy"></span>
+    <span class="article-card__media" aria-hidden="true"><img src="assets/images/articles/workplace-interview.svg" alt="" width="360" height="219" loading="lazy"></span>
     <span class="article-card__body"><small>good-companies.jp</small><strong class="article-card__title">Sharing a richer and more enjoyable working life at LTS</strong><span>An interview about work, career ownership, and growing with colleagues at LTS.</span></span>
   </a>
   <a class="article-card" href="https://note.com/d_biz_share/n/n07cc2eac3b22" target="_blank" rel="noopener">
-    <span class="article-card__media" aria-hidden="true"><img src="assets/images/articles/portfolio-interview.svg" alt="" width="720" height="438" loading="lazy"></span>
+    <span class="article-card__media" aria-hidden="true"><img src="assets/images/articles/portfolio-interview.svg" alt="" width="360" height="219" loading="lazy"></span>
     <span class="article-card__body"><small>note.com</small><strong class="article-card__title">editch interview #1</strong><span>Looking back on entering a portfolio competition and what changed afterward.</span></span>
   </a>
 </div>

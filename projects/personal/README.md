@@ -1,7 +1,7 @@
 # 個人開発
 
 <a class="product-card" href="https://kikusyo.com/" target="_blank" rel="noopener">
-  <img src="../../assets/images/projects/kikusyo-card.webp" alt="聴くっしょ！ 小説と朗読をつなぐ朗読許可プラットフォーム" width="960" height="502">
+  <img src="../../assets/images/projects/kikusyo-card.webp" alt="聴くっしょ！ 小説と朗読をつなぐ朗読許可プラットフォーム" width="640" height="335">
   <span class="product-card__body">
     <span class="product-card__meta"><strong>聴くっしょ！</strong><small>運営中</small></span>
     <span>作家が投稿した小説を、声優・ナレーターが許可を得て朗読できるプラットフォームです。2022年の公開から運営を続け、2026年4月にシステムを全面移行しました。</span>

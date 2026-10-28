@@ -69,6 +69,8 @@ jobs:
               assert head.meta.get('twitter:card') == 'summary', filename
               assert [x.get('href') for x in head.links if x.get('rel') == 'canonical'] == [base + path], filename
               assert any(x.get('rel') == 'alternate' and x.get('href') == base + alternate for x in head.links), filename
+              default_path = path if lang == 'ja' else alternate
+              assert any(x.get('rel') == 'alternate' and x.get('hreflang') == 'x-default' and x.get('href') == base + default_path for x in head.links), filename
               assert '<title>' in html and '田中遥介' in html, filename
               assert 'noindex' not in html, filename
               assert 'https://static.cloudflareinsights.com/beacon.min.js' in html, filename
@@ -116,8 +118,12 @@ jobs:
               assert profile in hero
           assert '"@type": "ProfilePage"' in home
           assert '"@type": "Person"' in home
+          assert '"@id": "https://yodev21.github.io/yodev21/#person"' in home
+          assert '"dateModified": "2026-10-29"' in home
+          assert '"subjectOf"' in home
           assert '"sameAs"' in home
           assert 'property="og:image"' in home
+          assert '田中遥介（yodev21）のプロフィール。' in home
           footer = home.split('class="site-footer"', 1)[1]
           assert 'class="site-footer__top"' in footer
           assert 'class="site-footer__bottom"' in footer
@@ -163,6 +169,8 @@ jobs:
           personal = Path('_site/projects/personal/index.html').read_text()
           assert 'class="stack-summary"' in personal
           assert 'class="product-card"' in personal
+          assert 'property="og:image"' in personal
+          assert 'assets/images/projects/kikusyo-card.webp' in personal
           assert 'https://kikusyo.com/' in personal
           assert '運営中' in personal
           assert '<dt>クラウド</dt>' in personal

@@ -1,12 +1,13 @@
 title: 田中遥介 / yodev21
 tagline: Tech Lead
-description: 曖昧な要求を構造化し、クラウド設計・アプリ開発・本番運用までをつなぐテックリード。AI・クラウド領域の経験と実績を紹介します。
+description: 田中遥介（yodev21）のプロフィール。要求整理からクラウド設計、アプリケーション開発、本番運用までを担うテックリードです。
 url: https://yodev21.github.io
 baseurl: /yodev21
 lang: ja
 locale: ja_JP
 cloudflare_web_analytics_site_id: 282bea37e8344754aae7cfeaa2033596
 contact_email: yodev21.business@gmail.com
+profile_last_modified: 2026-10-29
 theme: jekyll-theme-primer
 plugins:
   - jekyll-seo-tag
@@ -38,6 +39,7 @@ defaults:
       title: Tech Lead
       search_title: 田中遥介 — プロフィール
       image: /assets/images/profile.jpg
+      description: 田中遥介（yodev21）のプロフィール。要求整理からクラウド設計、アプリケーション開発、本番運用までを担うテックリードです。
       permalink: /
       alternates:
         ja: /
@@ -48,7 +50,7 @@ defaults:
       title: Tech Lead
       search_title: Yosuke Tanaka — Profile
       image: /assets/images/profile.jpg
-      description: A tech lead turning ambiguous requirements into working systems across cloud architecture, application delivery, AI, and production operations.
+      description: Profile of Yosuke Tanaka (yodev21), a tech lead working across requirements, cloud architecture, application development, and production operations.
       lang: en
       locale: en_US
       alternates:
@@ -59,7 +61,7 @@ defaults:
     values:
       title: 使用技術
       search_title: 使用技術
-      description: 業務・個人開発で使用した言語、クラウド、フレームワーク、インフラ技術の一覧。
+      description: 田中遥介が業務・個人開発で使用した言語、クラウド、フレームワーク、インフラ技術の一覧です。
       alternates:
         ja: /TECHNOLOGIES.html
         en: /TECHNOLOGIES.en.html
@@ -72,7 +74,7 @@ defaults:
     values:
       title: これまでの業務経験
       search_title: これまでの業務経験
-      description: これまで担当した業務、役割、主な技術を公開可能な範囲でまとめています。
+      description: 田中遥介が担当した業務、役割、主な技術を、公開可能な範囲で時系列にまとめています。
       alternates:
         ja: /EXPERIENCE.html
         en: /EXPERIENCE.en.html
@@ -85,7 +87,7 @@ defaults:
     values:
       title: Professional Experience
       search_title: Professional Experience
-      description: A chronological summary of professional work, roles, and principal technologies.
+      description: A chronological summary of Yosuke Tanaka's professional work, roles, and principal technologies.
       lang: en
       locale: en_US
       alternates:
@@ -100,7 +102,7 @@ defaults:
     values:
       title: Technologies Used
       search_title: Technologies Used
-      description: Languages, cloud platforms, frameworks, and infrastructure tools used in professional and personal projects.
+      description: Languages, cloud platforms, frameworks, and infrastructure tools Yosuke Tanaka has used in professional and personal projects.
       lang: en
       locale: en_US
       alternates:
@@ -143,7 +145,8 @@ defaults:
     values:
       title: 個人開発
       search_title: 個人開発
-      description: 小説・朗読投稿サービスの開発・運用とリアーキテクチャの実績。
+      description: 2022年から運営中の小説・朗読投稿サービス「聴くっしょ！」の開発・運用とリアーキテクチャの記録です。
+      image: /assets/images/projects/kikusyo-card.webp
       breadcrumbs:
         - name: ホーム
           url: /
@@ -153,7 +156,8 @@ defaults:
     values:
       title: 小説・朗読投稿サービスの開発・運用
       search_title: 小説・朗読投稿サービスの開発・運用
-      description: Ruby on RailsとAWS Lightsailを使った個人サービスの開発・運用実績。
+      description: 「聴くっしょ！」の旧システムをRuby on RailsとAWS Lightsailで開発・運用した記録です。
+      image: /assets/images/projects/kikusyo-card.webp
       breadcrumbs:
         - name: ホーム
           url: /
@@ -165,7 +169,8 @@ defaults:
     values:
       title: 小説・朗読投稿サービスのリアーキテクチャ
       search_title: 小説・朗読投稿サービスのリアーキテクチャ
-      description: Go・Next.js・Google Cloudへの移行と、AIを活用した開発・品質管理の取り組み。
+      description: 運営中の「聴くっしょ！」をGo・Next.js・Google Cloudへ移行し、開発・品質管理・運用基盤を再設計した記録です。
+      image: /assets/images/projects/kikusyo-card.webp
       breadcrumbs:
         - name: ホーム
           url: /

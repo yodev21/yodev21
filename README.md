@@ -94,19 +94,19 @@ AIは実装や調査に使いますが、出力をそのまま採用すること
 
 <div class="article-grid">
   <a class="article-card" href="https://careers.lt-s.jp/students/interview/newgrad-bp-001002-1-1-0-0" target="_blank" rel="noopener">
-    <span class="article-card__media" aria-hidden="true"><img src="assets/images/articles/team-interview.svg" alt="" width="720" height="438" loading="lazy"></span>
+    <span class="article-card__media" aria-hidden="true"><img src="assets/images/articles/team-interview.svg" alt="" width="360" height="219" loading="lazy"></span>
     <span class="article-card__body"><small>careers.lt-s.jp</small><strong class="article-card__title">「遠くにいくなら皆で」チーム志向で進むエンジニアの道</strong><span>学び続ける姿勢と、メンバーの成長を支えるチームづくりについて話しました。</span></span>
   </a>
   <a class="article-card" href="https://clover.lt-s.jp/9295" target="_blank" rel="noopener">
-    <span class="article-card__media" aria-hidden="true"><img src="assets/images/articles/cloud-interview.svg" alt="" width="720" height="438" loading="lazy"></span>
+    <span class="article-card__media" aria-hidden="true"><img src="assets/images/articles/cloud-interview.svg" alt="" width="360" height="219" loading="lazy"></span>
     <span class="article-card__body"><small>clover.lt-s.jp</small><strong class="article-card__title">上流から実装・運用まで LTSのAWS構築・アプリ開発</strong><span>AWS案件における上流工程から設計・実装・運用までの取り組みを紹介しています。</span></span>
   </a>
   <a class="article-card" href="https://good-companies.jp/2024/07/12/lt-s/" target="_blank" rel="noopener">
-    <span class="article-card__media" aria-hidden="true"><img src="assets/images/articles/workplace-interview.svg" alt="" width="720" height="438" loading="lazy"></span>
+    <span class="article-card__media" aria-hidden="true"><img src="assets/images/articles/workplace-interview.svg" alt="" width="360" height="219" loading="lazy"></span>
     <span class="article-card__body"><small>good-companies.jp</small><strong class="article-card__title">働く豊かさや楽しさを仲間と分かち合える環境</strong><span>LTSでの働き方、キャリア、仲間と成長する環境についてのインタビューです。</span></span>
   </a>
   <a class="article-card" href="https://note.com/d_biz_share/n/n07cc2eac3b22" target="_blank" rel="noopener">
-    <span class="article-card__media" aria-hidden="true"><img src="assets/images/articles/portfolio-interview.svg" alt="" width="720" height="438" loading="lazy"></span>
+    <span class="article-card__media" aria-hidden="true"><img src="assets/images/articles/portfolio-interview.svg" alt="" width="360" height="219" loading="lazy"></span>
     <span class="article-card__body"><small>note.com</small><strong class="article-card__title">editchインタビュー #1</strong><span>ポートフォリオコンテストに参加した当時の経験と、その前後の変化を振り返っています。</span></span>
   </a>
 </div>

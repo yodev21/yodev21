@@ -10,19 +10,26 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'; worker-src 'none'; upgrade-insecure-requests">
     {% seo %}
     {% if is_home %}
+    {% capture profile_name %}{% if page.lang == 'en' %}Yosuke Tanaka{% else %}田中 遥介{% endif %}{% endcapture %}
+    {% capture profile_description %}{{ page.description | default: site.description }}{% endcapture %}
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfilePage",
-      "url": "{{ page.url | absolute_url }}",
+      "@id": {{ page.url | append: '#profile-page' | absolute_url | jsonify }},
+      "url": {{ page.url | absolute_url | jsonify }},
+      "dateModified": {{ site.profile_last_modified | date: '%Y-%m-%d' | jsonify }},
+      "inLanguage": {{ page.lang | default: site.lang | jsonify }},
       "mainEntity": {
+        "@id": {{ '/#person' | absolute_url | jsonify }},
         "@type": "Person",
-        "name": "{% if page.lang == 'en' %}Yosuke Tanaka{% else %}田中 遥介{% endif %}",
+        "name": {{ profile_name | strip | jsonify }},
         "alternateName": "yodev21",
-        "url": "{{ page.url | absolute_url }}",
-        "image": "{{ '/assets/images/profile.jpg' | absolute_url }}",
+        "url": {{ '/' | absolute_url | jsonify }},
+        "description": {{ profile_description | strip | jsonify }},
+        "image": {{ '/assets/images/profile.jpg' | absolute_url | jsonify }},
         "jobTitle": "Tech Lead / Software Engineer",
-        "worksFor": { "@type": "Organization", "name": "LTS, Inc." },
+        "worksFor": { "@type": "Organization", "name": "{% if page.lang == 'en' %}LTS, Inc.{% else %}株式会社エル・ティー・エス{% endif %}" },
         "sameAs": [
           "https://github.com/yodev21",
           "https://youtrust.jp/users/yodev21",
@@ -32,7 +39,13 @@
           "https://qiita.com/yokku21",
           "https://x.com/yodev21"
         ],
-        "knowsAbout": ["Cloud architecture", "Software engineering", "AI product development", "Production operations"]
+        "knowsAbout": ["Requirements engineering", "Cloud architecture", "Software engineering", "AI-assisted product development", "Production operations", "Google Cloud", "AWS", "Go"],
+        "subjectOf": [
+          { "@type": "Article", "url": "https://careers.lt-s.jp/students/interview/newgrad-bp-001002-1-1-0-0", "name": "{% if page.lang == 'en' %}A team-oriented engineering path{% else %}「遠くにいくなら皆で」チーム志向で進むエンジニアの道{% endif %}" },
+          { "@type": "Article", "url": "https://clover.lt-s.jp/9295", "name": "{% if page.lang == 'en' %}AWS and application development at LTS{% else %}上流から実装・運用まで LTSのAWS構築・アプリ開発{% endif %}" },
+          { "@type": "Article", "url": "https://good-companies.jp/2024/07/12/lt-s/", "name": "{% if page.lang == 'en' %}Working and growing with colleagues at LTS{% else %}働く豊かさや楽しさを仲間と分かち合える環境{% endif %}" },
+          { "@type": "Article", "url": "https://note.com/d_biz_share/n/n07cc2eac3b22", "name": "editch interview #1" }
+        ]
       }
     }
     </script>
@@ -40,6 +53,9 @@
     {% for alternate in page.alternates %}
     <link rel="alternate" hreflang="{{ alternate[0] }}" href="{{ alternate[1] | absolute_url }}">
     {% endfor %}
+    {% if page.alternates.ja %}
+    <link rel="alternate" hreflang="x-default" href="{{ page.alternates.ja | absolute_url }}">
+    {% endif %}
     <link rel="icon" href="{{ '/assets/icons/favicon.svg' | relative_url }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     {% if site.cloudflare_web_analytics_site_id %}
