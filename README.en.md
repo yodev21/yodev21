@@ -30,7 +30,7 @@ Outside work, I have designed, built, and operated a novel and reading community
   </section>
 </div>
 
-## Technologies I Work With Now
+<h2 id="current-technologies">Technologies I Work With Now</h2>
 
 | Area | Technologies & themes |
 |---|---|

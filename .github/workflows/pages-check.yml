@@ -170,6 +170,10 @@ jobs:
               assert '<table>' in experience
               assert experience.count('<tr>') == 10
           assert 'class="capability-grid"' in home
+          assert 'id="current-technologies"' in home
+          assert 'id="current-technologies"' in home_en
+          assert 'href="/yodev21/#current-technologies"' in Path('_site/TECHNOLOGIES.html').read_text()
+          assert 'href="/yodev21/README.en.html#current-technologies"' in Path('_site/TECHNOLOGIES.en.html').read_text()
           assert 'id="selected-work"' in home
           assert 'class="selected-work-list"' in home
           personal = Path('_site/projects/personal/index.html').read_text()
@@ -182,6 +186,8 @@ jobs:
           assert '<dt>クラウド</dt>' in personal
           assert '<h1' in Path('_site/projects/personal/01_小説朗読投稿サービス.html').read_text()
           assert '<h1' in Path('_site/projects/personal/02_小説朗読投稿サービス_移行.html').read_text()
+          assert 'ページ下部の連絡先をご利用ください。' in Path('_site/PRIVACY.html').read_text()
+          assert 'contact options in the page footer' in Path('_site/PRIVACY.en.html').read_text()
           architecture = Path('_site/projects/personal/02_小説朗読投稿サービス_移行.html').read_text()
           assert architecture.count('class="architecture-diagram"') == 3
           assert 'language-mermaid' not in architecture
@@ -194,6 +200,7 @@ jobs:
           assert '.site-footer__contact' in css
           assert 'overflow-wrap:anywhere' in css.replace(' ', '')
           assert '@media (max-width: 520px)' in css
+          assert '.article-card__body>p:not(.article-card__source)' in css.replace(' ', '')
           assert 'prefers-reduced-motion' in css
           print('SEO, navigation, portfolio structure and responsive styles OK')
           PY

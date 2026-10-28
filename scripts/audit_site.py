@@ -4,11 +4,12 @@
 from html.parser import HTMLParser
 from pathlib import Path
 import sys
-from urllib.parse import urlparse
+from urllib.parse import unquote, urljoin, urlparse
 
 
 ALLOWED_RUNTIME_ORIGINS = {"https://static.cloudflareinsights.com"}
 SITE_ORIGIN = "https://yodev21.github.io"
+SITE_BASE_PATH = "/yodev21"
 
 
 class Page(HTMLParser):
@@ -21,9 +22,12 @@ class Page(HTMLParser):
         self.iframes = []
         self.forms = []
         self.meta = []
+        self.ids = set()
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if attrs.get("id"):
+            self.ids.add(attrs["id"])
         if tag == "a":
             self.anchors.append(attrs)
         elif tag == "img":
@@ -45,20 +49,46 @@ def origin(url):
     return f"{parsed.scheme}://{parsed.netloc}" if parsed.scheme and parsed.netloc else None
 
 
+def published_url(build_dir, path):
+    relative = path.relative_to(build_dir).as_posix()
+    if relative == "index.html":
+        relative = ""
+    elif relative.endswith("/index.html"):
+        relative = relative[: -len("index.html")]
+    return f"{SITE_ORIGIN}{SITE_BASE_PATH}/{relative}"
+
+
+def internal_target(build_dir, source_path, href):
+    parsed = urlparse(urljoin(published_url(build_dir, source_path), href))
+    if parsed.scheme not in ("", "http", "https") or parsed.netloc not in ("", "yodev21.github.io"):
+        return None
+    if not parsed.path.startswith(SITE_BASE_PATH):
+        return None
+
+    relative = unquote(parsed.path[len(SITE_BASE_PATH) :]).lstrip("/")
+    if not relative or relative.endswith("/"):
+        relative += "index.html"
+    return build_dir / relative, unquote(parsed.fragment)
+
+
 def audit(build_dir):
     pages = sorted(build_dir.rglob("*.html"))
     assert pages, f"No HTML found in {build_dir}"
 
+    parsed_pages = {}
     for path in pages:
         html = path.read_text(encoding="utf-8")
         page = Page()
         page.feed(html)
+        parsed_pages[path] = page
 
         csp = [m.get("content", "") for m in page.meta if m.get("http-equiv") == "Content-Security-Policy"]
         assert len(csp) == 1, f"{path}: expected one CSP meta tag"
         for directive in (
             "default-src 'self'",
+            "script-src-attr 'none'",
             "connect-src 'self' https://cloudflareinsights.com",
+            "style-src-attr 'none'",
             "object-src 'none'",
             "base-uri 'self'",
             "form-action 'none'",
@@ -91,6 +121,19 @@ def audit(build_dir):
                 assert anchor.get("target") == "_blank", f"{path}: external link must open a new tab: {href}"
                 assert "noopener" in anchor.get("rel", "").split(), f"{path}: external link missing noopener: {href}"
 
+    for path, page in parsed_pages.items():
+        for anchor in page.anchors:
+            href = anchor.get("href", "")
+            target = internal_target(build_dir, path, href)
+            if not target:
+                continue
+            target_path, fragment = target
+            assert target_path.exists(), f"{path}: broken internal link: {href}"
+            if fragment and target_path.suffix == ".html":
+                target_page = parsed_pages.get(target_path)
+                assert target_page, f"{path}: linked page was not parsed: {href}"
+                assert fragment in target_page.ids, f"{path}: missing fragment target: {href}"
+
     privacy = (build_dir / "PRIVACY.html").read_text(encoding="utf-8")
     for disclosure in (
         "Cloudflare, Inc.",
@@ -111,7 +154,7 @@ def audit(build_dir):
     for css in build_dir.rglob("*.css"):
         assert "url(http://" not in css.read_text(encoding="utf-8")
         assert "url(https://" not in css.read_text(encoding="utf-8")
-    print(f"Security, privacy, external-link and asset audit passed for {len(pages)} pages")
+    print(f"Security, privacy, internal/external-link and asset audit passed for {len(pages)} pages")
 
 
 if __name__ == "__main__":
