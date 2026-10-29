@@ -36,7 +36,7 @@ defaults:
   - scope:
       path: README.md
     values:
-      title: Tech Lead
+      title: テックリード・ソフトウェアエンジニア
       search_title: 田中遥介 — プロフィール
       image: /assets/images/profile.jpg
       description: 田中遥介（yodev21）のプロフィール。要求整理からクラウド設計、アプリケーション開発、本番運用までを担うテックリードです。
@@ -47,7 +47,7 @@ defaults:
   - scope:
       path: README.en.md
     values:
-      title: Tech Lead
+      title: Tech Lead / Software Engineer
       search_title: Yosuke Tanaka — Profile
       image: /assets/images/profile.jpg
       description: Profile of Yosuke Tanaka (yodev21), a tech lead working across requirements, cloud architecture, application development, and production operations.
