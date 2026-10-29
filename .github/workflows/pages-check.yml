@@ -89,7 +89,23 @@ jobs:
           assert '田中遥介 — プロフィール' in search_index
           assert 'Technologies Used' in search_index
           assert 'Professional Experience' in search_index
-          assert base + '/' in Path('_site/sitemap.xml').read_text()
+          sitemap = Path('_site/sitemap.xml').read_text()
+          expected_sitemap_urls = [
+              base + '/',
+              base + '/README.en.html',
+              base + '/EXPERIENCE.html',
+              base + '/EXPERIENCE.en.html',
+              base + '/TECHNOLOGIES.html',
+              base + '/TECHNOLOGIES.en.html',
+              base + '/PRIVACY.html',
+              base + '/PRIVACY.en.html',
+              base + '/projects/personal/',
+              base + '/projects/personal/01_%E5%B0%8F%E8%AA%AC%E6%9C%97%E8%AA%AD%E6%8A%95%E7%A8%BF%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9.html',
+              base + '/projects/personal/02_%E5%B0%8F%E8%AA%AC%E6%9C%97%E8%AA%AD%E6%8A%95%E7%A8%BF%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9_%E7%A7%BB%E8%A1%8C.html',
+          ]
+          for url in expected_sitemap_urls:
+              assert '<loc>' + url + '</loc>' in sitemap, url
+          assert sitemap.count('<url>') == len(expected_sitemap_urls)
           assert 'Sitemap: ' + base + '/sitemap.xml' in Path('_site/robots.txt').read_text()
           breadcrumb_pages = {
               'TECHNOLOGIES.html': 2,
@@ -109,6 +125,8 @@ jobs:
               assert rendered.count('itemprop="position"') == count, filename
           home = Path('_site/index.html').read_text()
           home_en = Path('_site/README.en.html').read_text()
+          assert '<title>テックリード・ソフトウェアエンジニア | 田中遥介 / yodev21</title>' in home
+          assert '<title>Tech Lead / Software Engineer | 田中遥介 / yodev21</title>' in home_en
           assert 'class="breadcrumbs"' not in home
           assert 'class="breadcrumbs"' not in home_en
           assert 'class="hero"' in home
